@@ -38,12 +38,8 @@ Now, we create two different Subscriber in Vendor V3, one for squares without a 
 Conclusions
 -----------
 
-<<<<<<< HEAD
-We can observe that square update it position continuously, but the position of the circle is uptade every 2000 ms. As you can see in the following images, V2 publishes several samples that we don't see in V3.
-=======
 We can observe that square updates its position continuously, but the position of the circle is updated every 2000 ms.
 V2 publishes several samples that we don't see in V3, as you can see in the following images.
->>>>>>> fcb6d954122b9dd481b535024124c1047c6684ab
    
  .. image:: test7_2.png
    :scale: 100 %
