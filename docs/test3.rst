@@ -3,7 +3,7 @@ Durability
 
 The History of the Publishers is set to KEEP_LAST. You can select the number of samples that the Publisher is going to save. 
 You can also select if this History is going to be VOLATILE or TRANSIENT_LOCAL. 
-The latter will send that last stored values to subscribers joining after the Publisher has been created. 
+The latter will send that last stored value to subscribers joining after the Publisher has been created. 
 
 Create Publishers
 -----------------
@@ -52,7 +52,7 @@ Conclusions
    :align: center
 
 As you can see in the previous image, we observe the last position followed by a tail with the last 99 positions published.
-The value introduced in History delimits the size of this tail.
+The value introduced in History delimits the size of this stele.
 If we modify this value and we introduce a smaller value, such as 30, we will see a minor stele. (You can see that in the following image)
 
 .. image:: test3_4.png
