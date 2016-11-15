@@ -1,12 +1,12 @@
 Content Base Filter
 ===================
 
-This filter draws a rectangle in the shapes window. Only the instances that are inside the rectangle are accepted. The rest of them are ignored. You can resize and move this content filter dynamically. 
+This filter draws a rectangle in the shapes window. Only the instances that are inside the rectangle are accepted. The rest of them are ignored. You can resize and move this content filter dynamically.
 
 Create Publishers
 -----------------
 
-We launch two Publisher in vendor V1 y V2 with the following characteristics (We can create both in the same vendor)
+We launch two Publishers in vendor V1 y V2 with the following characteristics (We can create both in the same vendor)
 
 +--------+----------+--------+-----------+---------+----------+------------+-----------+
 |        | Shape    | Color  | Partition | History (Reliable) | Durability | Ownership |
@@ -24,7 +24,7 @@ We launch two Publisher in vendor V1 y V2 with the following characteristics (We
 Create Subscribers
 ------------------
    
-Now, we create two Subscriber in vendor V3:
+Now, we create two Subscribers in vendor V3:
 
 +--------+--------+---------+--------------------+------------+--------------+
 |        | Shape  | Partion | History (Reliable) | Durability | Content base |
