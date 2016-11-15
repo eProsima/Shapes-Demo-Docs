@@ -3,7 +3,7 @@ Using eProsima Shapes Demo
 
 This section guides you through the main menus of eProsima Shapes Demo. After the executable is launched you should see a window similar to the one presented in the following image.
 
-.. image:: mainwindow.png
+.. image:: mainWindow.png
    :scale: 100 %
    :alt: Main Window
    :align: center
