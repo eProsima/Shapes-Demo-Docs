@@ -77,7 +77,7 @@ The user can modify the following settings:
 
 - **Update interval:** This value changes the publication period for all the Publishers. 
 
-- **Length:** This scrollbar allows the user to change how much the Shape moves between two write calls. 
+- **Speed:** This scrollbar allows the user to change how much the Shape moves between two write calls. 
 
 Endpoints and Output tabs
 -------------------------
