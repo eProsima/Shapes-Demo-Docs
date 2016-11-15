@@ -1,7 +1,7 @@
 Discovery and basic connectivity
 ================================
 
-This test attempts to show a basic example of publishing and subscribing. 
+This test attempts to show a basic example of publishing and subscribing with eProsima Shapes-Demo. 
 We design and test with three vendors, but it is also valid with two.
 
 Create Publishers

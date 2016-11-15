@@ -36,7 +36,7 @@ Now, we create a Subscriber in V3.
 | **V3** | Square | No      | 1 (ON)             | VOLATILE   | EXCLUSIVE |
 +--------+--------+---------+--------------------+------------+-----------+
 
-Only the Publisher in V2 can publish, due to this, we have a big square in the shapes window of V3. 
+Only the Publisher in V2 can publish, due to this, we have a big square in V3.
 
 .. image:: test5_3.png
    :scale: 100 %
@@ -45,8 +45,7 @@ Only the Publisher in V2 can publish, due to this, we have a big square in the s
 
 Delete V2
 ---------
-   
-If we stop V2, V1 will can publish into the square topic. In the following image we can appreciate this behaviour. V3 has an small square in the shapes window.
+If we stop V2, V1 will can publish. In the following image we can appreciate this behaviour. V3 has a small square in the window.
 
 .. image:: test5_4.png
    :scale: 100 %
