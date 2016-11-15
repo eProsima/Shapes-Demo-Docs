@@ -2,12 +2,12 @@ Partition
 =========
 
 You can select different partitions to create groups of Publishers and Subscribers. 
-In this example, you can select between four partitions (A, B, C and D). Additionally you can select the “*” partition, that will be matched against all other partitions. 
+In this example, you can select between four partitions (A, B, C and D). Additionally, you can select the “*” partition, that will be matched against all other partitions. 
 
 Create Publishers
 -----------------
 
-First, we must to create three Publishers with the following characteristics:
+First, we must create three Publishers with the following characteristics:
 
 +--------+----------+--------+-----------+---------+----------+------------+-----------+
 |        | Shape    | Color  | Partition | History (Reliable) | Durability | Ownership |
@@ -30,7 +30,7 @@ Create Subscribers
 ------------------
    
 Second, we create three Subscribers per vendor, one for squares in partition A, one for circles in partition A, and one for triangles in partition A. 
-In the following tables we can see the characteristics of these Subcribers.
+In the following tables we can see the characteristics of them.
 	
 Subscribers in vendor V1:
 	
