@@ -5,6 +5,8 @@ The History of the Publishers is set to KEEP_LAST. You can select the number of 
 You can also select if this History is going to be VOLATILE or TRANSIENT_LOCAL. 
 The latter will send that last stored value to subscribers joining after the Publisher has been created. 
 
+The Durability QoS privides late-joining nodes with the ability to get previously sent data.
+
 First, we have to launch three instances and create a Publisher in each of them:
 
 1 - Create a red square publisher:
