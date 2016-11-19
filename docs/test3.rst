@@ -28,29 +28,26 @@ First, we have to launch three instances and create a Publisher in each of them:
    - Change the History field from 6 to 100.
    - Select TRANSIENT_LOCAL.
    
-   
-
-The feature to keep in mind in these publishers is the "History" field. In this case, we assign a value of 100 to this field, it means that the Publisher will save the last 100 samples.
+Your windows should look similar to the following image.
 
 .. image:: test3_2.png
    :scale: 100 %
    :alt: Initial state
    :align: center
-
-Create Subscribers
-------------------
    
-Second, we create a Subscriber at each vendor with the following characteristics. As in Publishers, we assign a value of 100 to the History field.
+Second, we create a Subscriber at each instance.
 
-+--------+--------+-----------+--------------------+------------+-----------+
-|        | Shape  | Partition | History (Reliable) | Durability | Ownership |
-+========+========+===========+====================+============+===========+
-| **V1** | Square | No        | 100 (ON)           | TRANSIENT  | SHARED    |
-+--------+--------+-----------+--------------------+------------+-----------+
-| **V2** | Square | No        | 100 (ON)           | TRANSIENT  | SHARED    |
-+--------+--------+-----------+--------------------+------------+-----------+
-| **V2** | Square | No        | 100 (ON)           | TRANSIENT  | SHARED    |
-+--------+--------+-----------+--------------------+------------+-----------+
+1 - Click Subscribe on Instance1.
+   - Select SQUARE option for Shape.
+   - Change the History field from 6 to 100.
+   
+2 - Click Subscribe on Instance2.
+   - Select SQUARE option for Shape.
+   - Change the History field from 6 to 100.
+   
+3 - Click Subscribe on Instance3.
+   - Select SQUARE option for Shape.
+   - Change the History field from 6 to 100.
 
 
 Conclusions
