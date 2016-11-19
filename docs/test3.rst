@@ -14,10 +14,10 @@ First, we have to launch three instances and create a Publisher in each of them:
    - Change the History field from 6 to 100.
    - Select TRANSIENT_LOCAL.
    
-2 - Create a blue square publisher:
+2 - Create an orange square publisher:
    - Start eProsima Shapes-Demo. (We will refer to this instance as Instance2)
    - Click on Publish.
-   - Select SQUARE option for Shape and BLUE for Color.
+   - Select SQUARE option for Shape and ORANGE for Color.
    - Change the History field from 6 to 100.
    - Select TRANSIENT_LOCAL.
    
@@ -49,20 +49,10 @@ Second, we create a Subscriber at each instance.
    - Select SQUARE option for Shape.
    - Change the History field from 6 to 100.
 
-
-Conclusions
------------	
+Your windows should look similar to the following image. For example, you will see 100 red squares on Instance2 and Instance3, mirroring the movements of the red square in the publisher. The leading square indicates the current position of the published square. 
 
 .. image:: test3_3.png
    :scale: 100 %
    :alt: Final state
    :align: center
 
-As you can see in the previous image, we observe the last position followed by a tail with the last 99 positions published.
-The value introduced in History delimits the size of this stele.
-If we modify this value and we introduce a smaller value, such as 30, we will see a minor stele. (You can see that in the following image)
-
-.. image:: test3_4.png
-   :scale: 100 %
-   :alt: Final state 2
-   :align: center
