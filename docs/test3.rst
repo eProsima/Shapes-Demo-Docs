@@ -39,15 +39,15 @@ Your windows should look similar to the following image.
    
 Second, we create a Subscriber at each instance.
 
-1 - Click Subscribe on Instance1.
+4 - Click Subscribe on Instance1.
    - Select SQUARE option for Shape.
    - Change the History field from 6 to 100.
    
-2 - Click Subscribe on Instance2.
+5 - Click Subscribe on Instance2.
    - Select SQUARE option for Shape.
    - Change the History field from 6 to 100.
    
-3 - Click Subscribe on Instance3.
+6 - Click Subscribe on Instance3.
    - Select SQUARE option for Shape.
    - Change the History field from 6 to 100.
 
