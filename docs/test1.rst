@@ -1,52 +1,49 @@
 Discovery and basic connectivity
 ================================
 
-This test attempts to show a basic example of publishing and subscribing with eProsima Shapes-Demo. 
-We design and test with three vendors, but it is also valid with two.
+This test attemps to show the publish-subscribe concept. You will be to start three instances of eProsima Shapes-Demo.
 
-Create Publishers
------------------
+First, you have to create three publishers:
 
-First, we launch three Publishers with the following characteristics.
-
-+--------+--------+-------+-----------+--------------------+------------+-----------+
-|        | Shape  | Color | Partition | History (Reliable) | Durability | Ownership |
-+========+========+=======+===========+====================+============+===========+
-| **V1** | Square | RED   | NO        |       1 (ON)       | VOLATILE   | SHARED    |
-+--------+--------+-------+-----------+--------------------+------------+-----------+
-| **V2** | Square | BLUE  | NO        |       1 (ON)       | VOLATILE   | SHARED    | 
-+--------+--------+-------+-----------+--------------------+------------+-----------+
-| **V3** | Square | BLACK | NO        |       1 (ON)       | VOLATILE   | SHARED    | 
-+--------+--------+-------+-----------+--------------------+------------+-----------+
-
-The following image shows the initial state of the test.
+1 - Create a red square publisher:
+   - Start eProsima Shapes-Demo. (We will refer to this instance as Instance1)
+   - Click on Publish.
+   - Select SQUARE option for Shape and RED for Color.
+   
+2 - Create a blue square publisher:
+   - Start eProsima Shapes-Demo. (We will refer to this instance as Instance2)
+   - Click on Publish.
+   - Select SQUARE option for Shape and BLUE for Color.
+   
+3 - Create a black square publisher:
+   - Start eProsima Shapes-Demo. (We will refer to this instance as Instance3)
+   - Click on Publish.
+   - Select SQUARE option for Shape and BLACK for Color.   
+   
+Your windows should look similar to the following image.
 
 .. image:: test1_2.png
    :scale: 100 %
    :alt: Publish
    :align: center
    
+Second, you have to create three subscribers for squares:
+
+1 - Click Subscribe on Instance1
+   - Select SQUARE option for Shape
    
-Create Subscribers
-------------------
+2 - Click Subscribe on Instance2
+   - Select SQUARE option for Shape
+   
+3 - Click Subscribe on Instance3
+   - Select SQUARE option for Shape
 
-Second, we create a Subscriber at each vendor with these characteristics:
-
-+--------+--------+-----------+--------------------+------------+-----------+
-|        | Shape  | Partition | History (Reliable) | Durability | Ownership |
-+========+========+===========+====================+============+===========+
-| **V1** | Square | No        | 1 (ON)             | VOLATILE   | SHARED    |
-+--------+--------+-----------+--------------------+------------+-----------+
-| **V2** | Square | No        | 1 (ON)             | VOLATILE   | SHARED    |
-+--------+--------+-----------+--------------------+------------+-----------+
-| **V3** | Square | No        | 1 (ON)             | VOLATILE   | SHARED    |
-+--------+--------+-----------+--------------------+------------+-----------+
- 
-The following figure shows the final state of the test. Each vendor has its square and the squares published by other vendors.
+Your windows should look similar to the following image.
 
 .. image:: test1_3.png
    :scale: 100 %
    :alt: Subscribe
    :align: center
    
+You will see two aditional squares in each instance, mirroning the movements of the original square in real-time.
    
