@@ -2,52 +2,58 @@ Ownership
 =========
 
 The Ownership Qos determines if the Topic (Shape) is owned by a single Publisher. 
-If the selected ownership is EXCLUSIVE the Publisher will use the Ownership strength value as the strength of its publication. 
-Only the Publisher with the highest strength can publish in the same Topic.
+If the selected ownership is EXCLUSIVE the Publisher will use the Ownership strength value as the strength of its publication. Only the Publisher with the highest strength can publish in the same Topic.
 
-Create publishers
------------------
+First, you have to launch two instances and create a Publisher in each of them:
 
-We create two Publishers with the following characteristics.
+1 - Create a red square publisher:
+   - Start eProsima Shapes-Demo. (We will refer to this instance as Instance1)
+   - Click on Publish.
+   - Select SQUARE option for Shape and RED for Color.
+   - Change the History field from 6 to 1.
+   - Select EXCLUSIVE.
+   - Set Strength to 1.
+   - Set Size to 15.
+   
+2 - Create a red square publisher:
+   - Start eProsima Shapes-Demo. (We will refer to this instance as Instance2)
+   - Click on Publish.
+   - Select SQUARE option for Shape and RED for Color.
+   - Change the History field from 6 to 1.
+   - Select EXCLUSIVE.
+   - Set Strength 2.
+   - Set Size to 15.
 
-+--------+--------+-------+---------+---------+----------+------------+-------------+
-|        | Shape  | Color | Partion | History (Reliable) | Durability | Ownership   |
-+========+========+=======+=========+====================+============+=============+
-| **V1** | Square | RED   | NO      |       1 (ON)       | VOLATILE   | EXCLUSIVE 1 |
-+--------+--------+-------+---------+--------------------+------------+-------------+
-| **V2** | Square | RED   | NO      |       1 (ON)       | VOLATILE   | EXCULISVE 2 | 
-+--------+--------+-------+---------+--------------------+------------+-------------+
-
-The size of the square is 15 in V1, in contrast, in V2 the size of the square is 35. In the following image we can appreciate the difference.
+You should see a small red square on Instance1 and a big red square on Instance2.
 
 .. image:: test5_2.png
    :scale: 100 %
    :alt: Initial state
    :align: center
+  
+Now, create a Subscriber.
 
-Create subscriber
------------------
-   
-Now, we create a Subscriber in V3.
+3 - Create a square subscriber:
+   - Start eProsima Shapes-Demo. (We will refer to this instance as Instance3)
+   - Click on Subscribe.
+   - Select SQUARE option for Shape.
+   - Select EXCLUSIVE.
 
-+--------+--------+---------+--------------------+------------+-----------+
-|        | Shape  | Partion | History (Reliable) | Durability | Ownership |
-+========+========+=========+====================+============+===========+
-| **V3** | Square | No      | 1 (ON)             | VOLATILE   | EXCLUSIVE |
-+--------+--------+---------+--------------------+------------+-----------+
-
-Only the Publisher in V2 can publish, due to this, we have a big square in V3.
+You should see a big square on Instance3, because Instance2 has a higher strength than Instance1.
 
 .. image:: test5_3.png
    :scale: 100 %
    :alt: State 1
    :align: center
 
-Delete V2
----------
-If we stop V2, V1 will can publish. In the following image we can appreciate this behaviour. V3 has a small square in the window.
+Failure
+-------
+
+Now you have to stop Instance2. Initially, Instance2 had higher strength and you saw a big red square on Instance2, but you should see a small red square because Instance1 has higher strength now.
 
 .. image:: test5_4.png
    :scale: 100 %
    :alt: State 2
    :align: center
+
+If you repeat the second step, you should see a big red square mirroring the big red square movements in Instance2 again.
