@@ -27,7 +27,7 @@ Your windows should look similar to the following image.
    :alt: Publish
    :align: center
    
-Second, you have to create three subscribers for squares:
+Second, you have to create three subscribers:
 
 1 - Click Subscribe on Instance1.
    - Select SQUARE option for Shape.
