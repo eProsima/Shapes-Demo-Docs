@@ -29,14 +29,17 @@ Your windows should look similar to the following image.
    
 Second, you have to create three subscribers for squares:
 
-1 - Click Subscribe on Instance1
-   - Select SQUARE option for Shape
+1 - Click Subscribe on Instance1.
+   - Select SQUARE option for Shape.
+   - Change the History field from 6 to 1.
    
-2 - Click Subscribe on Instance2
-   - Select SQUARE option for Shape
+2 - Click Subscribe on Instance2.
+   - Select SQUARE option for Shape.
+   - Change the History field from 6 to 1.
    
-3 - Click Subscribe on Instance3
-   - Select SQUARE option for Shape
+3 - Click Subscribe on Instance3.
+   - Select SQUARE option for Shape.
+   - Change the History field from 6 to 1.
 
 Your windows should look similar to the following image.
 
