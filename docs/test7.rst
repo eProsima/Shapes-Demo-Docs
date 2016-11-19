@@ -1,46 +1,44 @@
-Time Base Filter
+Time Based Filter
 ================
 
-The time base filter can be used to specify the minimum amount of time (in milliseconds) that the Subscriber wants between updates.
+The time based filter can be used to specify the minimum amount of time (in milliseconds) that the Subscriber wants between updates.
 
-Create Publishers
------------------
+First, you have to launch two instances and create a Publisher in each of them:
 
-We create two Publishers with the following characteristics. Both of them can be created in the same vendor.
+1 - Create a red square publisher:
+   - Start eProsima Shapes-Demo. (We will refer to this instance as Instance1)
+   - Click on Publish.
+   - Select SQUARE option for Shape and RED for Color.
+   
+2 - Create an orange circle publisher:
+   - Start eProsima Shapes-Demo. (We will refer to this instance as Instance2)
+   - Click on Publish.
+   - Select CIRCLE option for Shape and ORANGE for Color.
+   - Change the History field from 6 to 1.
 
-+--------+----------+--------+-----------+---------+----------+------------+-----------+
-|        | Shape    | Color  | Partition | History (Reliable) | Durability | Ownership |
-+========+==========+========+===========+====================+============+===========+
-| **V1** | Square   | RED    | NO        |     1 (ON)         | VOLATILE   | SHARED    |
-+--------+----------+--------+-----------+--------------------+------------+-----------+
-| **V2** | Circle   | ORANGE | NO        |     1 (ON)         | VOLATILE   | SHARED    | 
-+--------+----------+--------+-----------+--------------------+------------+-----------+
+Your windows should look similar to the following image.
 
 .. image:: test6_2.png
    :scale: 100 %
    :alt: Initial state
    :align: center
-
    
-Create Subscribers
-------------------
+Now, create two subscriber:
 
-Now, we create two different Subscriber in Vendor V3, one for squares without a filter, and another for circles with a time base filter of 2000 ms.
+3 - Create a circle subscriber:
+   - Start eProsima Shapes-Demo. (We will refer to this instance as Instance3)
+   - Click on Subscribe.
+   - Select CIRCLE option for Shape.
+   - Check Time Based an set 2000ms.
 
-+--------+--------+---------+--------------------+------------+--------------+
-| Vendor | Shape  | Partion | History (Reliable) | Durability | Time Base    |
-+========+========+=========+====================+============+==============+
-| **V3** | Square | No      | 6 (ON)             | VOLATILE   | NO           |
-+--------+--------+---------+--------------------+------------+--------------+
-| **V3** | Circle | No      | 6 (ON)             | VOLATILE   | OK (2000 ms) |
-+--------+--------+---------+--------------------+------------+--------------+
+4 - Create a square subscriber:
+   - Click on Subscribe in Instance3.
+   - Select SQUARE option for Shape. 
 
-Conclusions
------------
+You will see that square updates its position continously, but the circle jumps ever two secods. In this case, the publisher is only sending data once two seconds.
 
-We can observe that square updates its position continuously, but the position of the circle is updated every 2000 ms.
-V2 publishes several samples that we don't see in V3, as you can see in the following images.
-   
+Your windows should look similar to the following image.
+
  .. image:: test7_2.png
    :scale: 100 %
    :alt: Initial state
