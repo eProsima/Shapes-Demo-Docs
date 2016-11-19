@@ -1,24 +1,34 @@
-Durability
-==========
+History and Durability
+======================
 
 The History of the Publishers is set to KEEP_LAST. You can select the number of samples that the Publisher is going to save. 
 You can also select if this History is going to be VOLATILE or TRANSIENT_LOCAL. 
 The latter will send that last stored value to subscribers joining after the Publisher has been created. 
 
-Create Publishers
------------------
+First, we have to launch three instances and create a Publisher in each of them:
 
-First, we have to launch three vendors and create a Publisher in each of them with the following characteristics.
-
-+--------+--------+--------+-----------+---------+----------+------------+-----------+
-| Vendor | Shape  | Color  | Partition | History - Reliable | Durability | Ownership |
-+========+========+========+===========+====================+============+===========+
-| **V1** | Square | RED    | NO        |     100 (ON)       | TRANSIENT  | SHARED    |
-+--------+--------+--------+-----------+--------------------+------------+-----------+
-| **V2** | Square | ORANGE | NO        |     100 (ON)       | TRANSIENT  | SHARED    | 
-+--------+--------+--------+-----------+--------------------+------------+-----------+
-| **V3** | Square | BLACK  | NO        |     100 (ON)       | TRANSIENT  | SHARED    | 
-+--------+--------+--------+-----------+--------------------+------------+-----------+
+1 - Create a red square publisher:
+   - Start eProsima Shapes-Demo. (We will refer to this instance as Instance1)
+   - Click on Publish.
+   - Select SQUARE option for Shape and RED for Color.
+   - Change the History field from 6 to 100.
+   - Select TRANSIENT_LOCAL.
+   
+2 - Create a blue square publisher:
+   - Start eProsima Shapes-Demo. (We will refer to this instance as Instance2)
+   - Click on Publish.
+   - Select SQUARE option for Shape and BLUE for Color.
+   - Change the History field from 6 to 100.
+   - Select TRANSIENT_LOCAL.
+   
+3 - Create a black square publisher:
+   - Start eProsima Shapes-Demo. (We will refer to this instance as Instance3)
+   - Click on Publish.
+   - Select SQUARE option for Shape and BLACK for Color.  
+   - Change the History field from 6 to 100.
+   - Select TRANSIENT_LOCAL.
+   
+   
 
 The feature to keep in mind in these publishers is the "History" field. In this case, we assign a value of 100 to this field, it means that the Publisher will save the last 100 samples.
 
