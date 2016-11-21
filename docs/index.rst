@@ -27,7 +27,7 @@ It can be used to demonstrate the capabilities of eProsima Fast RTPS or as an in
 	partition
 	ownership
 	content_based_filter
-	test7
+	time_based_filter
 
 .. troubleshooting:
 
