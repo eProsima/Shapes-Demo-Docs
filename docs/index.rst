@@ -23,7 +23,7 @@ It can be used to demonstrate the capabilities of eProsima Fast RTPS or as an in
 	:caption: Shapes Demo Tests
 	
 	discovery
-	test3
+	history_durability
 	test4
 	test5
 	test6
