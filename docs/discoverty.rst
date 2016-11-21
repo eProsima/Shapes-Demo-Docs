@@ -1,7 +1,7 @@
 Discovery and basic connectivity
 ================================
 
-This test attemps to show the publish-subscribe concept. You will be to start three instances of eProsima Shapes-Demo.
+This test attemps to show the automatic discovery concept in Fast RTPS. Automatic discovery means that new applications are automatically discovered by any other members of the network. To achieve this, we need to create three publishers and three subscribers.
 
 First, you have to create three publishers:
 
