@@ -1,12 +1,13 @@
 Partition
 =========
 
-Partition allows the user to create different groups of Publishres and Subscribers. In this example, there are four partitions (A, B, C and D). Additionally, you can select the “*” partition, that will be matched against all other partitions. 
+In Fast RTPS, you can use *Partitions* to group Subscribers and Publishers. If you deploy a Publisher with a partition, only the subscriber with the same partition will receive data from it. In this demo, there are four partitions (A, B, C and D). Additionally, you can select the “*” partition, that will be matched against all other partitions.
 
-In this test, we are going to create three Publishers in three different partitions, and three Subscribers per instance, one per shape in Partition A. 
+In this test, we are going to create three Publishers (Square in Partition A, Circle in Partition B, and Triangle in Partition "*"), and three Subscribers per instance, all of them in Partition A. 
 
-Finally, in partition A we only have red squares and black triangles. Because of this, all instances find triangles and squares. 
-In contrast, orange circles are published in partition B. This behaviour is shown in the final image.
+Finally, in partition A we have red squares and black triangles. Because of this, all instances find triangles and squares. In contrast, orange circles are published in partition B and they are only visible in the Instance2. 
+
+**Step-by-Step**
 
 First, we must create three Publishers.
 
