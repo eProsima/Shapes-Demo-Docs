@@ -2,10 +2,11 @@ History and Durability
 ======================
 
 The History of the Publishers is set to KEEP_LAST. You can select the number of samples that the Publisher is going to save. 
-You can also select if this History is going to be VOLATILE or TRANSIENT_LOCAL. 
-The latter will send that last stored value to subscribers joining after the Publisher has been created. 
+The Durability QoS privides late-joining nodes with the ability to get previously sent data. You can select if Durability is going to be VOLATILE, the data samples are not stored, or TRANSIENT_LOCAL, the data samples will attempt to store in memory.
 
-The Durability QoS privides late-joining nodes with the ability to get previously sent data.
+In this test we have to launch three Publisher and three Subscriber whith TRANSIENT_LOCAL. 
+
+Finally, you will see 100 red squares on Instance2 and Instance3, mirroring the movements of the red square in the publisher of Instance1. The leading square indicates the current position of the published square. 
 
 First, we have to launch three instances and create a Publisher in each of them:
 
@@ -51,7 +52,7 @@ Second, we create a Subscriber at each instance.
    - Select SQUARE option for Shape.
    - Change the History field from 6 to 100.
 
-Your windows should look similar to the following image. For example, you will see 100 red squares on Instance2 and Instance3, mirroring the movements of the red square in the publisher. The leading square indicates the current position of the published square. 
+Your windows should look similar to the following image.
 
 .. image:: test3_3.png
    :scale: 100 %
