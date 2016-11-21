@@ -25,7 +25,7 @@ It can be used to demonstrate the capabilities of eProsima Fast RTPS or as an in
 	discovery
 	history_durability
 	partition
-	ownership
+	redundancey_fault_tolerance
 	content_based_filter
 	time_based_filter
 	
