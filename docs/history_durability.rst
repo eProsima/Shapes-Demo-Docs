@@ -1,12 +1,15 @@
 History and Durability
 ======================
 
-The History of the Publishers is set to KEEP_LAST. You can select the number of samples that the Publisher is going to save. 
-The Durability QoS privides late-joining nodes with the ability to get previously sent data. You can select if Durability is going to be VOLATILE, the data samples are not stored, or TRANSIENT_LOCAL, the data samples will attempt to store in memory.
+Fast RTPS allows Publishers to send data before Subscriber comes. All these publications are stored in the history of each Publisher, therefore, when a subscriber arrives has two options, start from scratch or request all previous publications.
+
+The History of the Publishers is set to KEEP_LAST in this example and we have two options to the “Durability” concept, VOLATILE and TRANSIENT_LOCAL. If you select VOLATILE, the previous data samples will not be sent, on the contrary, if you select TRANSIENT_LOCAL, the n previous data samples will be sent to the late-joiner subscriber.
 
 In this test we have to launch three Publisher and three Subscriber whith TRANSIENT_LOCAL. 
 
 Finally, you will see 100 red squares on Instance2 and Instance3, mirroring the movements of the red square in the publisher of Instance1. The leading square indicates the current position of the published square. 
+
+**Step-by-Step**
 
 First, we have to launch three instances and create a Publisher in each of them:
 
