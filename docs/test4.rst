@@ -2,7 +2,7 @@ Partition
 =========
 
 You can select different partitions to create groups of Publishers and Subscribers. 
-In this example, you can select between four partitions (A, B, C and D). Additionally, you can select the “*” partition, that will be matched against all other partitions. 
+In this example, there are four partitions (A, B, C and D). Additionally, you can select the “*” partition, that will be matched against all other partitions. 
 
 First, we must create three Publishers.
 
