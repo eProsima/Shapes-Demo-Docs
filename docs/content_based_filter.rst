@@ -1,9 +1,9 @@
 Content Based Filter
 ====================
 
-This filter draws a rectangle in the shapes window. Only the instances that are inside the rectangle are accepted. The rest of them are ignored. It also helps to control network and CPU usage on the subscriber side. 
+This filter draws a shaded rectangle in the shapes window. Only the samples that are inside will be made available to the subscriber. It also helps to control network and CPU usage on the subscriber side. You can resize and move this content filter dynamically.
 
-You can resize and move this content filter dynamically.
+In this test, we are going to create two Publishers and two Subscriber, one with Content Based.
 
 First, you have to launch two instances and create a Publisher in each of them:
 
@@ -40,16 +40,16 @@ Now, create two subscriber:
    - Select SQUARE option for Shape.
    - Change the History field from 6 to 1.
 
-You will see a shaded rectangle in Instance3. This is the filter for the samples of the Circle topic.
+You will see a shaded rectangle in Instance3. This is the filter for the samples of the Circle Shape.
 
-If the circle is out of the rectangle, it is ignored.
+If the circle is out of the rectangle, it is not available for the subscriber.
 
 .. image:: test6_3.png
    :scale: 100 %
    :alt: State 1
    :align: center
 
-On the contrary, if the instance is in the rectangle, it is accepted.
+On the contrary, if the instance is in the rectangle, it is available.
 
 .. image:: test6_4.png
    :scale: 100 %
