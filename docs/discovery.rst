@@ -1,9 +1,11 @@
 Discovery and basic connectivity
 ================================
 
-This test attemps to show the automatic discovery concept in Fast RTPS. Automatic discovery means that new applications are automatically discovered by any other members of the network. To achieve this, we need to create three publishers and three subscribers.
+In Fast RTPS, the discovery task is automatic. Fast RTPS performs the task of finding the relevant information and distributing it to its destination. It means that new nodes are automatically discovered by any other in the network.
 
-At the end of the test, you will see two aditional squares in each instance, mirroning the movements of the original square in real-time.
+In this test we have to launch three Publisher and three Subscriber. At the end, you will see two additional squares in each instance, mirroring the movements of the original square in real-time.
+
+**Step-by-Step**
 
 First, you have to create three publishers:
 
