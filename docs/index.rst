@@ -24,7 +24,7 @@ It can be used to demonstrate the capabilities of eProsima Fast RTPS or as an in
 	
 	discovery
 	history_durability
-	test4
+	partition
 	test5
 	test6
 	test7
