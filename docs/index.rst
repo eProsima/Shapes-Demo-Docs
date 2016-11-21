@@ -22,7 +22,7 @@ It can be used to demonstrate the capabilities of eProsima Fast RTPS or as an in
 .. toctree::
 	:caption: Shapes Demo Tests
 	
-	test1
+	discovery
 	test3
 	test4
 	test5
