@@ -8,6 +8,7 @@ It can be used to demonstrate the capabilities of eProsima Fast RTPS or as an in
 
 * :ref:`firststep`
 * :ref:`systemtest`
+* :ref:`troubleshooting`
 
 .. _firststep:
 
@@ -27,3 +28,10 @@ It can be used to demonstrate the capabilities of eProsima Fast RTPS or as an in
 	test5
 	test6
 	test7
+
+.. troubleshooting:
+
+.. toctree::
+	:caption: Troubleshooting
+	
+	troubleshooting
