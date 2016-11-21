@@ -3,6 +3,8 @@ Discovery and basic connectivity
 
 This test attemps to show the automatic discovery concept in Fast RTPS. Automatic discovery means that new applications are automatically discovered by any other members of the network. To achieve this, we need to create three publishers and three subscribers.
 
+At the end of the test, you will see two aditional squares in each instance, mirroning the movements of the original square in real-time.
+
 First, you have to create three publishers:
 
 1 - Create a red square publisher:
@@ -47,6 +49,4 @@ Your windows should look similar to the following image.
    :scale: 100 %
    :alt: Subscribe
    :align: center
-   
-You will see two aditional squares in each instance, mirroning the movements of the original square in real-time.
    
