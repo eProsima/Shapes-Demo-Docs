@@ -1,9 +1,11 @@
 Time Based Filter
 ================
 
-The time based filter can be used to specify the minimum amount of time (in milliseconds) that the Subscriber wants between updates.
+When you deploy a Subscriber in Fast RTPS, you can select a time based filter. You restrict the number of data updates in the Subscriber with this filter. You specify the minimum separation time (in milliseconds) between updates. Any data arriving during this interval will be discarded.
 
-In this test, we are going to create two Publishers and two Subscribers, one with time based checked with 2000ms. 
+In this test, we are going to create two Publishers and two Subscribers, one with time based filter of 2000ms. You will see that one updates its position continuously, but the other jumps every two seconds.
+
+**Step-by-Step**
 
 First, you have to launch two instances and create a Publisher in each of them:
 
@@ -36,8 +38,6 @@ Now, create two subscriber:
 4 - Create a square subscriber:
    - Click on Subscribe in Instance3.
    - Select SQUARE option for Shape. 
-
-You will see that square updates its position continously, but the circle jumps ever two secods. In this case, the publisher is only sending data once two seconds.
 
 Your windows should look similar to the following image.
 
