@@ -1,8 +1,8 @@
 Ownership
 =========
 
-The Ownership Qos determines if the Topic (Shape) is owned by a single Publisher. 
-If the selected ownership is EXCLUSIVE for a publisher, the Strength box will become able to indicate the value of strength for it. Only the Publisher with the highest strength can publish in this Topic.
+The Ownership Qos determines if the Topic (Shape) is owned by a single Publisher or not. 
+If the selected ownership is EXCLUSIVE for a publisher, the Strength box will become able to indicate the value of strength for it. Only the Publisher with the highest strength can publish on this Topic.
 If the selected ownership is EXCLUSIVE for a subscriber, it only wants data from one publisher.
 
 In this test, we are going to create two Publishers with EXCLUSIVE ownership in SQUARE Shape, and one Subscriber wiht EXCLUSIVE ownership at the same Shape.
