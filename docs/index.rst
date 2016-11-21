@@ -26,7 +26,7 @@ It can be used to demonstrate the capabilities of eProsima Fast RTPS or as an in
 	history_durability
 	partition
 	ownership
-	test6
+	content_based_filter
 	test7
 
 .. troubleshooting:
