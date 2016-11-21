@@ -21,3 +21,11 @@ You should add the following lines inside the ShapesDefaultProfile qos_profile t
 </participant_qos>
 
 This setting is necessary to avoid the use of Shared Memory as transport (disabling the loopback), a feature that is not yet implemented in Fast RTPS.
+
+Interoperability
+================
+
+You can see an example of the interoperabiltiy between eProsima Shapes-Demo and other implementations in the following video:
+
+https://www.youtube.com/watch?v=e9_oAJDh-tY
+
