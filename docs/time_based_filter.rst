@@ -3,6 +3,8 @@ Time Based Filter
 
 The time based filter can be used to specify the minimum amount of time (in milliseconds) that the Subscriber wants between updates.
 
+In this test, we are going to create two Publishers and two Subscribers, one with time based checked with 2000ms. 
+
 First, you have to launch two instances and create a Publisher in each of them:
 
 1 - Create a red square publisher:
