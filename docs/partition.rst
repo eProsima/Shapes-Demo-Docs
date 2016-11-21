@@ -1,8 +1,12 @@
 Partition
 =========
 
-You can select different partitions to create groups of Publishers and Subscribers. 
-In this example, there are four partitions (A, B, C and D). Additionally, you can select the “*” partition, that will be matched against all other partitions. 
+Partition allows the user to create different groups of Publishres and Subscribers. In this example, there are four partitions (A, B, C and D). Additionally, you can select the “*” partition, that will be matched against all other partitions. 
+
+In this test, we are going to create three Publishers in three different partitions, and three Subscribers per instance, one per shape in Partition A. 
+
+Finally, in partition A we only have red squares and black triangles. Because of this, all instances find triangles and squares. 
+In contrast, orange circles are published in partition B. This behaviour is shown in the final image.
 
 First, we must create three Publishers.
 
@@ -43,7 +47,7 @@ Instance1:
 +========+==========+===========+====================+============+===========+
 |        | Square   | A         | 1 (ON)             | VOLATILE   | SHARED    |
 +--------+----------+-----------+--------------------+------------+-----------+
-| **V1** | Circle   | A         | 1 (ON)             | VOLATILE   | SHARED    |
+| **I1** | Circle   | A         | 1 (ON)             | VOLATILE   | SHARED    |
 +--------+----------+-----------+--------------------+------------+-----------+
 |        | Triangle | A         | 1 (ON)             | VOLATILE   | SHARED    |
 +--------+----------+-----------+--------------------+------------+-----------+
@@ -55,7 +59,7 @@ Instance2:
 +========+==========+===========+====================+============+===========+
 |        | Square   | A         | 1 (ON)             | VOLATILE   | SHARED    |
 +--------+----------+-----------+--------------------+------------+-----------+
-| **V2** | Circle   | A         | 1 (ON)             | VOLATILE   | SHARED    |
+| **I2** | Circle   | A         | 1 (ON)             | VOLATILE   | SHARED    |
 +--------+----------+-----------+--------------------+------------+-----------+
 |        | Triangle | A         | 1 (ON)             | VOLATILE   | SHARED    |
 +--------+----------+-----------+--------------------+------------+-----------+
@@ -67,13 +71,10 @@ Instance3:
 +========+==========+===========+====================+============+===========+
 |        | Square   | A         | 1 (ON)             | VOLATILE   | SHARED    |
 +--------+----------+-----------+--------------------+------------+-----------+
-| **V3** | Circle   | A         | 1 (ON)             | VOLATILE   | SHARED    |
+| **I3** | Circle   | A         | 1 (ON)             | VOLATILE   | SHARED    |
 +--------+----------+-----------+--------------------+------------+-----------+
 |        | Triangle | A         | 1 (ON)             | VOLATILE   | SHARED    |
 +--------+----------+-----------+--------------------+------------+-----------+
-
-In partition A we only have red squares and black triangles. Because of this, all vendors find triangles and squares. 
-In contrast, orange circles are published in partition B. This behaviour is shown in the following image.
 
 .. image:: test4_3.png
    :scale: 100 %
