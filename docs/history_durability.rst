@@ -3,7 +3,7 @@ History and Durability
 
 Fast RTPS allows Publishers to send data before Subscriber comes. All these publications are stored in the history of each Publisher, therefore, when a subscriber arrives has two options, start from scratch or request all previous publications.
 
-The History of the Publishers is set to KEEP_LAST in this example and we have two options to the “Durability” concept, VOLATILE and TRANSIENT_LOCAL. If you select VOLATILE, the previous data samples will not be sent, on the contrary, if you select TRANSIENT_LOCAL, the n previous data samples will be sent to the late-joiner subscriber.
+The History determines the number of data that will kept in the send queue. The History of the Publishers is set to KEEP_LAST in this example and we have two options to the “Durability” concept, VOLATILE and TRANSIENT_LOCAL. If you select VOLATILE, the previous data samples will not be sent, on the contrary, if you select TRANSIENT_LOCAL, the n previous data samples will be sent to late-joining subscriber.
 
 In this test we have to launch three Publisher and three Subscriber whith TRANSIENT_LOCAL. 
 
