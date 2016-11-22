@@ -1,9 +1,9 @@
 Time Based Filter
 ================
 
-When you deploy a Subscriber in Fast RTPS, you can select a time based filter. You restrict the number of data updates in the Subscriber with this filter. You specify the minimum separation time (in milliseconds) between updates. Any data arriving during this interval will be discarded.
+When you deploy a Subscriber in Fast RTPS, you can select a time based filter. You can restrict the number of data updates in the Subscriber with this filter. You can specify the minimum separation time (in milliseconds) between updates. Any data arriving during this interval will be discarded.
 
-In this test, we are going to create two Publishers and two Subscribers, one with time based filter of 2000ms. You will see that one updates its position continuously, but the other jumps every two seconds.
+In this test, we are going to create two Publishers and two Subscribers, one with a time based filter of 2000ms. You will see that one updates its position continuously, but the other jumps every two seconds.
 
 **Step-by-Step**
 
