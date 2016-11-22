@@ -3,7 +3,7 @@ Discovery and basic connectivity
 
 In Fast RTPS, the discovery task is automatic. Fast RTPS performs the task of finding the relevant information and distributing it to its destination. It means that new nodes are automatically discovered by any other in the network.
 
-In this test we have to launch three Publisher and three Subscriber. At the end, you will see two additional squares in each instance, mirroring the movements of the original square in real-time.
+In this test we have to launch three Publishers and three Subscribers. At the end, you will see two additional squares in each instance, mirroring the movements of the original square in real-time.
 
 **Step-by-Step**
 
