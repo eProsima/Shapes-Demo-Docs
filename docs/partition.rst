@@ -5,7 +5,7 @@ In Fast RTPS, you can use *Partitions* to group Subscribers and Publishers. If y
 
 In this test, we are going to create three Publishers (Square in Partition A, Circle in Partition B, and Triangle in Partition "*"), and three Subscribers per instance, all of them in Partition A. 
 
-Finally, in partition A we have red squares and black triangles. Because of this, all instances find triangles and squares. In contrast, orange circles are published in partition B and they are only visible in the Instance2. 
+Finally, we have red squares and black triangles in partition A. Because of this, all instances are able to find triangles and squares. On the  contrary, orange circles are published in partition B and they are only visible in the Instance2. 
 
 **Step-by-Step**
 
