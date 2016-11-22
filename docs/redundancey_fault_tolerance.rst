@@ -5,7 +5,7 @@ Fast RTPS allows more than one Publisher to write data on the same Topic. You ca
 
 The Ownership Qos determines if the Topic (Shape) is owned by a single Publisher or not. 
 
-You can select SHARE or EXLUSIVE ownership, if you select EXCLUSIVE for a publisher, you have to indicate the value of strength for it. Only the Publisher with the highest strength can send data on this Topic. If the primary Publisher has a problem and cannot write data, the secondary Publisher with the highest strength is promoted to primary Publisher. If you select SHARE, all the publisher can write data at the same time.
+You can select SHARE or EXLUSIVE ownership, if you select EXCLUSIVE for a publisher, you have to indicate the value of strength for it. Only the Publisher with the highest strength can send data on this Topic. If the primary Publisher has a problem and cannot write data, the secondary Publisher with the highest strength is promoted to primary Publisher. If you select SHARE, all the publishers can write data at the same time.
 
 In this test, we are going to create two Publishers with EXCLUSIVE ownership in SQUARE Shape, and one Subscriber with EXCLUSIVE ownership at the same Shape.
 
