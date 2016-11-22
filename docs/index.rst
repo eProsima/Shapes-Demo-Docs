@@ -20,7 +20,7 @@ It can be used to demonstrate the capabilities of eProsima Fast RTPS or as an in
 .. _systemtest:
 
 .. toctree::
-	:caption: Shapes Demo Tests
+	:caption: Shapes Demo Examples
 	
 	discovery
 	history_durability
