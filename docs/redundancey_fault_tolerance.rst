@@ -54,8 +54,8 @@ You should see a big square on Instance3, because Instance2 has a higher strengt
    :alt: State 1
    :align: center
 
-Failure
--------
+
+*Failure*
 
 Now you have to stop Instance2. Initially, Instance2 had higher strength and you saw a big red square on Instance2, but you should see a small red square because Instance1 has higher strength now.
 
