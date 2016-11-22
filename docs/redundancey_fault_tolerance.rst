@@ -3,7 +3,7 @@ Redundancy and Fault Tolerance
 
 Fast RTPS allows more than one Publisher to write data on the same Topic. You can allow all Publishers to have the same relevance, or you can set one as the primary Publisher and keep the rest as secondary Publisher. In that case, only the main Publisher can send data to the subscribers.
 
-The Ownership Qos determines if the Topic (Shape) is owned by a single Publisher or not. 
+The Ownership QoS determines if the Topic (Shape) is owned by a single Publisher or not. 
 
 You can select SHARE or EXLUSIVE ownership, if you select EXCLUSIVE for a publisher, you have to indicate the value of strength for it. Only the Publisher with the highest strength can send data on this Topic. If the primary Publisher has a problem and cannot write data, the secondary Publisher with the highest strength is promoted to primary Publisher. If you select SHARE, all the publishers can write data at the same time.
 
