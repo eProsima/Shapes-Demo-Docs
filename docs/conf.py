@@ -48,7 +48,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u' eProsima Shapes Demo'
+project = u'Shapes Demo'
 copyright = u'2016, eProsima'
 author = u'eProsima'
 
