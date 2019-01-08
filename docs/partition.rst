@@ -18,17 +18,17 @@ First, we must create three Publishers.
    - Change the History field from 6 to 1.
    - Check Partition A.
    
-2 - Create an orange square publisher:
+2 - Create an orange circle publisher:
    - Start eProsima Shapes-Demo. (We will refer to this instance as Instance2)
    - Click on Publish.
-   - Select SQUARE option for Shape and ORANGE for Color.
+   - Select CIRCLE option for Shape and ORANGE for Color.
    - Change the History field from 6 to 1.
    - Check Partition B.
    
-3 - Create a black square publisher:
+3 - Create a black triangle publisher:
    - Start eProsima Shapes-Demo. (We will refer to this instance as Instance3)
    - Click on Publish.
-   - Select SQUARE option for Shape and BLACK for Color.  
+   - Select TRIANGLE option for Shape and BLACK for Color.  
    - Change the History field from 6 to 1.
    - Check Partition "*".
 

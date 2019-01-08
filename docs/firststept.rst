@@ -70,8 +70,22 @@ The eProsima Shapes Demo application allows the user to define additional option
    :scale: 100 %
    :alt: Options Window
    :align: center
+   
+   
+The user can customize several aspects of ShapesDemo operation:
 
-The user can modify the following settings:
+- **Transport Protocol:** 		UDP is the default transport protocol for Fast RTPS but TCP functionality is available. In order to use TCP we must be aware of its point-to-point connection nature: one of the ShapesDemo instance must be a TCP server and all the others must be TCP clients. To use TCP follow the next steps:
+	
+	+ Push the *Stop* button in order to end UDP use. This will automatically remove all publishers and subscribers of this instance.
+	+ To create a TCP server push *TCP Server* button and fill the *listen port* editbox with an available port.
+	+ To create a TCP client push *TCP Client* button:
+	
+		- fill the *IP server* editbox with the IP address of the server.
+		- if client and server do not share the same net because the server is behind a NAT the WAN IP address of the server gateway must be specified.
+		- fill the *Server port* editbox with the corresponding server listening port.
+	
+	+ Push the *Start* button in order to resume ShapesDemo operation.
+
 
 - **Domain ID:** The user can select different Domain Ids. Shapes Demo instances using different Domain Ids will not communicate. To modify the Domain ID the user needs to stop the participant (thus removing all existing Publishers and Subscribers) and start a new one with the new Domain Id.
 
