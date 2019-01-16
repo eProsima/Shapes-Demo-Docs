@@ -28,9 +28,9 @@ It can be used to demonstrate the capabilities of eProsima Fast RTPS or as an in
 	redundancey_fault_tolerance
 	content_based_filter
 	time_based_filter
-	tcp_WAN_transport
+	tcp_LAN_WAN_transport
 
-.. troubleshooting:
+.. _troubleshooting:
 
 .. toctree::
 	:caption: Troubleshooting

@@ -67,20 +67,29 @@ Other Options
 The eProsima Shapes Demo application allows the user to define additional options. To see the Options window, please click *Options->Preferences* in the main bar. The following image shows the Options Menu.
 
 .. image:: options.png
-   :scale: 100 %
+   :scale: 75 %
    :alt: Options Window
    :align: center
    
    
 The user can customize several aspects of ShapesDemo operation:
 
-- **Transport Protocol:** 		UDP is the default transport protocol for Fast RTPS but TCP functionality is available. In order to use TCP we must be aware of its point-to-point connection nature: one of the ShapesDemo instance must be a TCP server and all the others must be TCP clients. To use TCP follow the next steps:
+- **Transport Protocol:** UDP is the default transport protocol for Fast RTPS but TCP functionality is available. In order to use TCP we must be aware of its point-to-point connection nature: one of the ShapesDemo instance must be a TCP server and all the others must be TCP clients. To use TCP follow the next steps:
 	
-	+ Push the *Stop* button in order to end UDP use. This will automatically remove all publishers and subscribers of this instance.
-	+ To create a TCP server push *TCP Server* button and fill the *listen port* editbox with an available port.
-	+ To create a TCP client push *TCP Client* button:
+	+ Push the *Stop* button in order to end UDP use. This will automatically remove all publishers and subscribers from this instance.
 	
-		- fill the *IP server* editbox with the IP address of the server.
+	+ To create a TCP LAN server push the corresponding button and fill the *Server Port* editbox with an available port.
+	
+	+ To create a TCP WAN server push the corresponding button:
+	
+		- fill the *WAN IP* editbox with the WAN router address.
+		- fill the *Server Port* editbox with an available TCP port.
+		
+		Note that the router NAT and computer firewall settings must allow external connections to the server port.
+	
+	+ To create a TCP client push push the corresponding button:
+	
+		- fill the *Server IP* editbox with the IP address of the server.
 		- if client and server do not share the same net because the server is behind a NAT the WAN IP address of the server gateway must be specified.
 		- fill the *Server port* editbox with the corresponding server listening port.
 	
