@@ -1,5 +1,5 @@
-eProsima Shape Demo Analytics
-=============================
+eProsima Shape Demo 
+===================
 
 Shapes Demo is an application that Publishes and Subscribes to shapes of different colors and sizes moving on a board. Each Shape conforms its own topic: Square, Triangle or Circle. A single instance of the Shapes Demo can publish on or subscribe to several topics at a time.
 
