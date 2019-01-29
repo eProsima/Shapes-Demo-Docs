@@ -74,24 +74,24 @@ The eProsima Shapes Demo application allows the user to define additional option
    
 The user can customize several aspects of ShapesDemo operation:
 
-- **Transport Protocol:** UDP is the default transport protocol for Fast RTPS but TCP functionality is available. In order to use TCP we must be aware of its point-to-point connection nature: one of the ShapesDemo instance must be a TCP server and all the others must be TCP clients. To use TCP follow the next steps:
+- **Transport Protocol:** UDP is the default transport protocol for Fast RTPS but TCP protocol is available. In order to use TCP we must be aware of its point-to-point connection nature: one of the ShapesDemo instance must be a TCP server and all the others must be TCP clients. To use TCP follow the next steps:
 	
 	+ Push the *Stop* button in order to end UDP use. This will automatically remove all publishers and subscribers from this instance.
 	
-	+ To create a TCP LAN server push the corresponding button and fill the *Server Port* editbox with an available port.
+	+ To create a TCP LAN server push the corresponding button and fill the *Server Port* textbox with an available port where the application will be listening for incoming connections.
 	
 	+ To create a TCP WAN server push the corresponding button:
 	
-		- fill the *WAN IP* editbox with the WAN router address.
-		- fill the *Server Port* editbox with an available TCP port.
+		- fill the *WAN IP* textbox with the public IPv4 router address.
+		- fill the *Server Port* textbox with an available TCP port where the application will be listening for incoming connections.
 		
 		Note that the router NAT and computer firewall settings must allow external connections to the server port.
 	
-	+ To create a TCP client push push the corresponding button:
+	+ To create a TCP client push the corresponding button:
 	
-		- fill the *Server IP* editbox with the IP address of the server.
+		- fill the *Server IP* textbox with the IP address of the server.
 		- if client and server do not share the same net because the server is behind a NAT the WAN IP address of the server gateway must be specified.
-		- fill the *Server port* editbox with the corresponding server listening port.
+		- fill the *Server port* textbox with the corresponding server listening port.
 	
 	+ Push the *Start* button in order to resume ShapesDemo operation.
 

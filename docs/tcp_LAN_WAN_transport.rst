@@ -1,12 +1,12 @@
 TCP Transport
 ==============
 
-Fast RTPS transport layer could be adapted to specific network requirements. UDP transport is optimal for localhost applications but in order to interact within a LAN or WAN a TCP transport may be required. Here we explain how Shapes Demo should be set up in order to fit some network specific layouts.
+Fast RTPS transport layer could be adapted to specific network requirements. UDP transport is optimal for local network applications but in order to interact on a Wide Area Network (WAN), where one or several NAT mappings may be enforced, a TCP transport would be more suitable. Here we explain how Shapes Demo should be set up in order to fit some network specific layouts.
 
 LAN configuration
 -----------------
 
-This is a common scenario where several computers share the same LAN network. In this case one of the computers should set up Shapes Demo as a server and all the others as clients. Let's suppose that the server computer LAN IP address is 192.168.2.49 then all clients instances of Shapes Demo in the other computers must specify this IP Server address. In this case we select as TCP port 5100 but any other available TCP port is valid. The server computer firewall must allow inbound traffic on the selected port.
+TCP over LAN can be tested in a scenario where several computers share the same LAN network; nevertheless, UDP performs better and is the advisable choice in practical situations. In this case one of the computers should set up Shapes Demo as a server and all the others as clients. Let's suppose that the server computer LAN IP address is 192.168.2.49 then all clients instances of Shapes Demo in the other computers must specify this IP Server address. In this case we select as TCP port 5100 but any other available TCP port is valid. The server computer firewall must allow inbound traffic on the selected port.
 
 .. image:: LAN_settings_options.png
    :scale: 100 %
@@ -17,7 +17,7 @@ This is a common scenario where several computers share the same LAN network. In
 WAN configuration
 -----------------
 
-In this scenario the server computer does not share network with its clients but its reachable through a WAN IP address. This may happen if the server and clients are in a different LANs of the same WAN like WWW. In order to test this scenario we used the following network layout:
+This is the typical TCP scenario where the server computer does not share network with its clients but its reachable through a WAN IP address. This may happen if the server and clients are in a different LANs of the same WAN like WWW. In order to test this scenario we used the following network layout:
 
 .. image:: WAN_network_layout.png
    :scale: 100 %
