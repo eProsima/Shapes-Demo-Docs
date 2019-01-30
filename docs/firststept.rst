@@ -67,11 +67,34 @@ Other Options
 The eProsima Shapes Demo application allows the user to define additional options. To see the Options window, please click *Options->Preferences* in the main bar. The following image shows the Options Menu.
 
 .. image:: options.png
-   :scale: 100 %
+   :scale: 75 %
    :alt: Options Window
    :align: center
+   
+   
+The user can customize several aspects of ShapesDemo operation:
 
-The user can modify the following settings:
+- **Transport Protocol:** UDP is the default transport protocol for Fast RTPS but TCP protocol is available. In order to use TCP we must be aware of its point-to-point connection nature: one of the ShapesDemo instance must be a TCP server and all the others must be TCP clients. To use TCP follow the next steps:
+	
+	+ Push the *Stop* button in order to end UDP use. This will automatically remove all publishers and subscribers from this instance.
+	
+	+ To create a TCP LAN server push the corresponding button and fill the *Server Port* textbox with an available port where the application will be listening for incoming connections.
+	
+	+ To create a TCP WAN server push the corresponding button:
+	
+		- fill the *WAN IP* textbox with the public IPv4 router address.
+		- fill the *Server Port* textbox with an available TCP port where the application will be listening for incoming connections.
+		
+		Note that the router NAT and computer firewall settings must allow external connections to the server port.
+	
+	+ To create a TCP client push the corresponding button:
+	
+		- fill the *Server IP* textbox with the IP address of the server.
+		- if client and server do not share the same net because the server is behind a NAT the WAN IP address of the server gateway must be specified.
+		- fill the *Server port* textbox with the corresponding server listening port.
+	
+	+ Push the *Start* button in order to resume ShapesDemo operation.
+
 
 - **Domain ID:** The user can select different Domain Ids. Shapes Demo instances using different Domain Ids will not communicate. To modify the Domain ID the user needs to stop the participant (thus removing all existing Publishers and Subscribers) and start a new one with the new Domain Id.
 

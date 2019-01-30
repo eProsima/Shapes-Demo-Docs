@@ -30,7 +30,7 @@ First, you have to launch two instances and create a Publisher in each of them:
    - Change the History field from 6 to 1.
    - Select EXCLUSIVE.
    - Set Strength 2.
-   - Set Size to 15.
+   - Set Size to 30.
 
 You should see a small red square on Instance1 and a big red square on Instance2.
 
