@@ -52,10 +52,10 @@ There are multiple parameters that the user can define in this menu:
 - **Lifespan:** The Lifespan Qos determines the duration while the sample is still valid.
 
 
-- **Disable Positive ACKs:** If enabled, doesn't expects for positive ACKs from the subscriber, considering delivered sent samples after the indicated duration if no negative ACKNACK was received.
+- **Disable Positive ACKs:** If enabled, writers don't expect positive ACKNACK messages from the subscriber. Instead they consider samples to be delivered after the indicated duration if no negative ACKNACK was received.
 
 
-Take into acoount that Disabling positive ACKs and modify Lifespan will not have any visual effect.
+Note that using Disable Positive ACKs and Lifespan QoS will not have any visual effect.
 
 Subscribing to a Shape
 ----------------------
