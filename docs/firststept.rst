@@ -70,6 +70,10 @@ This menu is very similar to the Publication menu but the user cannot change the
 
 - **Content Based Filter:** This filter draws a rectangle in the shapes window. Only the instances that are included in this rectangle are accepted. The rest of them are ignored. The user can dynamically resize and move this content filter.
 
+- **Deadline:** The Deadline Qos determines the maximum expected amount of time between samples. When the deadline is missed the application will be notified and a message printed on the console.
+
+- **Lifespan:** The Lifespan Qos determines the duration while the sample is still valid. When a sample's lifespan expires, it will be removed from publisher and subscriber histories.
+
 Note that using Lifespan QoS will not have any visual effect.
 
 Other Options
