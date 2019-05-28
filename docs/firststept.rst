@@ -52,10 +52,7 @@ There are multiple parameters that the user can define in this menu:
 - **Lifespan:** The Lifespan Qos determines the duration while the sample is still valid. When a sample's lifespan expires, it will be removed from publisher and subscriber histories.
 
 
-- **Disable Positive ACKs:** If enabled, writers don't expect positive ACKNACK messages from the subscriber. Instead they consider samples to be delivered after the indicated duration if no negative ACKNACK was received.
-
-
-Note that using Disable Positive ACKs and Lifespan QoS will not have any visual effect.
+Note that using Lifespan QoS will not have any visual effect.
 
 Subscribing to a Shape
 ----------------------
@@ -73,7 +70,7 @@ This menu is very similar to the Publication menu but the user cannot change the
 
 - **Content Based Filter:** This filter draws a rectangle in the shapes window. Only the instances that are included in this rectangle are accepted. The rest of them are ignored. The user can dynamically resize and move this content filter.
 
-Take into acoount that Disabling positive ACKs and modify Lifespan will not have any visual effect.
+Note that using Lifespan QoS will not have any visual effect.
 
 Other Options
 -------------
