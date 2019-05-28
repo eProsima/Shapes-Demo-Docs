@@ -46,10 +46,10 @@ There are multiple parameters that the user can define in this menu:
 - **Ownership:** The Ownership Qos determines whether the instance (color) of the Topic (Shape) is owned by a single Publisher. If the selected ownership is **EXCLUSIVE** the Publisher will use the Ownership strength value as the strength of its publication. Only the publisher with the highest strength can publish in the same Topic with the same Key.
 
 
-- **Deadline:** The Deadline Qos determines the maximum expected amount of time between samples.
+- **Deadline:** The Deadline Qos determines the maximum expected amount of time between samples. When the deadline is missed the application will be notified and a message printed on the console.
 
 
-- **Lifespan:** The Lifespan Qos determines the duration while the sample is still valid.
+- **Lifespan:** The Lifespan Qos determines the duration while the sample is still valid. When a sample's lifespan expires, it will be removed from publisher and subscriber histories.
 
 
 - **Disable Positive ACKs:** If enabled, writers don't expect positive ACKNACK messages from the subscriber. Instead they consider samples to be delivered after the indicated duration if no negative ACKNACK was received.
