@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redundancy and Fault Tolerance</title>
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/fiware_readthedocs.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="redundancy-and-fault-tolerance">
+<h1>Redundancy and Fault Tolerance</h1>
+<p>Fast RTPS allows more than one Publisher to write data on the same Topic. You can allow all Publishers to have the same relevance, or you can set one as the primary Publisher and keep the rest as secondary Publisher. In that case, only the main Publisher can send data to the subscribers.</p>
+<p>The Ownership QoS determines if the Topic (Shape) is owned by a single Publisher or not.</p>
+<p>You can select SHARE or EXLUSIVE ownership, if you select EXCLUSIVE for a publisher, you have to indicate the value of strength for it. Only the Publisher with the highest strength can send data on this Topic. If the primary Publisher has a problem and cannot write data, the secondary Publisher with the highest strength is promoted to primary Publisher. If you select SHARE, all the publishers can write data at the same time.</p>
+<p>In this test, we are going to create two Publishers with EXCLUSIVE ownership in SQUARE Shape, and one Subscriber with EXCLUSIVE ownership at the same Shape.</p>
+<p><strong>Step-by-Step</strong></p>
+<p>First, you have to launch two instances and create a Publisher in each of them:</p>
+<dl class="simple">
+<dt>1 - Create a red square publisher:</dt>
+<dd><ul class="simple">
+<li><p>Start eProsima Shapes-Demo. (We will refer to this instance as Instance1)</p></li>
+<li><p>Click on Publish.</p></li>
+<li><p>Select SQUARE option for Shape and RED for Color.</p></li>
+<li><p>Change the History field from 6 to 1.</p></li>
+<li><p>Select EXCLUSIVE.</p></li>
+<li><p>Set Strength to 1.</p></li>
+<li><p>Set Size to 15.</p></li>
+</ul>
+</dd>
+<dt>2 - Create a red square publisher:</dt>
+<dd><ul class="simple">
+<li><p>Start eProsima Shapes-Demo. (We will refer to this instance as Instance2)</p></li>
+<li><p>Click on Publish.</p></li>
+<li><p>Select SQUARE option for Shape and RED for Color.</p></li>
+<li><p>Change the History field from 6 to 1.</p></li>
+<li><p>Select EXCLUSIVE.</p></li>
+<li><p>Set Strength 2.</p></li>
+<li><p>Set Size to 30.</p></li>
+</ul>
+</dd>
+</dl>
+<p>You should see a small red square on Instance1 and a big red square on Instance2.</p>
+<img alt="Initial state" class="align-center" src="_images/test5_2.png" style="width: 1398.0px; height: 681.0px;" />
+<p>Now, create a Subscriber.</p>
+<dl class="simple">
+<dt>3 - Create a square subscriber:</dt>
+<dd><ul class="simple">
+<li><p>Start eProsima Shapes-Demo. (We will refer to this instance as Instance3)</p></li>
+<li><p>Click on Subscribe.</p></li>
+<li><p>Select SQUARE option for Shape.</p></li>
+<li><p>Select EXCLUSIVE.</p></li>
+</ul>
+</dd>
+</dl>
+<p>You should see a big square on Instance3, because Instance2 has a higher strength than Instance1.</p>
+<img alt="State 1" class="align-center" src="_images/test5_3.png" style="width: 1402.0px; height: 684.0px;" />
+<p><em>Failure</em></p>
+<p>Now you have to stop Instance2. Initially, Instance2 had higher strength and you saw a big red square on Instance2, but you should see a small red square because Instance1 has higher strength now.</p>
+<img alt="State 2" class="align-center" src="_images/test5_4.png" style="width: 1402.0px; height: 685.0px;" />
+<p>If you repeat the second step, you should see a big red square mirroring the big red square movements in Instance2 again.</p>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

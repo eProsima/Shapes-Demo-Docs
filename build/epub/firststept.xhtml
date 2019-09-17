@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>Using eProsima Shapes Demo</title>
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/fiware_readthedocs.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="using-eprosima-shapes-demo">
+<h1>Using eProsima Shapes Demo</h1>
+<p>This section guides you through the main menus of eProsima Shapes Demo. After the executable is launched you should see a window similar to the one presented in the following image.</p>
+<img alt="Main Window" class="align-center" src="_images/mainWindow.png" style="width: 468.0px; height: 681.0px;" />
+<p>As you can see the main window is design for simplicity, with only two principal buttons situated on the left. There are additional menus that will be explained later.</p>
+<div class="section" id="publishing-a-shape">
+<h2>Publishing a Shape</h2>
+<p>When the user presses the Publish button a new window appear to allow the user to define what type of Shape and which QoS the want to use in its publication. The following image shows an example of the Publication menu.</p>
+<img alt="Publish Window" class="align-center" src="_images/publish.png" style="width: 486.0px; height: 714.0px;" />
+<p>There are multiple parameters that the user can define in this menu:</p>
+<ul class="simple">
+<li><p><strong>Shape:</strong> This parameter defines the topic where the publication is going to occur. Three different shapes can be published: <strong>Square</strong>, <strong>Circle</strong> and <strong>Triangle</strong>.</p></li>
+<li><p><strong>Color:</strong> The user can define the color of the Shape. This parameter will be used as key; that is, a way to distinguish between multiple instances of the same shape.</p></li>
+<li><p><strong>Size:</strong> This parameter allows you to control how big the shape is. The size can vary between 1 and 99.</p></li>
+<li><p><strong>Partition:</strong> The user can select different partitions to differentiate groups of publishers and subscribers. The user can select between four partitions (A, B, C and D). Additionally the user can select the “*” partition, that will be matched against all other partitions. The user should note, however, that using the <em>wildcard (*)</em> partition is not the same as not using any partition. A publisher that uses the wildcard partition will not be matched with a subscriber that uses no partitions.</p></li>
+<li><p><strong>Reliable:</strong> The user can select to disable the Reliable check-box to use a Best-Effort Publisher.</p></li>
+<li><p><strong>History and Durability:</strong> The History of the Publishers is set to <strong>KEEP_LAST</strong>. The user can select the number of samples that the Publisher is going to save. The user can also select whether this History is going to be <strong>VOLATILE</strong> or <strong>TRANSIENT_LOCAL</strong>. The latter will send that last stored values to subscribers joining after the Publisher has been created.</p></li>
+<li><p><strong>Liveliness:</strong> The user can select the Liveliness Qos for the Publisher between three different values: <strong>AUTOMATIC</strong>, <strong>MANUAL_BY_PARTICIPANT</strong> and <strong>MANUAL_BY_TOPIC</strong>. The user can also set the Lease Duration for the Publisher.</p></li>
+<li><p><strong>Ownership:</strong> The Ownership Qos determines whether the instance (color) of the Topic (Shape) is owned by a single Publisher. If the selected ownership is <strong>EXCLUSIVE</strong> the Publisher will use the Ownership strength value as the strength of its publication. Only the publisher with the highest strength can publish in the same Topic with the same Key.</p></li>
+<li><p><strong>Deadline:</strong> The Deadline Qos determines the maximum expected amount of time between samples. When the deadline is missed the application will be notified and a message printed on the console.</p></li>
+<li><p><strong>Lifespan:</strong> The Lifespan Qos determines the duration while the sample is still valid. When a sample’s lifespan expires, it will be removed from publisher and subscriber histories.</p></li>
+</ul>
+<p>Note that using Lifespan QoS will not have any visual effect.</p>
+</div>
+<div class="section" id="subscribing-to-a-shape">
+<h2>Subscribing to a Shape</h2>
+<p>When the user presses the Subscriber button a new window appear to allow the user to define what type of Shape and which QoS the want to use in its subscription. The following image shows an example of the Subscribe menu.</p>
+<img alt="Subscribe Window" class="align-center" src="_images/subscribe.png" style="width: 491.0px; height: 798.0px;" />
+<p>This menu is very similar to the Publication menu but the user cannot change the color and size, and it has additional elements:</p>
+<ul class="simple">
+<li><p><strong>Time Based Filter:</strong> This value can be used by the user to only specify the minimum amount of time (in milliseconds) that the subscriber wants between updates.</p></li>
+<li><p><strong>Content Based Filter:</strong> This filter draws a rectangle in the shapes window. Only the instances that are included in this rectangle are accepted. The rest of them are ignored. The user can dynamically resize and move this content filter.</p></li>
+<li><p><strong>Deadline:</strong> The Deadline Qos determines the maximum expected amount of time between samples. When the deadline is missed the application will be notified and a message printed on the console.</p></li>
+<li><p><strong>Lifespan:</strong> The Lifespan Qos determines the duration while the sample is still valid. When a sample’s lifespan expires, it will be removed from publisher and subscriber histories.</p></li>
+</ul>
+<p>Note that using Lifespan QoS will not have any visual effect.</p>
+</div>
+<div class="section" id="other-options">
+<h2>Other Options</h2>
+<p>The eProsima Shapes Demo application allows the user to define additional options. To see the Options window, please click <em>Options-&gt;Preferences</em> in the main bar. The following image shows the Options Menu.</p>
+<img alt="Options Window" class="align-center" src="_images/options.png" style="width: 1548.75px; height: 357.0px;" />
+<p>The user can customize several aspects of ShapesDemo operation:</p>
+<ul>
+<li><p><strong>Transport Protocol:</strong> UDP is the default transport protocol for Fast RTPS but TCP protocol is available. In order to use TCP we must be aware of its point-to-point connection nature: one of the ShapesDemo instance must be a TCP server and all the others must be TCP clients. To use TCP follow the next steps:</p>
+<blockquote>
+<div><ul>
+<li><p>Push the <em>Stop</em> button in order to end UDP use. This will automatically remove all publishers and subscribers from this instance.</p></li>
+<li><p>To create a TCP LAN server push the corresponding button and fill the <em>Server Port</em> textbox with an available port where the application will be listening for incoming connections.</p></li>
+<li><p>To create a TCP WAN server push the corresponding button:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>fill the <em>WAN IP</em> textbox with the public IPv4 router address.</p></li>
+<li><p>fill the <em>Server Port</em> textbox with an available TCP port where the application will be listening for incoming connections.</p></li>
+</ul>
+<p>Note that the router NAT and computer firewall settings must allow external connections to the server port.</p>
+</div></blockquote>
+</li>
+<li><p>To create a TCP client push the corresponding button:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>fill the <em>Server IP</em> textbox with the IP address of the server.</p></li>
+<li><p>if client and server do not share the same net because the server is behind a NAT the WAN IP address of the server gateway must be specified.</p></li>
+<li><p>fill the <em>Server port</em> textbox with the corresponding server listening port.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Push the <em>Start</em> button in order to resume ShapesDemo operation.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Domain ID:</strong> The user can select different Domain Ids. Shapes Demo instances using different Domain Ids will not communicate. To modify the Domain ID the user needs to stop the participant (thus removing all existing Publishers and Subscribers) and start a new one with the new Domain Id.</p></li>
+<li><p><strong>Update interval:</strong> This value changes the publication period for all the Publishers.</p></li>
+<li><p><strong>Speed:</strong> This scrollbar allows the user to change how much the Shape moves between two write calls.</p></li>
+</ul>
+</div>
+<div class="section" id="endpoints-and-output-tabs">
+<h2>Endpoints and Output tabs</h2>
+<p>A table including all created endpoints is also provided. An example of this legend is shown in the following image.</p>
+<img alt="Endpoints" class="align-center" src="_images/table1.png" style="width: 843.0px; height: 270.0px;" />
+<p>The user can use this table to remove endpoints. Two methods are provided:</p>
+<ul class="simple">
+<li><p>Right click in an endpoint: An option to remove the endpoint is shown.</p></li>
+<li><p>Pressing the delete button when the endpoint is selected.</p></li>
+</ul>
+<p>An example of the output tab is shown in the next figure.</p>
+<img alt="Outputs" class="align-center" src="_images/table2.png" style="width: 840.0px; height: 270.0px;" />
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

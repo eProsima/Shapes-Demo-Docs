@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>Content Based Filter</title>
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/fiware_readthedocs.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="content-based-filter">
+<h1>Content Based Filter</h1>
+<p>In Fast RTPS, you can restrict the data that will be available to the subscriber to control network and CPU usage. When you deploy a new Subscriber, you can check the Content Based Filter. This filter draws a shaded region in the shapes window. Only the samples that are inside will be made available to the subscriber. You can resize and move this region dynamically.</p>
+<p>In this test, we are going to create two Publishers and two Subscriber, one with Content Based.</p>
+<p><strong>Step-by-Step</strong></p>
+<p>First, you have to launch two instances and create a Publisher in each of them:</p>
+<dl class="simple">
+<dt>1 - Create a red square publisher:</dt>
+<dd><ul class="simple">
+<li><p>Start eProsima Shapes-Demo. (We will refer to this instance as Instance1)</p></li>
+<li><p>Click on Publish.</p></li>
+<li><p>Select SQUARE option for Shape and RED for Color.</p></li>
+<li><p>Change the History field from 6 to 1.</p></li>
+</ul>
+</dd>
+<dt>2 - Create an orange circle publisher:</dt>
+<dd><ul class="simple">
+<li><p>Start eProsima Shapes-Demo. (We will refer to this instance as Instance2)</p></li>
+<li><p>Click on Publish.</p></li>
+<li><p>Select CIRCLE option for Shape and ORANGE for Color.</p></li>
+<li><p>Change the History field from 6 to 1.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Your windows should look similar to the following image.</p>
+<img alt="Initial state" class="align-center" src="_images/test6_2.png" style="width: 1400.0px; height: 683.0px;" />
+<p>Now, create two subscriber:</p>
+<dl class="simple">
+<dt>3 - Create a circle subscriber:</dt>
+<dd><ul class="simple">
+<li><p>Start eProsima Shapes-Demo. (We will refer to this instance as Instance3)</p></li>
+<li><p>Click on Subscribe.</p></li>
+<li><p>Select CIRCLE option for Shape.</p></li>
+<li><p>Change the History field from 6 to 1.</p></li>
+<li><p>Check Content Based.</p></li>
+</ul>
+</dd>
+<dt>4 - Create a square subscriber:</dt>
+<dd><ul class="simple">
+<li><p>Click on Subscribe in Instance3.</p></li>
+<li><p>Select SQUARE option for Shape.</p></li>
+<li><p>Change the History field from 6 to 1.</p></li>
+</ul>
+</dd>
+</dl>
+<p>You will see a shaded rectangle in Instance3. This is the filter for the samples of the Circle Shape.</p>
+<p>If the circle is out of the rectangle, it is not available for the subscriber.</p>
+<img alt="State 1" class="align-center" src="_images/test6_3.png" style="width: 1398.0px; height: 680.0px;" />
+<p>On the contrary, if the instance is in the rectangle, it is available.</p>
+<img alt="State 2" class="align-center" src="_images/test6_4.png" style="width: 1399.0px; height: 681.0px;" />
+<p>The rectangle is configurable, you can resize and move it dynamically. The following images show examples of the filter.</p>
+<img alt="Publisher configuration" class="align-center" src="_images/test4_4.png" style="width: 1407.0px; height: 684.0px;" />
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

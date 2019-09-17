@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <title>Partition</title>
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/fiware_readthedocs.css" type="text/css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="partition">
+<h1>Partition</h1>
+<p>In Fast RTPS, you can use <em>Partitions</em> to group Subscribers and Publishers. If you deploy a Publisher with a partition, only the subscriber with the same partition will receive data from it. In this demo, there are four partitions (A, B, C and D). Additionally, you can select the “*” partition, that will be matched against all other partitions.</p>
+<p>In this test, we are going to create three Publishers (Square in Partition A, Circle in Partition B, and Triangle in Partition “*”), and three Subscribers per instance, all of them in Partition A.</p>
+<p>Finally, we have red squares and black triangles in partition A. Because of this, all instances are able to find triangles and squares. On the  contrary, orange circles are published in partition B and they are only visible in the Instance2.</p>
+<p><strong>Step-by-Step</strong></p>
+<p>First, we must create three Publishers.</p>
+<dl class="simple">
+<dt>1 - Create a red square publisher:</dt>
+<dd><ul class="simple">
+<li><p>Start eProsima Shapes-Demo. (We will refer to this instance as Instance1)</p></li>
+<li><p>Click on Publish.</p></li>
+<li><p>Select SQUARE option for Shape and RED for Color.</p></li>
+<li><p>Change the History field from 6 to 1.</p></li>
+<li><p>Check Partition A.</p></li>
+</ul>
+</dd>
+<dt>2 - Create an orange circle publisher:</dt>
+<dd><ul class="simple">
+<li><p>Start eProsima Shapes-Demo. (We will refer to this instance as Instance2)</p></li>
+<li><p>Click on Publish.</p></li>
+<li><p>Select CIRCLE option for Shape and ORANGE for Color.</p></li>
+<li><p>Change the History field from 6 to 1.</p></li>
+<li><p>Check Partition B.</p></li>
+</ul>
+</dd>
+<dt>3 - Create a black triangle publisher:</dt>
+<dd><ul class="simple">
+<li><p>Start eProsima Shapes-Demo. (We will refer to this instance as Instance3)</p></li>
+<li><p>Click on Publish.</p></li>
+<li><p>Select TRIANGLE option for Shape and BLACK for Color.</p></li>
+<li><p>Change the History field from 6 to 1.</p></li>
+<li><p>Check Partition “*”.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Instance1 will publish red squares in the partition A, Instance2 will publish orange circles in the partition B, and Instance3 will publish black triangles in all partitions. Your windows should look similar to the following image.</p>
+<img alt="Initial state" class="align-center" src="_images/test4_2.png" style="width: 1397.0px; height: 682.0px;" />
+<p>Second, create three Subscribers per Instance with the following characteristics.</p>
+<p>Instance1:</p>
+<table class="docutils">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 14%" />
+<col style="width: 15%" />
+<col style="width: 28%" />
+<col style="width: 17%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>Shape</p></th>
+<th class="head"><p>Partition</p></th>
+<th class="head"><p>History (Reliable)</p></th>
+<th class="head"><p>Durability</p></th>
+<th class="head"><p>Ownership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td><p>Square</p></td>
+<td><p>A</p></td>
+<td><p>1 (ON)</p></td>
+<td><p>VOLATILE</p></td>
+<td><p>SHARED</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>I1</strong></p></td>
+<td><p>Circle</p></td>
+<td><p>A</p></td>
+<td><p>1 (ON)</p></td>
+<td><p>VOLATILE</p></td>
+<td><p>SHARED</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Triangle</p></td>
+<td><p>A</p></td>
+<td><p>1 (ON)</p></td>
+<td><p>VOLATILE</p></td>
+<td><p>SHARED</p></td>
+</tr>
+</tbody>
+</table>
+<p>Instance2:</p>
+<table class="docutils">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 14%" />
+<col style="width: 15%" />
+<col style="width: 28%" />
+<col style="width: 17%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>Shape</p></th>
+<th class="head"><p>Partition</p></th>
+<th class="head"><p>History (Reliable)</p></th>
+<th class="head"><p>Durability</p></th>
+<th class="head"><p>Ownership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td><p>Square</p></td>
+<td><p>A</p></td>
+<td><p>1 (ON)</p></td>
+<td><p>VOLATILE</p></td>
+<td><p>SHARED</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>I2</strong></p></td>
+<td><p>Circle</p></td>
+<td><p>A</p></td>
+<td><p>1 (ON)</p></td>
+<td><p>VOLATILE</p></td>
+<td><p>SHARED</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Triangle</p></td>
+<td><p>A</p></td>
+<td><p>1 (ON)</p></td>
+<td><p>VOLATILE</p></td>
+<td><p>SHARED</p></td>
+</tr>
+</tbody>
+</table>
+<p>Instance3:</p>
+<table class="docutils">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 14%" />
+<col style="width: 15%" />
+<col style="width: 28%" />
+<col style="width: 17%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>Shape</p></th>
+<th class="head"><p>Partition</p></th>
+<th class="head"><p>History (Reliable)</p></th>
+<th class="head"><p>Durability</p></th>
+<th class="head"><p>Ownership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td><p>Square</p></td>
+<td><p>A</p></td>
+<td><p>1 (ON)</p></td>
+<td><p>VOLATILE</p></td>
+<td><p>SHARED</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>I3</strong></p></td>
+<td><p>Circle</p></td>
+<td><p>A</p></td>
+<td><p>1 (ON)</p></td>
+<td><p>VOLATILE</p></td>
+<td><p>SHARED</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Triangle</p></td>
+<td><p>A</p></td>
+<td><p>1 (ON)</p></td>
+<td><p>VOLATILE</p></td>
+<td><p>SHARED</p></td>
+</tr>
+</tbody>
+</table>
+<img alt="Publisher configuration" class="align-center" src="_images/test4_3.png" style="width: 1398.0px; height: 683.0px;" />
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

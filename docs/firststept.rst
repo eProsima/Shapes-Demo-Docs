@@ -31,7 +31,7 @@ There are multiple parameters that the user can define in this menu:
 - **Size:** This parameter allows you to control how big the shape is. The size can vary between 1 and 99.
 
 
-- **Partition:** The user can select different partitions to differentiate groups of publishers and subscribers. The user can select between four partitions (A, B, C and D). Additionally the user can select the “*” partition, that will be matched against all other partitions. The user should note, however, that using the *wildcard ()* partition is not the same as not using any partition. A publisher that uses the wildcard partition will not be matched with a subscriber that uses no partitions.
+- **Partition:** The user can select different partitions to differentiate groups of publishers and subscribers. The user can select between four partitions (A, B, C and D). Additionally the user can select the “*” partition, that will be matched against all other partitions. The user should note, however, that using the *wildcard (\*)* partition is not the same as not using any partition. A publisher that uses the wildcard partition will not be matched with a subscriber that uses no partitions.
 
 
 - **Reliable:** The user can select to disable the Reliable check-box to use a Best-Effort Publisher.
@@ -40,7 +40,7 @@ There are multiple parameters that the user can define in this menu:
 - **History and Durability:** The History of the Publishers is set to **KEEP_LAST**. The user can select the number of samples that the Publisher is going to save. The user can also select whether this History is going to be **VOLATILE** or **TRANSIENT_LOCAL**. The latter will send that last stored values to subscribers joining after the Publisher has been created.
 
 
-- **Liveliness:** The user can select the Liveliness Qos for the Publisher between three different values: **AUTOMATIC**, **MANUAL_BY_PARTICIPANT** and **MANUAL_BY_TOPIC**. The user can also set the Lease Duration for the Publisher.
+- **Liveliness:** The user can select the Liveliness Qos for the Publisher between three different values: **AUTOMATIC**, **MANUAL_BY_PARTICIPANT** and **MANUAL_BY_TOPIC**. The user can also set the Lease Duration value and in case of using **AUTOMATIC** or **MANUAL_BY_PARTICIPANT** also the Announcement Period.
 
 
 - **Ownership:** The Ownership Qos determines whether the instance (color) of the Topic (Shape) is owned by a single Publisher. If the selected ownership is **EXCLUSIVE** the Publisher will use the Ownership strength value as the strength of its publication. Only the publisher with the highest strength can publish in the same Topic with the same Key.
@@ -66,13 +66,11 @@ When the user presses the Subscriber button a new window appear to allow the use
 
 This menu is very similar to the Publication menu but the user cannot change the color and size, and it has additional elements:
 
+- **Liveliness:** This Qos policy is applied in the same way as in the Publisher except for the Announcement Period, which doesn't apply for the Subcriber.
+
 - **Time Based Filter:** This value can be used by the user to only specify the minimum amount of time (in milliseconds) that the subscriber wants between updates.
 
 - **Content Based Filter:** This filter draws a rectangle in the shapes window. Only the instances that are included in this rectangle are accepted. The rest of them are ignored. The user can dynamically resize and move this content filter.
-
-- **Deadline:** The Deadline Qos determines the maximum expected amount of time between samples. When the deadline is missed the application will be notified and a message printed on the console.
-
-- **Lifespan:** The Lifespan Qos determines the duration while the sample is still valid. When a sample's lifespan expires, it will be removed from publisher and subscriber histories.
 
 Note that using Lifespan QoS will not have any visual effect.
 

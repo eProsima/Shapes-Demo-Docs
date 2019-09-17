@@ -1,0 +1,18 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Using eProsima Shapes Demo}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Publishing a Shape}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}Subscribing to a Shape}{6}{section.1.2}
+\contentsline {section}{\numberline {1.3}Other Options}{8}{section.1.3}
+\contentsline {section}{\numberline {1.4}Endpoints and Output tabs}{9}{section.1.4}
+\contentsline {chapter}{\numberline {2}Discovery and basic connectivity}{11}{chapter.2}
+\contentsline {chapter}{\numberline {3}History and Durability}{15}{chapter.3}
+\contentsline {chapter}{\numberline {4}Partition}{19}{chapter.4}
+\contentsline {chapter}{\numberline {5}Redundancy and Fault Tolerance}{23}{chapter.5}
+\contentsline {chapter}{\numberline {6}Content Based Filter}{27}{chapter.6}
+\contentsline {chapter}{\numberline {7}Time Based Filter}{31}{chapter.7}
+\contentsline {chapter}{\numberline {8}TCP Transport}{33}{chapter.8}
+\contentsline {section}{\numberline {8.1}LAN configuration}{33}{section.8.1}
+\contentsline {section}{\numberline {8.2}WAN configuration}{33}{section.8.2}
+\contentsline {chapter}{\numberline {9}Troubleshooting}{37}{chapter.9}
+\contentsline {section}{\numberline {9.1}Two instances in the same computer}{37}{section.9.1}
+\contentsline {chapter}{\numberline {10}Interoperability}{39}{chapter.10}
