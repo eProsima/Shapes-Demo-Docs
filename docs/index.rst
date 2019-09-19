@@ -26,6 +26,7 @@ It can be used to demonstrate the capabilities of eProsima Fast RTPS or as an in
 	history_durability
 	partition
 	redundancey_fault_tolerance
+        liveliness
 	content_based_filter
 	time_based_filter
 	tcp_LAN_WAN_transport
