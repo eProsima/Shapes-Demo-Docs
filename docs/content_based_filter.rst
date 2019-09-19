@@ -1,7 +1,10 @@
 Content Based Filter
 ====================
 
-In Fast RTPS, you can restrict the data that will be available to the subscriber to control network and CPU usage. When you deploy a new Subscriber, you can check the Content Based Filter. This filter draws a shaded region in the shapes window. Only the samples that are inside will be made available to the subscriber. You can resize and move this region dynamically. 
+In Fast RTPS, you can restrict the data that will be available to the subscriber to control network and CPU usage. When 
+you deploy a new Subscriber, you can check the Content Based Filter. This filter draws a shaded region in the shapes 
+window. Only the samples that are inside will be made available to the subscriber. You can resize and move this region 
+dynamically. 
 
 In this test, we are going to create two Publishers and two Subscriber, one with Content Based.
 
@@ -58,7 +61,8 @@ On the contrary, if the instance is in the rectangle, it is available.
    :alt: State 2
    :align: center
    
-The rectangle is configurable, you can resize and move it dynamically. The following images show examples of the filter.
+The rectangle is configurable, you can resize and move it dynamically. The following images show examples of the 
+filter.
 
 .. image:: test4_4.png
    :scale: 100 %
