@@ -30,6 +30,7 @@ implementations of the RTPS protocol.
 	partition
 	redundancey_fault_tolerance
         liveliness
+        deadline
 	content_based_filter
 	time_based_filter
 	tcp_LAN_WAN_transport

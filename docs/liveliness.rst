@@ -37,7 +37,7 @@ First, you have to launch two instances and create a Publisher and a Subscriber:
    - Select SQUARE option for Shape.
    - Select MANUAL_BY_PARTICIPANT.
    - Set a value for the Lease Duration higher or equal to the one stated for the Publisher. 
-   (If the value of subscriber lease duration is lower the entities don't match)
+     (If the value of subscriber lease duration is lower the entities don't match)
 
 .. image:: test8_1.png
    :scale: 60 %
