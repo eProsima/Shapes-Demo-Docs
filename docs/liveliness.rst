@@ -12,13 +12,10 @@ duration as long as the DomainParticipant keeps running and remote participants 
 entities within the DomainParticipant alive.
 
 The remaining kinds (MANUAL_BY_PARTICIPANT and MANUAL_BY_TOPIC) need periodically an assertion to consider the remote 
-participants as alive. That assertion can be done by writing new data or using the function *assert_liveliness*. The 
-main difference between these two kinds is that MANUAL_BY_PARTICIPANT requires only the assertion of one of its 
-entities to consider that all of them are alive, while MANUAL_BY_TOPIC requires at least one assertion per publisher 
-to consider it as alive.
+participants as alive.
 
-In this test, we are going to create a Publisher using MANUAL_BY_TOPIC and a Subscriber using MANUAL_BY_PARTICIPANT 
-and a lease duration value lower than the write rate of the publisher.
+In this test, we are going to create a Publisher and Subscriber using AUTOMATIC liveliness and a lease duration value
+higher than the write rate of the publisher.
 
 **Step-by-Step**
 
@@ -28,14 +25,14 @@ First, you have to launch two instances and create a Publisher and a Subscriber:
    - Start eProsima Shapes-Demo. (We will refer to this instance as Instance1)
    - Click on Publish.
    - Select SQUARE option for Shape and RED for Color.
-   - Select MANUAL_BY_TOPIC.
-   - Set Lease Duration to 50. (The default write rate is 75 ms)
+   - Select AUTOMATIC.
+   - Set Lease Duration to 150. (The default write rate is 75 ms)
 
 2 - Create a square subscriber:
    - Start eProsima Shapes-Demo. (We will refer to this instance as Instance2)
    - Click on Subscribe.
    - Select SQUARE option for Shape.
-   - Select MANUAL_BY_PARTICIPANT.
+   - Select AUTOMATIC.
    - Set a value for the Lease Duration higher or equal to the one stated for the Publisher. 
      (If the value of subscriber lease duration is lower the entities don't match)
 
@@ -44,16 +41,11 @@ First, you have to launch two instances and create a Publisher and a Subscriber:
    :alt: Initial state
    :align: center
 
+If you go to the *Output Tab* on Instance2, you can observe that the subscriber has recovered the liveliness once it
+matches with the publisher.
 
-As you can see both matches even if they have different liveliness kinds since the standard established that they 
-are considered as compatible as long as the offered kind is greater than the required one (considering this order 
-AUTOMATIC < MANUAL_BY_PARTICIPANT < MANUAL_BY_TOPIC).
-
-If you go to the *Output Tab* on Instance2, you can observe that the subscriber is continuously losing and recovering 
-the liveliness due to the value established for the lease duration, which is lower than the publishing rate. This fact 
-makes that the liveliness timer ends up before a new sample comes from the publisher and therefore the subscriber 
-shows the liveliness lost message. After that, a new sample arrives at the subscriber side, who notifies about the 
-liveliness recover.
+Now, you have to open the Task Manager and kill the process corresponding with the publisher (Instnace1). As you can
+see, the subscriber lost the liveliness as the publisher doesn't terminate cleanly.
 
 .. image:: test8_2.png
    :scale: 60 %
