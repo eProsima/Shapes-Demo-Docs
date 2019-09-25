@@ -31,6 +31,7 @@ implementations of the RTPS protocol.
 	redundancey_fault_tolerance
         liveliness
         deadline
+        lifespan
 	content_based_filter
 	time_based_filter
 	tcp_LAN_WAN_transport
