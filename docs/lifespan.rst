@@ -3,10 +3,10 @@ Lifespan
 The Lifespan QoS establishes the maximum validity period of the samples saved on an entity's history. When
 the lifespan period elapses, the corresponding sample is automatically removed.
 
-Unlike other QoS, such as `Deadline <deadline.html>`__ or `Liveliness <liveliness.html>`__, this test does not provide a means to inform the user that
-the sample is being removed, which makes this test more complicated to illustrate. For this reason, we are
-going to create two publishers and two subscribers, and make only one of them use Lifespan, so that the effect
-of using this QoS can be graphically seen.
+Unlike other QoS, such as `Deadline <deadline.html>`__ or `Liveliness <liveliness.html>`__, this test does not
+provide a means to inform the user that the sample is being removed, which makes this Qos more complicated to
+illustrate. For this reason, we are going to create two publishers and two subscribers, and make only one of
+them use Lifespan, so that the effect of using this QoS can be graphically seen.
 
 **Step-by-Step**
 
