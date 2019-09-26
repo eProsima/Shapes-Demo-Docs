@@ -1,16 +1,16 @@
 Lifespan
 ==============================
-The Lifespan QoS establish the maximum validity period of the samples saved on the entity history. Each of those
-samples has a lifespan timer associated so that once it expires the linked data is removed from the entity history.
+The Lifespan QoS establishes the maximum validity period of the samples saved on an entity's history. When
+the lifespan period elapses, the corresponding sample is automatically removed.
 
-Before starting with the example, we need to advise you that it is complicated to understand.
-
-In this test, we are going to create two Publishers and two Subscribers, one using lifespan and the other
-without it, so you can see graphically the difference between both cases.
+Unlike other QoS, such as Deadline or Liveliness, this Qos does not provide a means to inform the user that
+the sample is being removed, which makes this test more complicated to illustrate. For this reason, we are
+going to create two publishers and two subscribers, and make only one of them use Lifespan, so that the effect
+of using this QoS can be graphically seen.
 
 **Step-by-Step**
 
-First, you have to launch an instance and create the two Publishers:
+First, launch an instance and create the two publishers:
 
 1 - Create a red square publisher:
    - Start eProsima Shapes-Demo. (We will refer to this instance as Instance1)
@@ -37,11 +37,11 @@ After that, change the write rate to 1000:
     - Set the update interval to 1000.
 
 .. image:: test10_1.png
-   :scale: 60 %
+   :scale: 100 %
    :alt: Initial state
    :align: center
 
-Now, create two Subscribers:
+Now, create two subscribers:
 
 4 - Create a square subscriber:
    - Start eProsima Shapes-Demo. (We will refer to this instance as Instance2)
@@ -61,16 +61,16 @@ Now, create two Subscribers:
     - Set History to 100.
     - Set Lifespan Duration to 50.
 
-Note that when a new subscriber matched with the publisher, due to the TRANSIENT_LOCAL durability, all the
+Note that when a new subscriber matches with the publisher, due to the TRANSIENT_LOCAL durability, all the
 samples stored on the publisher history are sent automatically to the new subscriber.
 
-Knowing that we are going to explain what is happening on Instance2 and Instance3. As you can see, the square
-subscriber history is fulled rapidly, while the triangle subscriber one increases at the same speed as the
-orange triangle publisher sends the new samples. That's why the samples of the orange triangle publisher history
-are removed faster than he sends new ones, due to the lifespan, while the red square publisher history samples
+Now let's explain what is happening on Instance2 and Instance3. As you can see, the square
+subscriber history is filled rapidly, while the triangle subscriber one increases at the same speed as the
+orange triangle publisher sends the new samples. This is because samples of the orange triangle publisher history
+are removed faster than new ones are being sent, due to the lifespan QoS, while the red square publisher history samples
 are kept.
 
 .. image:: test10_2.png
-   :scale: 60 %
+   :scale: 100 %
    :alt: State 1
    :align: center
