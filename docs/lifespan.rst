@@ -67,7 +67,7 @@ samples stored on the publisher history are sent automatically to the new subscr
 Now let's explain what is happening on Instance2 and Instance3. As you can see, the square subscriber history is
 filled rapidly, while the triangle subscriber one is filled at the same speed as the orange triangle publisher
 sends new samples. This is because in the second case, samples in the orange triangle publisher history were removed
-by the Qos, and are no longer available to sent to the subscriber, while the red square publisher history samples were
+by the Qos, and are no longer available to be sent to the subscriber, while the red square publisher history samples were
 kept in the history.
 
 .. image:: test10_2.png

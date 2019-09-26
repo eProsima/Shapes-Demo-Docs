@@ -6,7 +6,7 @@ a value for the lease duration and announcement period can be set. If MANUAL_BY_
 duration can be configured, as the announcement period is not used for this mode.
 
 In the AUTOMATIC liveliness kind, the service takes the responsibility for renewing the timer associated to the lease 
-duration, and as long as the remote participant keep running and remains connected, all the entities within that
+duration, and as long as the remote participant keeps running and remains connected, all the entities within that
 participant will be considered alive.
 
 The other two kinds (MANUAL_BY_PARTICIPANT and MANUAL_BY_TOPIC) need a periodic assertion to consider the remote
@@ -42,7 +42,7 @@ First, launch two instances and create a publisher and a subscriber:
 If you go to the *Output Tab* on Instance2, you can observe that the subscriber has recovered the liveliness once it
 matches with the publisher.
 
-Now, open the Task Manager and kill the process corresponding to the publisher (Instnace1). As you can
+Now, open the Task Manager and kill the process corresponding to the publisher (Instance1). As you can
 see, the subscriber reported that liveliness was lost, as the publisher didn't terminate cleanly.
 
 .. image:: test8_2.png
