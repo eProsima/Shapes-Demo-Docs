@@ -8,8 +8,8 @@ defines the maximum interval between writes, while the subscriber one establishe
 the reader should receive a new sample.
 
 In this test, we are going to create a publisher and a subscriber with a deadline period higher than the write rate
-of the publisher to show the normal behavior of the system, and then we are going to increase that write rate
-showing like that what happens when the deadline period expires.
+of the publisher to show the normal behavior of the system. Then we will increase the write rate
+to illustrate what happens when the deadline is not met.
 
 **Step-by-Step**
 
@@ -30,7 +30,7 @@ First, launch two instances and create a publisher and a subscriber:
      (If the value of subscriber deadline duration is lower the entities don't match)
 
 You can see now the normal behavior of the system, where the publisher is sending new samples and the subscriber
-is receiving them before the deadline timer expires.
+is receiving them before the deadline expires.
 
 .. image:: test9_1.png
    :scale: 100 %
@@ -50,7 +50,7 @@ Now, let's increase the write rate:
    :align: center
 
 
-If you go to the *Output Tab*, you can observe that both of them are continuously missing the deadline,
+If you go to the *Output Tab*, you can observe that both publisher and subscriber are continuously missing the deadline,
 as the value established for the deadline period is lower than the publishing rate.
 
 .. image:: test9_4.png

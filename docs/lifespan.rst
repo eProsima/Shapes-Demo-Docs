@@ -3,7 +3,7 @@ Lifespan
 The Lifespan QoS establishes the maximum validity period of the samples saved on an entity's history. When
 the lifespan period elapses, the corresponding sample is automatically removed.
 
-Unlike other QoS, such as Deadline or Liveliness, this Qos does not provide a means to inform the user that
+Unlike other QoS, such as `Deadline <deadline.html>`__ or `Liveliness <liveliness.html>`__, this test does not provide a means to inform the user that
 the sample is being removed, which makes this test more complicated to illustrate. For this reason, we are
 going to create two publishers and two subscribers, and make only one of them use Lifespan, so that the effect
 of using this QoS can be graphically seen.
@@ -64,11 +64,11 @@ Now, create two subscribers:
 Note that when a new subscriber matches with the publisher, due to the TRANSIENT_LOCAL durability, all the
 samples stored on the publisher history are sent automatically to the new subscriber.
 
-Now let's explain what is happening on Instance2 and Instance3. As you can see, the square
-subscriber history is filled rapidly, while the triangle subscriber one increases at the same speed as the
-orange triangle publisher sends the new samples. This is because samples of the orange triangle publisher history
-are removed faster than new ones are being sent, due to the lifespan QoS, while the red square publisher history samples
-are kept.
+Now let's explain what is happening on Instance2 and Instance3. As you can see, the square subscriber history is
+filled rapidly, while the triangle subscriber one is filled at the same speed as the orange triangle publisher
+sends new samples. This is because in the second case, samples in the orange triangle publisher history were removed
+by the Qos, and are no longer available to sent to the subscriber, while the red square publisher history samples were
+kept in the history.
 
 .. image:: test10_2.png
    :scale: 100 %
