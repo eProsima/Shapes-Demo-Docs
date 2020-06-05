@@ -1,7 +1,7 @@
 Partition
 =========
 
-In Fast RTPS, you can use *Partitions* to group Subscribers and Publishers. If you deploy a Publisher with a partition, 
+In *Fast DDS*, you can use *Partitions* to group Subscribers and Publishers. If you deploy a Publisher with a partition, 
 only the subscriber with the same partition will receive data from it. In this demo, there are four partitions 
 (A, B, C and D). Additionally, you can select the “*” partition, that will be matched against all other partitions.
 

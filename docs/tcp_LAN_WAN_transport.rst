@@ -1,7 +1,7 @@
 TCP Transport
 ==============
 
-Fast RTPS transport layer could be adapted to specific network requirements. UDP transport is optimal for local network 
+*Fast DDS* transport layer could be adapted to specific network requirements. UDP transport is optimal for local network 
 applications but in order to interact on a Wide Area Network (WAN), where one or several NAT mappings may be enforced, 
 a TCP transport would be more suitable. Here we explain how Shapes Demo should be set up in order to fit some network 
 specific layouts.

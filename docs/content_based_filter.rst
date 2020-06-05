@@ -1,10 +1,11 @@
 Content Based Filter
 ====================
 
-In Fast RTPS, you can restrict the data that will be available to the subscriber to control network and CPU usage. When 
-you deploy a new Subscriber, you can check the Content Based Filter. This filter draws a shaded region in the shapes 
-window. Only the samples that are inside will be made available to the subscriber. You can resize and move this region 
-dynamically. 
+In *Fast DDS*, you can restrict the data that will be available to the subscriber to control network and CPU usage.
+When  you deploy a new Subscriber, you can check the Content Based Filter.
+This filter draws a shaded region in the shapes window.
+Only the samples that are inside will be made available to the subscriber.
+You can resize and move this region dynamically. 
 
 In this test, we are going to create two Publishers and two Subscriber, one with Content Based.
 

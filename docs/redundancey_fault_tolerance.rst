@@ -1,7 +1,7 @@
 Redundancy and Fault Tolerance
 ==============================
 
-Fast RTPS allows more than one Publisher to write data on the same Topic. You can allow all Publishers to have the 
+*Fast DDS* allows more than one Publisher to write data on the same Topic. You can allow all Publishers to have the 
 same relevance, or you can set one as the primary Publisher and keep the rest as secondary Publisher. In that case, 
 only the main Publisher can send data to the subscribers.
 
