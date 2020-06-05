@@ -113,7 +113,7 @@ please click *Options->Preferences* in the main bar. The following image shows t
 
 The user can customize several aspects of ShapesDemo operation:
 
-- **Transport Protocol:** UDP is the default transport protocol for Fast RTPS but TCP protocol is available. 
+- **Transport Protocol:** UDP is the default transport protocol for *Fast DDS* but TCP protocol is available. 
   In order to use TCP we must be aware of its point-to-point connection nature: one of the ShapesDemo instance must be 
   a TCP server and all the others must be TCP clients. To use TCP follow the next steps:
 

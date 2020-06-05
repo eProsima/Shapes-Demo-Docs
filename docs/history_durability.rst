@@ -1,7 +1,7 @@
 History and Durability
 ======================
 
-Fast RTPS allows Publishers to send data before Subscriber comes. All these publications are stored in the history of 
+*Fast DDS* allows Publishers to send data before Subscriber comes. All these publications are stored in the history of 
 each Publisher, therefore, when a subscriber arrives it has two options, to start from scratch or to request all 
 previous publications.
 
