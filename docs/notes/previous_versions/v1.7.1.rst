@@ -1,0 +1,9 @@
+Version 1.7.1
+^^^^^^^^^^^^^
+
+Change log:
+
+*   Support Fast RTPS 1.7.1.
+*   Bug fixing.
+
+
