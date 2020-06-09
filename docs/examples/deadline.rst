@@ -1,0 +1,68 @@
+.. _examples_deadline:
+
+Deadline
+========
+
+The Deadline QoS raises an alarm when the frequency of new samples falls below a predefined threshold.
+This policy can be useful for those cases which need periodical updates.
+
+It can be distinguished between publisher and subscriber deadline period.
+On the publisher side, that period defines the maximum interval between writes, while the subscriber establishes
+the maximum interval in which the reader should receive a new sample.
+
+In this test, a publisher and a subscriber with a deadline period higher than the write rate
+of the publisher will be created.
+That shows the normal behavior of the system.
+Then the write rate will be increased to illustrate the effects of non-compliance with the deadline.
+
+Step-by-step example implementation
+-----------------------------------
+
+First, launch two instances and create a publisher and a subscriber:
+
+1. Create a red square publisher:
+
+   - Start eProsima Shape Demo (this instance will be referred to as *Instance1*).
+   - Click on Publish.
+   - Select SQUARE option for Shape.
+   - Select RED for Color.
+   - Set Deadline Duration to 100. (The default write rate is 75 ms)
+
+2. Create a square subscriber:
+
+   - Start eProsima Shape Demo (this instance will be referred to as *Instance2*).
+   - Click on Subscribe.
+   - Select SQUARE option for Shape.
+   - Set a value for the Deadline Duration higher or equal to the one stated for the publisher.
+
+   .. warning::
+
+      If the value of the subscriber Deadline Duration is lower than the value stated for the publisher
+      the entities will not match.
+
+It can be seen now the normal behavior of the system, where the publisher is sending new samples and the subscriber
+is receiving them before the deadline expires.
+
+.. figure:: /01-figures/test9_1.png
+   :alt: State 1
+   :align: center
+
+Now, increase the write rate:
+
+3. On Instance1:
+
+   - Click on Options.
+   - Select Preferences.
+   - Set the update interval to 200.
+
+.. figure:: /01-figures/test9_3.png
+   :alt: State 2
+   :align: center
+
+
+On the *Output Tab* can be observed that both publisher and subscriber are continuously missing the deadline,
+as the value established for the deadline period is lower than the publishing rate.
+
+.. figure:: /01-figures/test9_4.png
+   :alt: State 2
+   :align: center
