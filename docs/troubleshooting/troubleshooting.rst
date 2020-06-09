@@ -3,13 +3,13 @@ Troubleshooting
 
 This document compiles the known compatibility issues with other Shapes Demo implementations and the possible solutions.
 
-Two instances in the same computer
+Two instances in the same machine
 ----------------------------------
 
-When using eProsima Shapes Demo and RTI Shapes Demo in the same computer the file
+When using eProsima Shapes Demo and RTI Shapes Demo in the same machine, the file
 *<Shapes Demo installation directory>/resource/xml/RTI_SHAPES_DEMO_QOS_PROFILES.xml* needs
-to be modified to force RTI to only use UDPv4 as transport.
-For this purpose, it is necessary to write the following lines inside the ``<qos_profile>`` element of the
+to be modified to force RTI to use the UDPv4 transport protocol only.
+This can be done writing the following lines inside the ``<qos_profile>`` element of the
 RTI_Shapes_Lib::Shapes_Default_Profile.
 
 .. code-block:: xml
@@ -32,13 +32,11 @@ RTI_Shapes_Lib::Shapes_Default_Profile.
         <!-- ... -->
     </qos_library>
 
-This setting is necessary to avoid the use of Shared Memory Transport.
+This setting avoids the use of Shared Memory Transport.
 
 Interoperability
 ================
 
 You can see an example of the interoperability between eProsima Shapes Demo and other RTPS compliant
-implementations in the following video:
-
-https://www.youtube.com/watch?v=e9_oAJDh-tY
+implementations in the following video: https://www.youtube.com/watch?v=e9_oAJDh-tY
 

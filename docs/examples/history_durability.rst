@@ -25,7 +25,7 @@ First, three instances are launched and a publisher is created in each of them:
 
 1 - Create a red square publisher:
 
-   - Start eProsima Shape Demo (this instance will be referred to as *Instance1*).
+   - Start eProsima Shapes Demo (this instance will be referred to as *Instance1*).
    - Click on Publish.
    - Select SQUARE option for Shape and RED for Color.
    - Change the History field from 6 to 100.
@@ -33,7 +33,7 @@ First, three instances are launched and a publisher is created in each of them:
 
 2 - Create an orange square publisher:
 
-   - Start eProsima Shape Demo (this instance will be referred to as *Instance2*).
+   - Start eProsima Shapes Demo (this instance will be referred to as *Instance2*).
    - Click on Publish.
    - Select SQUARE option for Shape and ORANGE for Color.
    - Change the History field from 6 to 100.
@@ -41,7 +41,7 @@ First, three instances are launched and a publisher is created in each of them:
 
 3 - Create a black square publisher:
 
-   - Start eProsima Shape Demo (this instance will be referred to as *Instance3*).
+   - Start eProsima Shapes Demo (this instance will be referred to as *Instance3*).
    - Click on Publish.
    - Select SQUARE option for Shape and BLACK for Color.
    - Change the History field from 6 to 100.

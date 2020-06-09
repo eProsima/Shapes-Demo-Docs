@@ -22,7 +22,7 @@ First, launch two instances and create a publisher and a subscriber:
 
 1. Create a red square publisher:
 
-   - Start eProsima Shape Demo (this instance will be referred to as *Instance1*).
+   - Start eProsima Shapes Demo (this instance will be referred to as *Instance1*).
    - Click on Publish.
    - Select SQUARE option for Shape.
    - Select RED for Color.
@@ -30,7 +30,7 @@ First, launch two instances and create a publisher and a subscriber:
 
 2. Create a square subscriber:
 
-   - Start eProsima Shape Demo (this instance will be referred to as *Instance2*).
+   - Start eProsima Shapes Demo (this instance will be referred to as *Instance2*).
    - Click on Subscribe.
    - Select SQUARE option for Shape.
    - Set a value for the Deadline Duration higher or equal to the one stated for the publisher.

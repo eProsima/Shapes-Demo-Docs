@@ -16,13 +16,13 @@ First, launch two instances and create a Publisher in each of them:
 
 1. Create a red square publisher:
 
-   - Start eProsima Shape Demo (this instance will be referred to as *Instance1*).
+   - Start eProsima Shapes Demo (this instance will be referred to as *Instance1*).
    - Click on Publish.
    - Select SQUARE option for Shape and RED for Color.
 
 2. Create an orange circle publisher:
 
-   - Start eProsima Shape Demo (this instance will be referred to as *Instance2*).
+   - Start eProsima Shapes Demo (this instance will be referred to as *Instance2*).
    - Click on Publish.
    - Select CIRCLE option for Shape and ORANGE for Color.
    - Change the History field from 6 to 1.
@@ -35,7 +35,7 @@ Then, create two subscriber:
 
 3. Create a circle subscriber:
 
-   - Start eProsima Shape Demo (this instance will be referred to as *Instance3*).
+   - Start eProsima Shapes Demo (this instance will be referred to as *Instance3*).
    - Click on Subscribe.
    - Select CIRCLE option for Shape.
    - Check Time Based an set 2000ms.

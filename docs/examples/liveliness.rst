@@ -27,7 +27,7 @@ First, launch two instances and create a publisher and a subscriber:
 
 1. Create a red square publisher:
 
-   - Start eProsima Shape Demo. (We will refer to this instance as Instance1)
+   - Start eProsima Shapes Demo. (We will refer to this instance as Instance1)
    - Click on Publish.
    - Select SQUARE option for Shape and RED for Color.
    - Select ``AUTOMATIC`` for liveliness kind.
@@ -35,7 +35,7 @@ First, launch two instances and create a publisher and a subscriber:
 
 2. Create a square subscriber:
 
-   - Start eProsima Shape Demo. (We will refer to this instance as Instance2)
+   - Start eProsima Shapes Demo. (We will refer to this instance as Instance2)
    - Click on Subscribe.
    - Select SQUARE option for Shape.
    - Select ``AUTOMATIC`` for liveliness kind.

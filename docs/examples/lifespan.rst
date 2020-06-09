@@ -18,7 +18,7 @@ First, launch an instance and create the two publishers:
 
 1. Create a red square publisher:
 
-   - Start eProsima Shape Demo (this instance will be referred to as *Instance1*).
+   - Start eProsima Shapes Demo (this instance will be referred to as *Instance1*).
    - Click on Publish.
    - Select SQUARE option for Shape and RED for Color.
    - Select ``TRANSIENT_LOCAL`` option for the Durability.
@@ -52,7 +52,7 @@ Now, create two subscribers:
 
 4. Create a square subscriber:
 
-   - Start eProsima Shape Demo (this instance will be referred to as *Instance2*).
+   - Start eProsima Shapes Demo (this instance will be referred to as *Instance2*).
    - Click on Subscribe.
    - Select SQUARE option for Shape.
    - Select ``TRANSIENT_LOCAL`` option for the Durability.
@@ -62,7 +62,7 @@ Now, create two subscribers:
 
 5. Create a triangle subscriber:
 
-    - Start eProsima Shape Demo (this instance will be referred to as *Instance3*).
+    - Start eProsima Shapes Demo (this instance will be referred to as *Instance3*).
     - Click on Subscribe.
     - Select TRIANGLE option for Shape.
     - Select ``TRANSIENT_LOCAL`` option for the Durability.
