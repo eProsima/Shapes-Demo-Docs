@@ -1,7 +1,9 @@
 Version 2.0.0
 =============
 
+Change log:
 
+*   Updated to support Fast DDS 2.0.0.
 
 Previous versions
 =================
