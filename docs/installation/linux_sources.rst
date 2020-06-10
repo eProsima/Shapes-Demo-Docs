@@ -31,7 +31,7 @@ To install eProsima Shapes Demo using colcon, please follow the steps below:
 
        .. note::
 
-           If this fails due to an Environment Error, add the :code:`--user` flag to the :code:`pip` installation
+           If this fails due to an Environment Error, add the ``--user`` flag to the ``pip`` installation
            command.
 
 3.  Create a `ShapesDemo` directory and download the repos file that will be used to install
@@ -41,7 +41,7 @@ To install eProsima Shapes Demo using colcon, please follow the steps below:
 
         mkdir -p ShapesDemo/src && cd ShapesDemo
         wget https://raw.githubusercontent.com/eProsima/ShapesDemo/master/ShapesDemo.repos
-        vcs import src < ShapesDemo.repos
+        vcs import src < shapes-demo.repos
 
 3.  Build the packages:
 

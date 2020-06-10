@@ -187,6 +187,7 @@ Two methods are provided:
 - Right click in an endpoint: An option to remove the endpoint is shown.
 - Pressing the delete button when the endpoint is selected.
 
+The output tab shows the output log messages.
 An example of the output tab is shown in the figure below.
 
 .. figure:: /01-figures/table2.png
