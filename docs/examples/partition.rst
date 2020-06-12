@@ -8,7 +8,7 @@ If a publisher with a partition is deployed, only the subscriber with the same p
 In this demo, there are four partitions (``A``, ``B``, ``C`` and ``D``).
 Additionally, you can select the ``*`` partition, which refers to all partitions.
 Please refer to
-`Fast DDS Partitions Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/advanced.html?#partitions>`_
+`Fast DDS Partitions Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/dds_layer/domain/domainParticipant/partition.html>`_
 for more information on partitions.
 
 In this test, three publishers (Square in Partition A, Circle in Partition B, and Triangle in Partition ``*``),
