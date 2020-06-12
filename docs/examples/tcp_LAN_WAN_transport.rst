@@ -5,7 +5,7 @@ TCP Transport
 UDP transport is optimal for local network applications, but in order to interact on a Wide Area Network (WAN), where
 one or several NAT mappings may be enforced, a TCP transport is more suitable.
 Please refer to
-`Fast DDS Transports Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/transport/transport.html>`_
+`Fast DDS Transports Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/transport.html>`_
 for more information.
 
 This section describes how Shapes Demo should be set up in order to fit some network specific layouts.
