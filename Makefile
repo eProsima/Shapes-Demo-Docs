@@ -60,7 +60,7 @@ test: html
 	doc8 --max-line-length 120 docs
 	@echo
 	@echo "RST checking finished."
-	$(SPHINXBUILD) -W -b spelling -b linkcheck $(ALLSPHINXOPTS) $(BUILDDIR)/spelling
+	$(SPHINXBUILD) -W -b spelling $(ALLSPHINXOPTS) $(BUILDDIR)/spelling
 	@echo
 	@echo "Spell checking finished. The results in $(BUILDDIR)/spelling."
 

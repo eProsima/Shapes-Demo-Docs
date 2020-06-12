@@ -84,4 +84,4 @@ However, a small red square is displayed on Instance3 since Instance1 has higher
    :align: center
 
 Repeating the creation of a publisher with higher strength (:ref:`2. Create a red square publisher <redundancy>`),
-a smale red square replicating the big red square from Instance2 can be seen again.
+a small red square replicating the big red square from Instance2 can be seen again.

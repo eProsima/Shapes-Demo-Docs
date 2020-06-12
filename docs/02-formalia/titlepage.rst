@@ -3,7 +3,7 @@
    :width: 100px
    :align: left
    :alt: eProsima
-   :target: http://www.eprosima.com/
+   :target: https://www.eprosima.com/
 
 
 eProsima Shapes Demo is an application in which Publishers and Subscribers are shapes of different colors and sizes
