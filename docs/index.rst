@@ -33,7 +33,7 @@ eProsima Shapes Demo
    /examples/discovery
    /examples/history_durability
    /examples/partition
-   /examples/redundancey_fault_tolerance
+   /examples/redundancy_fault_tolerance
    /examples/liveliness
    /examples/deadline
    /examples/lifespan

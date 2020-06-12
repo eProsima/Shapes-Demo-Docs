@@ -5,10 +5,12 @@ Deadline
 
 The Deadline QoS raises an alarm when the frequency of new samples falls below a predefined threshold.
 This policy can be useful for those cases which need periodical updates.
-
-It can be distinguished between publisher and subscriber deadline period.
-On the publisher side, that period defines the maximum interval between writes, while the subscriber establishes
-the maximum interval in which the reader should receive a new sample.
+There exists a distinction between publisher and subscriber deadline period.
+On the publisher side, that period defines the maximum interval between writes, while on the subscriber's, it
+establishes the maximum interval in which the reader expects to receive a new sample.
+Please refer to
+`Fast DDS LivelinessQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/dds_layer/core/policy/standardQosPolicies.html#livelinessqospolicy>`_
+for more information on Liveliness QoS.
 
 In this test, a publisher and a subscriber with a deadline period higher than the write rate
 of the publisher will be created.
@@ -40,8 +42,8 @@ First, launch two instances and create a publisher and a subscriber:
       If the value of the subscriber Deadline Duration is lower than the value stated for the publisher
       the entities will not match.
 
-It can be seen now the normal behavior of the system, where the publisher is sending new samples and the subscriber
-is receiving them before the deadline expires.
+In the following figure, the normal behavior of the system can be seen, where the publisher is sending new samples and
+the subscriber is receiving them before the deadline expires.
 
 .. figure:: /01-figures/test9_1.png
    :alt: State 1

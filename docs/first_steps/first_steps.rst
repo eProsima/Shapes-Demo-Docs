@@ -34,11 +34,11 @@ There are multiple parameters that the user can define in this menu:
 - **Partition:** The user can select different partitions to differentiate groups of publishers and subscribers.
   The user can select between four partitions (``A``, ``B``, ``C`` and ``D``).
   Additionally the user can select the ``*`` partition, that will be matched against all other partitions (see
-  `Fast DDS Particions Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/dds_layer/domain/domain.html>`_).
+  `Fast DDS Partitions Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/advanced.html?highlight=partition#wildcards-in-partitions>`_).
 
   .. note::
 
-    Using the wildcard (``\*``) partition is not the same as not using any partition.
+    Using the wildcard (``*``) partition is not the same as not using any partition.
     A publisher that uses the wildcard partition will not be matched with a subscriber that do not defines any
     partitions.
 
@@ -146,9 +146,9 @@ The user can customize several aspects of Shapes Demo operation:
         - Fill the *Server Port* input field with an available TCP port where the application will be listening for
           incoming connections.
 
-    .. warning::
+      .. warning::
 
-      The router NAT and computer firewall settings must allow external connections to the server port.
+        The router NAT and computer firewall settings must allow external connections to the server port.
 
     + To create a TCP client push the ``TCP Client`` button:
 

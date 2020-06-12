@@ -7,6 +7,9 @@ Redundancy and Fault Tolerance
 All publishers may have the same relevance, or one publisher can be set as the primary publisher and keep the rest as
 secondary publishers.
 In that case, only the main publisher can send data to the subscribers.
+Please refer to
+`Fast DDS OwnershipQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/dds_layer/core/policy/standardQosPolicies.html#ownershipqospolicy>`_
+for more information on Ownership QoS.
 
 The Ownership QoS determines if the Topic (Shape) is owned by a single publisher or not.
 There are two ownership options: ``SHARE`` or EXLUSIVE ownership.
@@ -32,6 +35,8 @@ First, launch two instances and create a publisher in each of them:
    - Set Strength to 1.
    - Set Size to 15.
 
+.. _redundancy:
+
 2. Create a red square publisher:
 
    - Start eProsima Shapes Demo (this instance will be referred to as *Instance2*).
@@ -44,12 +49,15 @@ First, launch two instances and create a publisher in each of them:
 
 A small red square on Instance1 and a big red square on Instance2 should be displayed.
 
-.. image:: /01-figures/test5_2.png
-   :scale: 100 %
+.. note::
+
+   The Instance3 shown in the image below creates a square subscriber. Its creation will be explained later.
+
+.. figure:: /01-figures/test5_2.png
    :alt: Initial state
    :align: center
 
-Now, create a subscriber.
+Then, create a subscriber.
 
 3. Create a square subscriber:
 
@@ -58,10 +66,9 @@ Now, create a subscriber.
    - Select SQUARE option for Shape.
    - Select ``EXCLUSIVE``.
 
-You should see a big square on Instance3, because Instance2 has a higher strength than Instance1.
+A big square on Instance3 should be seen, since Instance2 has a higher strength than Instance1.
 
-.. image:: /01-figures/test5_3.png
-   :scale: 100 %
+.. figure:: /01-figures/test5_3.png
    :alt: State 1
    :align: center
 
@@ -70,11 +77,11 @@ Response to a failure of the main publisher
 
 To see how the roles of the publishers change, Instance2 will be stopped.
 Initially, Instance2 had higher strength and a big red square on Instance2 was observed.
-However, a small red square is displayed on Instance2 because Instance1 has higher strength now.
+However, a small red square is displayed on Instance3 since Instance1 has higher strength now.
 
-.. image:: /01-figures/test5_4.png
-   :scale: 100 %
+.. figure:: /01-figures/test5_4.png
    :alt: State 2
    :align: center
 
-Repeating the second step, a big red square replicating the big red square movements in Instance2 can be seen again.
+Repeating the creation of a publisher with higher strength (:ref:`2. Create a red square publisher <redundancy>`),
+a smale red square replicating the big red square from Instance2 can be seen again.

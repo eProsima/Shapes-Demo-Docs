@@ -5,6 +5,9 @@ Time Based Filter
 Thus, the number of data updates in the subscriber can be restricted specifying the minimum separation time (in
 milliseconds) between updates.
 Any data received during this interval will be discarded.
+Please refer to
+`Fast DDS TimeBasedFilterQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/dds_layer/core/policy/standardQosPolicies.html#timebasedfilterqospolicy>`_
+for more information on Time Based Filter QoS.
 
 In this test, two publishers and two subscribers, one with a time based filter of 2000ms, will be created.
 You will see that one subscriber updates its position continuously, but the other jumps every two seconds.

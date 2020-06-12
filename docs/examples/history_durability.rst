@@ -3,19 +3,23 @@
 History and Durability
 ======================
 
-*Fast DDS* allows publishers to send data before subscriber comes.
-All these publications are stored in the history of each Publisher.
-Therefore, when a subscriber arrives it has two options, to start from scratch or to request all previous publications.
-It is the history configuration that determines the number of data that will keep in the send queue.
+A publisher can send messages throughout a Topic even if there are no DataReaders on the network.
+Moreover, a DataReader that joins to the Topic after some data has been written could be interested in accessing that
+information.
+The durability defines how the system will behave regarding those samples that existed on the Topic before the
+subscriber joins.
+Please refer to
+`Fast DDS DurabilityQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/dds_layer/core/policy/standardQosPolicies.html#durabilityqospolicy>`_
+for more information on Durability QoS.
 
 In the following example, the publishers' history is set to ``KEEP_LAST``, and
 there are two options for the durability configuration which are ``VOLATILE`` and ``TRANSIENT_LOCAL``.
 If ``VOLATILE`` is selected, the previous data samples will not be sent.
-However, if ``TRANSIENT_LOCAL`` is selected, the *n^th* previous data samples will be sent to the late-joining
+However, if ``TRANSIENT_LOCAL`` is selected, the :math:`n^{th}` previous data samples will be sent to the late-joining
 subscriber.
 
-One hundred red squares will be displayed in *Instance2* and *Instance3*, reflecting the movements of the red
-square of the publisher from *Instance1*.
+In this example, one hundred red squares will be displayed in *Instance2* and *Instance3*, reflecting the movements of
+the red square of the publisher from *Instance1*.
 The leading square indicates the current position of the published square.
 
 Step-by-step example implementation

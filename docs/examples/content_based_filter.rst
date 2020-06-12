@@ -1,7 +1,7 @@
 Content Based Filter
 ====================
 
-In *Fast DDS*, the data that will be available to the subscriber can be restricted to control network and CPU usage.
+In *Fast DDS*, the data available to the subscriber can be restricted to control network and CPU usage.
 The Content Based Filter can be checked when a new subscriber is deployed.
 This filter draws a shaded region in the instance windows.
 Only the samples that are covered by the shade will be available to the subscriber.
@@ -30,11 +30,15 @@ First, you have to launch two instances and create a Publisher in each of them:
 
 Your windows should look similar to the following image.
 
+.. note::
+
+   The Instance3 shown in the image below creates a circle subscriber. Its creation will be explained later.
+
 .. figure:: /01-figures/test6_2.png
    :alt: Initial state
    :align: center
 
-Now, create two subscriber:
+Then, create two subscribers:
 
 3. Create a circle subscriber:
 
@@ -50,7 +54,8 @@ Now, create two subscriber:
    - Select SQUARE option for Shape.
    - Change the History field from 6 to 1.
 
-It can be seen a shaded rectangle in Instance3. This is the filter for the samples of the Circle Shape.
+In the following figure, a shaded rectangle in Instance3 is shown.
+This is the filter for the samples of the Circle Shape.
 If the circle is out of the rectangle, it is not available for the subscriber.
 
 .. figure:: /01-figures/test6_3.png

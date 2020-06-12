@@ -3,7 +3,7 @@
 Linux installation from sources
 ===============================
 
-For simplicity, the eProsima Shapes Demo installation manual follow the Colcon installation, since eProsima *Fast DDS*
+For simplicity, the eProsima Shapes Demo installation manual follows the Colcon installation, since eProsima *Fast DDS*
 and *Fast CDR* dependencies are downloaded and installed at the same time that eProsima Shapes Demo is built.
 However, the user must assure that `Qt5 <https://doc.qt.io/qt-5/>`_ is installed.
 
@@ -16,11 +16,12 @@ To install eProsima Shapes Demo using colcon, please follow the steps below:
 
 1.  Install the eProsima Fast DDS dependencies and verify that the system meets the installation requirements.
     The complete list of requirements and dependencies can be found in the
-    `Fast DDS Linux Installation Manual <https://fast-dds.docs.eprosima.com/en/latest/installation/sources/sources_linux.html#linux-installation-from-sources>`_.
-    Specifically, follow the steps outlined in sections
-    `Requirements <https://fast-dds.docs.eprosima.com/en/latest/installation/sources/sources_linux.html#requirements>`_
-    and
-    `Dependencies <https://fast-dds.docs.eprosima.com/en/latest/installation/sources/sources_linux.html#dependencies>`_.
+    `Fast DDS Linux Installation Manual <https://fast-dds.docs.eprosima.com/en/v2.0.0/installation/sources/sources.html>`_.
+
+.. Specifically, follow the steps outlined in sections
+.. `Requirements <https://fast-dds.docs.eprosima.com/en/latest/installation/sources/sources_linux.html#requirements>`_
+.. and
+.. `Dependencies <https://fast-dds.docs.eprosima.com/en/latest/installation/sources/sources_linux.html#dependencies>`_.
 
 2.  Install the ROS 2 development tools (`Colcon <https://colcon.readthedocs.io/en/released/>`_ and
     `Vcstool <https://pypi.org/project/vcstool/>`_) by executing the following command:
@@ -29,10 +30,10 @@ To install eProsima Shapes Demo using colcon, please follow the steps below:
 
            pip install -U colcon-common-extensions vcstool
 
-       .. note::
+    .. note::
 
-           If this fails due to an Environment Error, add the ``--user`` flag to the ``pip`` installation
-           command.
+        If this fails due to an Environment Error, add the ``--user`` flag to the ``pip`` installation
+        command.
 
 3.  Create a `ShapesDemo` directory and download the repos file that will be used to install
     eProsima Shapes Demo and its dependencies:

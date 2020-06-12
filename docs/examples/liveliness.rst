@@ -9,13 +9,14 @@ liveliness.
 If any of the first two is selected, a value for the lease duration and announcement period can be set.
 However, if ``MANUAL_BY_TOPIC`` is selected, only the lease duration can be configured, as the announcement period is
 not used with this configuration.
-
 With the ``AUTOMATIC`` liveliness kind, the service takes the responsibility for renewing the timer associated to the
 lease duration, and as long as the remote participant keeps running and remains connected, all the entities within that
 participant will be considered alive.
-
 The other two kinds (``MANUAL_BY_PARTICIPANT`` and ``MANUAL_BY_TOPIC``) need a periodic assertion to consider the remote
 participants as alive.
+Please refer to
+`Fast DDS LivelinessQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/dds_layer/core/policy/standardQosPolicies.html#livelinessqospolicy>`_
+for more information on Liveliness QoS.
 
 In this test, a publisher and subscriber using ``AUTOMATIC`` liveliness will be created, and a lease duration value
 higher than the write rate of the publisher will be set.
@@ -46,11 +47,11 @@ First, launch two instances and create a publisher and a subscriber:
    :alt: Initial state
    :align: center
 
-On the *Output Tab* of Instance2, it can be observed that the subscriber has recovered the liveliness once it
+The *Output Tab* of Instance2 shows that the subscriber has recovered the liveliness once it
 matches with the publisher.
 
 Then, kill the process corresponding to the publisher (Instance1).
-It can be seen that the subscriber reported that liveliness was lost, as the publisher did not terminate cleanly.
+As a result, the subscriber reported that liveliness was lost, as the publisher did not terminate cleanly.
 
 .. figure:: /01-figures/test8_2.png
    :alt: State 1
