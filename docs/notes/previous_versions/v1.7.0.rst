@@ -1,0 +1,8 @@
+Version 1.7.0
+^^^^^^^^^^^^^
+
+Change log:
+
+*    Updated to support Fast RTPS.
+*    Added support to configure TCP transports in the GUI.
+

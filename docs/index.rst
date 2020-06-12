@@ -1,44 +1,60 @@
-eProsima Shapes Demo 
+eProsima Shapes Demo
 ====================
 
-Shapes Demo is an application that Publishes and Subscribes to shapes of different colors and sizes moving on a board. 
-Each Shape conforms its own topic: Square, Triangle or Circle. A single instance of the Shapes Demo can publish on or 
-subscribe to several topics at a time.
+.. include:: 02-formalia/titlepage.rst
 
-It can be used to demonstrate the capabilities of eProsima *Fast DDS* or as an interoperability demonstrator with other 
-implementations of the RTPS protocol.
+.. _introduction:
 
+.. toctree::
+   :caption: Installation Manual
+   :numbered: 5
+   :maxdepth: 2
 
-* :ref:`firststep`
-* :ref:`systemtest`
-* :ref:`troubleshooting`
+   /installation/windows_binaries
+   /installation/linux_binaries
+   /installation/linux_sources
 
 .. _firststep:
 
 .. toctree::
-	:caption: First Stepts
-	
-	firststept
-   
+   :caption: First Steps
+   :numbered: 5
+   :maxdepth: 2
+
+   /first_steps/first_steps
+
 .. _systemtest:
 
 .. toctree::
-	:caption: Shapes Demo Examples
-	
-	discovery
-	history_durability
-	partition
-	redundancey_fault_tolerance
-        liveliness
-        deadline
-        lifespan
-	content_based_filter
-	time_based_filter
-	tcp_LAN_WAN_transport
+   :caption: Shapes Demo Examples
+   :numbered: 5
+   :maxdepth: 2
 
-.. _troubleshooting:
+   /examples/discovery
+   /examples/history_durability
+   /examples/partition
+   /examples/redundancy_fault_tolerance
+   /examples/liveliness
+   /examples/deadline
+   /examples/lifespan
+   /examples/content_based_filter
+   /examples/time_based_filter
+   /examples/tcp_LAN_WAN_transport
+
+.. _troubleshootingindex:
 
 .. toctree::
-	:caption: Troubleshooting
-	
-	troubleshooting
+   :caption: Troubleshooting
+   :numbered: 5
+   :maxdepth: 2
+
+   /troubleshooting/troubleshooting
+   /troubleshooting/interoperability
+
+.. _index_notes:
+
+.. toctree::
+   :caption: Release Notes
+   :maxdepth: 2
+
+   /notes/notes
