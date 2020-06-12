@@ -34,7 +34,7 @@ There are multiple parameters that the user can define in this menu:
 - **Partition:** The user can select different partitions to differentiate groups of publishers and subscribers.
   The user can select between four partitions (``A``, ``B``, ``C`` and ``D``).
   Additionally the user can select the ``*`` partition, that will be matched against all other partitions (see
-  `Fast DDS Partitions Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/advanced.html?#partitions>`_).
+  `Fast DDS Partitions Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/dds_layer/domain/domainParticipant/partition.html>`_).
 
   .. note::
 
