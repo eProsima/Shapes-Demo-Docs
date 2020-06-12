@@ -16,11 +16,11 @@ To install eProsima Shapes Demo using colcon, please follow the steps below:
 
 1.  Install the eProsima Fast DDS dependencies and verify that the system meets the installation requirements.
     The complete list of requirements and dependencies can be found in the
-    `Fast DDS Linux Installation Manual <https://fast-dds.docs.eprosima.com/en/v2.0.0/installation/sources/sources_linux.html>`_.
+    `Fast DDS Linux Installation Manual <https://fast-dds.docs.eprosima.com/en/latest/installation/sources/sources_linux.html>`_.
     Specifically, follow the steps outlined in sections
-    `Requirements <https://fast-dds.docs.eprosima.com/en/v2.0.0/installation/sources/sources_linux.html#requirements>`_
+    `Requirements <https://fast-dds.docs.eprosima.com/en/latest/installation/sources/sources_linux.html#requirements>`_
     and
-    `Dependencies <https://fast-dds.docs.eprosima.com/en/v2.0.0/installation/sources/sources_linux.html#dependencies>`_.
+    `Dependencies <https://fast-dds.docs.eprosima.com/en/latest/installation/sources/sources_linux.html#dependencies>`_.
 
 2.  Install the ROS 2 development tools (`Colcon <https://colcon.readthedocs.io/en/released/>`_ and
     `Vcstool <https://pypi.org/project/vcstool/>`_) by executing the following command:

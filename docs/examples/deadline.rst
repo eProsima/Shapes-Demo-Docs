@@ -9,7 +9,7 @@ There exists a distinction between publisher and subscriber deadline period.
 On the publisher side, that period defines the maximum interval between writes, while on the subscriber's, it
 establishes the maximum interval in which the reader expects to receive a new sample.
 Please refer to
-`Fast DDS LivelinessQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/dds_layer/core/policy/standardQosPolicies.html#livelinessqospolicy>`_
+`Fast DDS LivelinessQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/core/policy/standardQosPolicies.html#livelinessqospolicy>`_
 for more information on Liveliness QoS.
 
 In this test, a publisher and a subscriber with a deadline period higher than the write rate

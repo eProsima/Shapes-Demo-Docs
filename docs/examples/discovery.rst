@@ -7,7 +7,7 @@ In *Fast DDS*, the discovery task is automatic.
 *Fast DDS* performs the task of finding the relevant information and distributing it to its destination.
 It means that new nodes are automatically discovered by any other in the network.
 Please refer to the
-`Fast DDS Discovery Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/discovery/discovery.html>`_
+`Fast DDS Discovery Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/discovery/discovery.html>`_
 for more information on the various *Fast DDS* discovery mechanisms.
 
 In this test, three Publishers and three Subscribers are launched.

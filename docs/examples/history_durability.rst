@@ -9,7 +9,7 @@ information.
 The durability defines how the system will behave regarding those samples that existed on the Topic before the
 subscriber joins.
 Please refer to
-`Fast DDS DurabilityQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/dds_layer/core/policy/standardQosPolicies.html#durabilityqospolicy>`_
+`Fast DDS DurabilityQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/core/policy/standardQosPolicies.html#durabilityqospolicy>`_
 for more information on Durability QoS.
 
 In the following example, the publishers' history is set to ``KEEP_LAST``, and

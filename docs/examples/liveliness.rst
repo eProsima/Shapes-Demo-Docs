@@ -15,7 +15,7 @@ participant will be considered alive.
 The other two kinds (``MANUAL_BY_PARTICIPANT`` and ``MANUAL_BY_TOPIC``) need a periodic assertion to consider the remote
 participants as alive.
 Please refer to
-`Fast DDS LivelinessQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/dds_layer/core/policy/standardQosPolicies.html#livelinessqospolicy>`_
+`Fast DDS LivelinessQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/core/policy/standardQosPolicies.html#livelinessqospolicy>`_
 for more information on Liveliness QoS.
 
 In this test, a publisher and subscriber using ``AUTOMATIC`` liveliness will be created, and a lease duration value

@@ -8,7 +8,7 @@ All publishers may have the same relevance, or one publisher can be set as the p
 secondary publishers.
 In that case, only the main publisher can send data to the subscribers.
 Please refer to
-`Fast DDS OwnershipQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/v2.0.0/fastdds/dds_layer/core/policy/standardQosPolicies.html#ownershipqospolicy>`_
+`Fast DDS OwnershipQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/core/policy/standardQosPolicies.html#ownershipqospolicy>`_
 for more information on Ownership QoS.
 
 The Ownership QoS determines if the Topic (Shape) is owned by a single publisher or not.
