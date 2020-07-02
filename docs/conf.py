@@ -68,10 +68,14 @@ def select_css(html_build_dir):
         the readthedocs website are built.
     :return: Returns a list of CSS files to be imported.
     """
+    common_css = '_static/css/eprosima_rtd_theme.css'
+    local_css = '_static/css/fiware_readthedocs.css'
     if download_css(html_build_dir):
-        return ['_static/css/eprosima_rtd_theme.css']
+        print('Appliying CSS style file: {}'.format(common_css))
+        return [common_css]
     else:
-        return ['_static/css/fiware_readthedocs.css']
+        print('Appliying CSS style file: {}'.format(local_css))
+        return [local_css]
 
 
 script_path = os.path.dirname(os.path.abspath(__file__))
