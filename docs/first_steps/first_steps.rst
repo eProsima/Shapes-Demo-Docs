@@ -117,7 +117,7 @@ The eProsima Shapes Demo application allows the user to define additional option
 To see the Options window, please go to *Options->Preferences* in the main bar.
 The following image shows the Options Menu.
 
-.. image:: /01-figures/options.png
+.. image:: /01-figures/LAN_settings_options.png
    :scale: 75 %
    :alt: Options Window
    :align: center
@@ -160,6 +160,12 @@ The user can customize several aspects of Shapes Demo operation:
 
     + Push the *Start* button in order to resume Shapes Demo operation.
 
+- **Shared Memory Transport:** Fast DDS transport using Shared Memory Segment for Participants running in the same
+      host.
+
+- **Intraprocess:** Allow Intraprocess delivery when two Participants run in the same process.
+
+- **Data SHaring:** Allow Data Sharing delivery when two Participants run in the same process.
 
 - **Domain ID:** The user can select different Domain IDs.
   Shapes Demo instances using different Domain IDs will not communicate.
