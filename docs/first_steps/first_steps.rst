@@ -110,69 +110,76 @@ has additional elements:
 
     Using Lifespan QoS will not have any visual effect.
 
-Other Options
--------------
+Participant configuration
+-------------------------
 
-The eProsima Shapes Demo application allows the user to define additional options.
-To see the Options window, please go to *Options->Preferences* in the main bar.
+The eProsima Shapes Demo application allows the user to define Participant policies.
+To see the Options window, please go to *Options->Participant Configuration* in the main bar.
 The following image shows the Options Menu.
 
-.. image:: /01-figures/LAN_settings_options.png
+.. image:: /01-figures/participant.png
    :scale: 75 %
    :alt: Options Window
    :align: center
 
-The user can customize several aspects of Shapes Demo operation:
+- **Transport Protocol:**  You can select between UDP protocol, TCP LAN Server, TCP WAN Server or TCP Client,
+  and Shared Memory protocol.
 
-- **Transport Protocol:** UDP is the default transport protocol for *Fast DDS* but TCP protocol is also available
-  (see
-  `Fast DDS Transports Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/transport.html>`_).
+  - **UDP:** With UDP Protocol the applicacion will work sending multicast packets to communicate with other apps.
 
-  .. warning::
+  - **TCP:** TCP protocol needs a minimal configuration to create the connection between the machines:
 
-    In order to use the TCP its point-to-point connection nature must be well known: one of the Shapes Demo instance
-    must be a TCP server and all the others must be TCP clients.
+    - If the applicacion is going to run as a *LAN server*, it only needs to set the listening port where it is going to
+      accept connections (note that firewall must be configured to allow inbound traffic).
 
-  To use TCP follow the next steps:
+    - If the applicacion is going to run as a *WAN server*, it needs to set the listening port where it is going to
+      accept connections and the server WAN address (note that firewall must be configured to allow inbound traffic
+      and router must relay listening port traffic to server machine).
 
-    + Push the *Stop* button in order to end UDP use. This will automatically remove all publishers and subscribers
-      from this instance.
+    - If the applicacion is going to run as a *client* it needs to know the IP address of the server (or its WAN address
+      if both instances don't share network) and the port where server is listening for connections.
 
-    + To create a TCP LAN server push ``TCP LAN Server`` button and fill the *Server Port* input field with an available
-      port. It is the port where the application will be listening for incoming connections.
+  - **Shared Memory (SHM):** Activating Shared Memory protocol will use the Shared Memory Transport, a *Fast DDS*
+    feature that allows a faster and more efficient communication for Participants running in the same host.
 
-    + To create a TCP WAN server push the ``TCP WAN Server`` button:
+  - **Default** In case no transport has been activated, *Fast DDS* default transports will be used (UDP + SHM)
+    (see
+    `Fast DDS Transports Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/transport.html>`_).
 
-        - Fill the *WAN IP* input field with the public IPv4 router address.
-        - Fill the *Server Port* input field with an available TCP port where the application will be listening for
-          incoming connections.
+- **Same host delivery:**  *Fast DDS* has some features that allow Participants running in the same host or process
+  to share resources in order to improve the communication:
 
-      .. warning::
+  - **Intraprocess:** Allow using Intraprocess delivery when both Endpoints are running in the same process.
 
-        The router NAT and computer firewall settings must allow external connections to the server port.
+  - **Data Sharing:** Allow using Data Sharing delivery when both Endpoints are running in the same host.
 
-    + To create a TCP client push the ``TCP Client`` button:
-
-        - Fill the *Server IP* input field with the IP address of the server.
-        - If client and server do not share the same network because the server is behind a NAT, the WAN IP address of
-          the server gateway must be specified.
-        - Fill the *Server port* input field with the corresponding server listening port.
-
-    + Push the *Start* button in order to resume Shapes Demo operation.
-
-- **Shared Memory Transport:** Fast DDS transport using Shared Memory Segment for Participants running in the same
-      host.
-
-- **Intraprocess:** Allow Intraprocess delivery when two Participants run in the same process.
-
-- **Data SHaring:** Allow Data Sharing delivery when two Participants run in the same process.
-
-- **Domain ID:** The user can select different Domain IDs.
+- **Domain:** The user can select different Domain IDs.
   Shapes Demo instances using different Domain IDs will not communicate.
   To modify the Domain ID the user needs to stop the participant (thus removing all existing publishers and
   subscribers) and start a new one with the new Domain ID.
   See
   `Fast DDS Domain Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/domain/domain.html>`_.
+
+- **Statistics:** The user can activate *Fast DDS Statistics module* so different instrumentation data could be
+  collected and analyzed by the *Fast DDS Statistics Backend*, or be represented by *Fast DDS Monitor*.
+  This module requires to have compiled *Fast DDS* with Statistics Module ON.
+
+In order to change the Participant, in case there is a Participant running it should be stopped.
+This will drop every endpoint already created.
+
+Preferences
+-----------
+
+The eProsima Shapes Demo application allows the user to define additional options.
+To see the Options window, please go to *Options->Preferences* in the main bar.
+The following image shows the Options Menu.
+
+.. image:: /01-figures/preferences.png
+   :scale: 75 %
+   :alt: Options Window
+   :align: center
+
+The user can customize several aspects of Shapes Demo operation:
 
 - **Update interval:** This value changes the publication period for all the publishers.
 
