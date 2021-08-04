@@ -126,8 +126,12 @@ The following image shows the Options Menu.
   and Shared Memory protocol.
 
   - **UDP:** With UDP Protocol the applicacion will work sending multicast packets to communicate with other apps.
+    (See
+    `Fast DDS UDP Transport Documentation <https://fast-dds.docs.eprosima.com/en/v2.3.4/fastdds/transport/udp/udp.html#transport-udp-udp>`_).
 
   - **TCP:** TCP protocol needs a minimal configuration to create the connection between the machines:
+    (See
+    `Fast DDS TCP Transport Documentation <https://fast-dds.docs.eprosima.com/en/v2.3.4/fastdds/transport/tcp/tcp.html#transport-tcp-tcp>`_).
 
     - If the applicacion is going to run as a *LAN server*, it only needs to set the listening port where it is going to
       accept connections (note that firewall must be configured to allow inbound traffic).
@@ -141,28 +145,36 @@ The following image shows the Options Menu.
 
   - **Shared Memory (SHM):** Activating Shared Memory protocol will use the Shared Memory Transport, a *Fast DDS*
     feature that allows a faster and more efficient communication for Participants running in the same host.
+    (See
+    `Fast DDS Shared Memory Transport Documentation <https://fast-dds.docs.eprosima.com/en/v2.3.4/fastdds/transport/shared_memory/shared_memory.html#transport-sharedmemory-sharedmemory>`_).
 
   - **Default** In case no transport has been activated, *Fast DDS* default transports will be used (UDP + SHM)
-    (see
+    (See
     `Fast DDS Transports Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/transport.html>`_).
 
 - **Same host delivery:**  *Fast DDS* has some features that allow Participants running in the same host or process
   to share resources in order to improve the communication:
 
   - **Intraprocess:** Allow using Intraprocess delivery when both Endpoints are running in the same process.
+    (See
+    `Fast DDS Intraprocess Documentation <https://fast-dds.docs.eprosima.com/en/v2.3.4/fastdds/transport/intraprocess.html#intraprocess-delivery>`_).
 
   - **Data Sharing:** Allow using Data Sharing delivery when both Endpoints are running in the same host.
+    (See
+    `Fast DDS Data Sharing Documentation <https://fast-dds.docs.eprosima.com/en/v2.3.4/fastdds/transport/datasharing.html#datasharing-delivery>`_).
 
 - **Domain:** The user can select different Domain IDs.
   Shapes Demo instances using different Domain IDs will not communicate.
   To modify the Domain ID the user needs to stop the participant (thus removing all existing publishers and
   subscribers) and start a new one with the new Domain ID.
-  See
-  `Fast DDS Domain Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/domain/domain.html>`_.
+  (See
+  `Fast DDS Domain Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/domain/domain.html>`_).
 
 - **Statistics:** The user can activate *Fast DDS Statistics module* so different instrumentation data could be
   collected and analyzed by the *Fast DDS Statistics Backend*, or be represented by *Fast DDS Monitor*.
   This module requires to have compiled *Fast DDS* with Statistics Module ON.
+  (See
+  `Fast DDS Statistics Module Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/statistics/statistics.html>`_).
 
 In order to change the Participant, in case there is a Participant running it should be stopped.
 This will drop every endpoint already created.

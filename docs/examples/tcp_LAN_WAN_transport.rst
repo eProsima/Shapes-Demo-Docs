@@ -70,17 +70,17 @@ The following image shows server and client settings:
 *   On the client side, the *server IP* field contains the server's router IP address, i.e. the Router S IP address
     (``192.168.1.75``).
     The client's router can understand this address and properly lead the outbound traffic.
-*   On the server side, the *WAN IP* field contains the server's router IP address, i.e. i.e. the Router S IP address
+*   On the server side, the *WAN IP* field contains the server's router IP address, i.e. the Router S IP address
     (``192.168.1.75``) since Router S NAT settings relay inbound traffic to server's TCP port towards Server computer.
+
+Client TCP side:
+
+.. figure:: /01-figures/tcp_client_options.png
+    :alt: WAN Client settings options
+    :align: center
 
 Server TCP side:
 
 .. figure:: /01-figures/tcp_wan_server_options.png
    :alt: WAN Server settings options
-   :align: center
-
-Client TCP side:
-
-.. figure:: /01-figures/tcp_client_options.png
-   :alt: WAN Client settings options
    :align: center
