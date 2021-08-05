@@ -17,7 +17,7 @@ TCP over LAN can be tested in a scenario where several machines share the same L
 nevertheless, UDP performs better and is the advisable choice in practical situations.
 For this configuration example, one of the machines set up eProsima Shapes Demo as a server and all the others as
 clients.
-Assume that the server LAN IP address is ``192.168.2.49``, then
+Assume that the server LAN IP address is ``192.168.1.75``, then
 all clients instances of eProsima Shapes Demo deployed on other machines must specify this IP Server address.
 In this case, the 5100 port is selected as TCP port, but any other available TCP port is valid.
 
@@ -25,12 +25,19 @@ In this case, the 5100 port is selected as TCP port, but any other available TCP
 
     The server firewall must allow inbound traffic on the selected port.
 
+Server TCP side:
 
-.. image:: /01-figures/LAN_settings_options.png
+.. image:: /01-figures/tcp_lan_server_options.png
    :scale: 100 %
-   :alt: LAN settings options
+   :alt: LAN Server settings options
    :align: center
 
+Client TCP side:
+
+.. image:: /01-figures/tcp_client_options.png
+   :scale: 100 %
+   :alt: LAN Client settings options
+   :align: center
 
 WAN configuration
 -----------------
@@ -41,15 +48,15 @@ This may happen if the server and clients are in a different LANs of the same WA
 To test this scenario we used the network architecture shown in the figure below.
 It contains the following elements:
 
-*   A Main Router which simulates the WAN network.
-    In this network Router C has address ``192.168.1.74`` and Router S has address ``192.168.1.75``.
-*   A client LAN network managed by Router C.
-*   A server LAN network managed by Router S.
-    The Router S NAT settings relay any inbound TCP traffic to port 5100 towards Sever machine.
-    The TCP port 5100 was arbitrarily chosen, any available port will do.
-*   An eProsima Shapes Demo client running in the machine with IPv4 address ``192.168.2.17``.
-*   An eProsima Shapes Demo server running in the machine with IPv4 address ``192.168.3.49``.
-    The Server machine firewall settings allow inbound TCP traffic to port 5100.
+- A Main Router which simulates the WAN network.
+  In this network Router C has address ``192.168.1.74`` and Router S has address ``192.168.1.75``.
+- A client LAN network managed by Router C.
+- A server LAN network managed by Router S.
+  The Router S NAT settings relay any inbound TCP traffic to port 5100 towards Sever machine.
+  The TCP port 5100 was arbitrarily chosen, any available port will do.
+- An eProsima Shapes Demo client running in the machine with IPv4 address ``192.168.2.17``.
+- An eProsima Shapes Demo server running in the machine with IPv4 address ``192.168.3.49``.
+  The Server machine firewall settings allow inbound TCP traffic to port 5100.
 
 .. figure:: /01-figures/WAN_network_layout.png
    :alt: WAN test layout
@@ -63,10 +70,17 @@ The following image shows server and client settings:
 *   On the client side, the *server IP* field contains the server's router IP address, i.e. the Router S IP address
     (``192.168.1.75``).
     The client's router can understand this address and properly lead the outbound traffic.
-*   On the server side, the *WAN IP* field contains the server's router IP address, i.e. i.e. the Router S IP address
+*   On the server side, the *WAN IP* field contains the server's router IP address, i.e. the Router S IP address
     (``192.168.1.75``) since Router S NAT settings relay inbound traffic to server's TCP port towards Server computer.
 
-.. figure:: /01-figures/WAN_settings_options.png
-   :alt: WAN settings options
-   :align: center
+Client TCP side:
 
+.. figure:: /01-figures/tcp_client_options.png
+    :alt: WAN Client settings options
+    :align: center
+
+Server TCP side:
+
+.. figure:: /01-figures/tcp_wan_server_options.png
+   :alt: WAN Server settings options
+   :align: center
