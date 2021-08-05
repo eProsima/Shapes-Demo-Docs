@@ -127,11 +127,11 @@ The following image shows the Options Menu.
 
   - **UDP:** With UDP Protocol the applicacion will work sending multicast packets to communicate with other apps.
     (See
-    `Fast DDS UDP Transport Documentation <https://fast-dds.docs.eprosima.com/en/v2.3.4/fastdds/transport/udp/udp.html#transport-udp-udp>`_).
+    `Fast DDS UDP Transport Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/udp/udp.html#transport-udp-udp>`_).
 
   - **TCP:** TCP protocol needs a minimal configuration to create the connection between the machines:
     (See
-    `Fast DDS TCP Transport Documentation <https://fast-dds.docs.eprosima.com/en/v2.3.4/fastdds/transport/tcp/tcp.html#transport-tcp-tcp>`_).
+    `Fast DDS TCP Transport Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/tcp/tcp.html#transport-tcp-tcp>`_).
 
     - If the applicacion is going to run as a *LAN server*, it only needs to set the listening port where it is going to
       accept connections (note that firewall must be configured to allow inbound traffic).
@@ -141,12 +141,12 @@ The following image shows the Options Menu.
       and router must relay listening port traffic to server machine).
 
     - If the applicacion is going to run as a *client* it needs to know the IP address of the server (or its WAN address
-      if both instances don't share network) and the port where server is listening for connections.
+      if both instances don't share network) and the port where the server is listening for connections.
 
   - **Shared Memory (SHM):** Activating Shared Memory protocol will use the Shared Memory Transport, a *Fast DDS*
     feature that allows a faster and more efficient communication for Participants running in the same host.
     (See
-    `Fast DDS Shared Memory Transport Documentation <https://fast-dds.docs.eprosima.com/en/v2.3.4/fastdds/transport/shared_memory/shared_memory.html#transport-sharedmemory-sharedmemory>`_).
+    `Fast DDS Shared Memory Transport Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/shared_memory/shared_memory.html#transport-sharedmemory-sharedmemory>`_).
 
   - **Default** In case no transport has been activated, *Fast DDS* default transports will be used (UDP + SHM)
     (See
@@ -157,11 +157,11 @@ The following image shows the Options Menu.
 
   - **Intraprocess:** Allow using Intraprocess delivery when both Endpoints are running in the same process.
     (See
-    `Fast DDS Intraprocess Documentation <https://fast-dds.docs.eprosima.com/en/v2.3.4/fastdds/transport/intraprocess.html#intraprocess-delivery>`_).
+    `Fast DDS Intraprocess Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/intraprocess.html#intraprocess-delivery>`_).
 
   - **Data Sharing:** Allow using Data Sharing delivery when both Endpoints are running in the same host.
     (See
-    `Fast DDS Data Sharing Documentation <https://fast-dds.docs.eprosima.com/en/v2.3.4/fastdds/transport/datasharing.html#datasharing-delivery>`_).
+    `Fast DDS Data Sharing Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/datasharing.html#datasharing-delivery>`_).
 
 - **Domain:** The user can select different Domain IDs.
   Shapes Demo instances using different Domain IDs will not communicate.
@@ -176,7 +176,7 @@ The following image shows the Options Menu.
   (See
   `Fast DDS Statistics Module Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/statistics/statistics.html>`_).
 
-In order to change the Participant, in case there is a Participant running it should be stopped.
+In case that the Participant is already running, it should be stopped in order to change its configuration.
 This will drop every endpoint already created.
 
 Preferences
