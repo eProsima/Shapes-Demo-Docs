@@ -1,13 +1,21 @@
-Version 2.3.2
+Version 2.3.4
 =============
 
-Change log:
+This release includes the following **improvements**:
 
-*   Updated to support Fast DDS 2.3.2.
+1. Updated to support Fast DDS v2.3.4
+1. Updated to use Fast DDS DDS API
+1. SHM can be selected as transport
+1. Intra-process and datasharing can be enabled/disabled for Shapes Demo DomainParticipants
+1. Fast DDS Statistics module can be enabled for Shapes Demo DomainParticipants
+1. Separate participant configuration from other options
+1. Change License to GNU
+
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.3.2.rst
 .. include:: previous_versions/v2.3.1.rst
 .. include:: previous_versions/v2.3.0.rst
 .. include:: previous_versions/v2.2.0.rst
