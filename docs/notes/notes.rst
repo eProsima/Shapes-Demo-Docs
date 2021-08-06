@@ -9,7 +9,7 @@ This release includes the following **improvements**:
 1. Intra-process and datasharing can be enabled/disabled for Shapes Demo DomainParticipants
 1. Fast DDS Statistics module can be enabled for Shapes Demo DomainParticipants
 1. Separate participant configuration from other options
-1. Change License to GNU
+1. Change License to GNU GPLv3, to be compliant with Qt's license
 
 
 Previous versions
