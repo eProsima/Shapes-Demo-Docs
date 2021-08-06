@@ -125,7 +125,7 @@ The following image shows the Options Menu.
 - **Transport Protocol:**  You can select between UDP protocol, TCP LAN Server, TCP WAN Server or TCP Client,
   and Shared Memory protocol.
 
-  - **UDP:** With UDP Protocol the applicacion will work sending multicast packets to communicate with other apps.
+  - **UDP:** With UDP Protocol the application will work sending multicast packets to communicate with other apps.
     (See
     `Fast DDS UDP Transport Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/udp/udp.html#transport-udp-udp>`_).
 
@@ -133,14 +133,14 @@ The following image shows the Options Menu.
     (See
     `Fast DDS TCP Transport Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/tcp/tcp.html#transport-tcp-tcp>`_).
 
-    - If the applicacion is going to run as a *LAN server*, it only needs to set the listening port where it is going to
+    - If the application is going to run as a *LAN server*, it only needs to set the listening port where it is going to
       accept connections (note that firewall must be configured to allow inbound traffic).
 
-    - If the applicacion is going to run as a *WAN server*, it needs to set the listening port where it is going to
+    - If the application is going to run as a *WAN server*, it needs to set the listening port where it is going to
       accept connections and the server WAN address (note that firewall must be configured to allow inbound traffic
       and router must relay listening port traffic to server machine).
 
-    - If the applicacion is going to run as a *client* it needs to know the IP address of the server (or its WAN address
+    - If the application is going to run as a *client* it needs to know the IP address of the server (or its WAN address
       if both instances don't share network) and the port where the server is listening for connections.
 
   - **Shared Memory (SHM):** Activating Shared Memory protocol will use the Shared Memory Transport, a *Fast DDS*
