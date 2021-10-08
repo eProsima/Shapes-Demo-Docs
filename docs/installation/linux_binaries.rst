@@ -3,33 +3,42 @@
 Linux installation from binaries
 ================================
 
-The following explains how to launch the eProsima Shapes Demo application on Linux systems running Ubuntu OS without
-the need for compilation. To do this, a Docker image will be used.
+eProsima provides the eProsima Fast DDS Suite Docker image for those who want a quick demonstration of Fast DDS running on an Ubuntu
+platform. It can be downloaded from `eProsima's downloads page <https://eprosima.com/index.php/downloads-all>`_.
 
-1.  Download and install Docker application. Open a terminal and type the following command:
+This Docker image was built for Ubuntu 20.04 (Focal Fossa).
 
-    .. code-block:: bash
+To run this container you need Docker installed. From a terminal run
 
-        sudo apt-get install docker.io
+.. code-block:: bash
 
-2.  Download the Docker image file from https://eprosima.com/index.php/downloads-all.
+    $ sudo apt install docker.io
 
-3.  Allow root to use graphical interface:
+1.  Allow root to use graphical interface:
 
-    .. code-block:: bash
+.. code-block:: bash
 
-        xhost local:root
+    xhost local:root
 
-4.  Load the Docker image:
+2.  Load the Docker image:
 
-    .. code-block:: bash
+.. code-block:: bash
 
-        docker load -i ubuntu-fast-dds-shapesdemo_2.0.0.tar
+    docker load -i ubuntu-fastdds-suite:<FastDDS-Version>.tar
 
-5.  Run the Docker image:
+3.  Run the Docker image:
 
-    .. code-block:: bash
+.. code-block:: bash
 
-        docker run -it --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix ubuntu-fast-dds-shapesdemo:v2.0.0
+    docker run -it --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
+    ubuntu-fastdds-suite:<FastDDS-Version>
 
+4.  Launch the Shapes Demo:
+
+.. code-block:: bash
+
+    ShapesDemo
+
+For more information regarding the capabilities of eProsima's Fast DDS Suite Docker image, you can check the
+:ref:`Fast DDS Docker Image documentation <fast_dds_suite_examples>`
 
