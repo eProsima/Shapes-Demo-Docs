@@ -25,7 +25,7 @@ This Docker image contains the complete Fast DDS suite. This includes:
   compute in real time statistical measurements on these parameters (mean, variance, standard deviation, etc.).
 
   You can read more about this application on the `Fast DDS Monitor documentation page
-  <https://eprosima-shapes-demo.readthedocs.io/>`_.
+  <https://fast-dds-monitor.readthedocs.io/>`_.
 
 - :ref:`Shapes Demo <fast_dds_suite_shapes_demo>`: eProsima Shapes Demo is an application in which Publishers and
   Subscribers are shapes of different colors and sizes moving on a board. Each shape refers to its own topic: Square,
@@ -76,7 +76,7 @@ This is a minimal example that will perform a Publisher/Subscriber match and sta
  split-window "./HelloWorldExample subscriber" \; \
  select-layout even-vertical
 
-This example is not constrained to the current instance. It's possible to run several instances of this
+This example is not constrained to the current instance. It is possible to run several instances of this
 container to check the communication between them by running the following from each container.
 
 .. code-block:: bash
