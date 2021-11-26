@@ -1,10 +1,9 @@
-Version 2.4.0
+Version 2.4.1
 =============
 
 This release includes the following **improvements**:
 
-* Updated to support Fast DDS v2.4.0
-* Fixed link to troubleshooting documentation
+* Updated to support Fast DDS v2.4.1
 
 
 Previous versions
