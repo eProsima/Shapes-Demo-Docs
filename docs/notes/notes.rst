@@ -1,14 +1,15 @@
-Version 2.4.1
+Version 2.5.0
 =============
 
 This release includes the following **improvements**:
 
-* Updated to support Fast DDS v2.4.1
+* Updated to support Fast DDS v2.5.0
 
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.4.1.rst
 .. include:: previous_versions/v2.4.0.rst
 .. include:: previous_versions/v2.3.4.rst
 .. include:: previous_versions/v2.3.2.rst
