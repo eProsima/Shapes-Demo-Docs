@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# firstSteps documentation build configuration file, created by
+# Shapes Demo documentation build configuration file, created by
 # sphinx-quickstart on Thu Nov 10 11:07:37 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -334,7 +334,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'firstSteps.tex', u'firstSteps Documentation',
+    (master_doc, 'ShapesDemo.tex', u'Shapes Demo Documentation',
      u'eProsima software team', 'manual'),
 ]
 
@@ -376,7 +376,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'firststeps', u'firstSteps Documentation',
+    (master_doc, 'shapes-demo', u'Shapes Demo Documentation',
      [author], 1)
 ]
 
