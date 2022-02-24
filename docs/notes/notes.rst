@@ -1,9 +1,9 @@
-Version 2.5.0
+Version 2.5.1
 =============
 
 This release includes the following **improvements**:
 
-* Updated to support Fast DDS v2.5.0
+* Updated to support Fast DDS v2.5.1
 
 
 Previous versions
