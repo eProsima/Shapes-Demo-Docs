@@ -1,14 +1,16 @@
-Version 2.5.1
+Version 2.6.0
 =============
 
-This release includes the following **improvements**:
+The minor release adds the following **improvements** to support Fast DDS v2.6.0:
 
-* Updated to support Fast DDS v2.5.1
-
+* Use Fast DDS content filter API to perform content filtering
+* Update type support with Fast DDS-Gen v2.1.2
+* Avoid sending type object and type information
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.5.1.rst
 .. include:: previous_versions/v2.5.0.rst
 .. include:: previous_versions/v2.4.1.rst
 .. include:: previous_versions/v2.4.0.rst
