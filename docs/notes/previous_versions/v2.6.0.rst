@@ -1,0 +1,8 @@
+Version 2.6.0
+^^^^^^^^^^^^^
+
+The minor release adds the following **improvements** to support Fast DDS v2.6.0:
+
+* Use Fast DDS content filter API to perform content filtering
+* Update type support with Fast DDS-Gen v2.1.2
+* Avoid sending type object and type information
