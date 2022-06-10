@@ -1,15 +1,15 @@
-Version 2.6.0
+Version 2.6.1
 =============
 
-The minor release adds the following **improvements** to support Fast DDS v2.6.0:
+This patch release adds the following **improvements**:
 
-* Use Fast DDS content filter API to perform content filtering
-* Update type support with Fast DDS-Gen v2.1.2
-* Avoid sending type object and type information
+* Support for Fast DDS v2.6.1
+* Option to use ROS 2 compatible topics to interact with ROS 2 application
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.6.0.rst
 .. include:: previous_versions/v2.5.1.rst
 .. include:: previous_versions/v2.5.0.rst
 .. include:: previous_versions/v2.4.1.rst
