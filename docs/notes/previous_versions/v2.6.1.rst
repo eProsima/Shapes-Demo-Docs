@@ -1,0 +1,7 @@
+Version 2.6.1
+^^^^^^^^^^^^^
+
+This patch release adds the following **improvements**:
+
+* Support for Fast DDS v2.6.1
+* Option to use ROS 2 compatible topics to interact with ROS 2 application

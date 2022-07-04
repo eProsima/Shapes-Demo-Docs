@@ -1,14 +1,15 @@
-Version 2.6.1
+Version 2.7.0
 =============
 
 This patch release adds the following **improvements**:
 
-* Support for Fast DDS v2.6.1
-* Option to use ROS 2 compatible topics to interact with ROS 2 application
+* Support for Fast DDS v2.7.0
+* The ShapesDemo's :class:`DomainParticipant` acts as :class:`TypeLookup` server.
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.6.1.rst
 .. include:: previous_versions/v2.6.0.rst
 .. include:: previous_versions/v2.5.1.rst
 .. include:: previous_versions/v2.5.0.rst
