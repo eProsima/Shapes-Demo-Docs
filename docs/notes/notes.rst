@@ -1,14 +1,14 @@
-Version 2.7.0
+Version 2.7.1
 =============
 
 This patch release adds the following **improvements**:
 
-* Support for Fast DDS v2.7.0
-* The ShapesDemo's :class:`DomainParticipant` acts as :class:`TypeLookup` server.
+* Support for Fast DDS v2.7.1
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.7.0.rst
 .. include:: previous_versions/v2.6.1.rst
 .. include:: previous_versions/v2.6.0.rst
 .. include:: previous_versions/v2.5.1.rst
