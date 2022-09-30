@@ -3,6 +3,8 @@ Version 2.8.0
 
 This patch release adds the following **improvements**:
 
+* Instances disposals are shown in the GUI
+* Improvements in the log window
 * Support for Fast DDS v2.8.0
 
 Previous versions
