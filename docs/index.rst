@@ -11,8 +11,8 @@ eProsima Shapes Demo
    :maxdepth: 2
 
    /installation/windows_binaries
-   /installation/linux_binaries
    /installation/linux_sources
+   /installation/docker_image
 
 .. _firststep:
 

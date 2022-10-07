@@ -1,7 +1,7 @@
-.. _installation_linux_binaries:
+.. _installation_docker_image:
 
-Linux installation from binaries
-================================
+Docker Image
+============
 
 eProsima provides the eProsima Fast DDS Suite Docker image for those who want a quick demonstration of Fast DDS running on an Ubuntu
 platform. It can be downloaded from `eProsima's downloads page <https://eprosima.com/index.php/downloads-all>`_.
@@ -38,7 +38,3 @@ To run this container you need Docker installed. From a terminal run
 .. code-block:: bash
 
     ShapesDemo
-
-For more information regarding the capabilities of eProsima's Fast DDS Suite Docker image, you can check the
-:ref:`Fast DDS Docker Image documentation <fast_dds_suite_examples>`
-
