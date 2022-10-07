@@ -11,8 +11,8 @@ eProsima Shapes Demo
    :maxdepth: 2
 
    /installation/windows_binaries
-   /installation/linux_binaries
    /installation/linux_sources
+   /installation/docker_image
 
 .. _firststep:
 
@@ -50,16 +50,6 @@ eProsima Shapes Demo
 
    /troubleshooting/troubleshooting
    /troubleshooting/interoperability
-
-.. _index_docker:
-
-.. toctree::
-   :caption: Docker Image
-   :maxdepth: 2
-   :numbered: 5
-   :hidden:
-
-   /docker/docker
 
 .. _index_notes:
 
