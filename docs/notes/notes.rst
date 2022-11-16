@@ -1,4 +1,4 @@
-Version 2.8.0
+Version 2.8.1
 =============
 
 This patch release includes the following **improvements**:
