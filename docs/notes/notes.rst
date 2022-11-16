@@ -1,15 +1,16 @@
 Version 2.8.0
 =============
 
-This patch release adds the following **improvements**:
+This patch release includes the following **improvements**:
 
-* Instances disposals are shown in the GUI
-* Improvements in the log window
-* Support for Fast DDS v2.8.0
+* Ownership QoS Policy enabled when ROS 2 compatible topic option is enabled
+* Partition QoS Policy enabled when ROS 2 compatible topic option is enabled
+* Support for Fast DDS v2.8.1
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.8.0.rst
 .. include:: previous_versions/v2.7.1.rst
 .. include:: previous_versions/v2.7.0.rst
 .. include:: previous_versions/v2.6.1.rst
