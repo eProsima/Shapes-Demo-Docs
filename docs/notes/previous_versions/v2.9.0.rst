@@ -1,0 +1,8 @@
+Version 2.9.0
+^^^^^^^^^^^^^
+
+This minor release includes the following **improvements**:
+
+* Support for Fast DDS v2.9.0.
+* Update type support with Fast DDS-Gen v2.3.0.
+* Move type support auto-generated files to specific folder to help maintenance.

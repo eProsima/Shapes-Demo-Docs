@@ -1,15 +1,17 @@
-Version 2.9.0
+Version 2.9.1
 =============
 
-This minor release includes the following **improvements**:
+This patch release includes the following **improvements**:
+* Support for Fast DDS v2.9.1.
 
-* Support for Fast DDS v2.9.0.
-* Update type support with Fast DDS-Gen v2.3.0.
-* Move type support auto-generated files to specific folder to help maintenance.
+This patch release includes the following **bugfixes**:
+
+* Added ROS2 name mangling to ROS2 KeylessType.
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.9.0.rst
 .. include:: previous_versions/v2.8.1.rst
 .. include:: previous_versions/v2.8.0.rst
 .. include:: previous_versions/v2.7.1.rst
