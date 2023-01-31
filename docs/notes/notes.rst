@@ -1,13 +1,14 @@
-Version 2.1.1
+Version 2.1.2
 =============
 
 Change log:
 
-*   Updated to support Fast DDS 2.1.1.
+*   Updated to support Fast DDS 2.1.2.
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.1.1.rst
 .. include:: previous_versions/v2.1.0.rst
 .. include:: previous_versions/v2.0.1.rst
 .. include:: previous_versions/v2.0.0.rst
