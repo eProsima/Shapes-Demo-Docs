@@ -40,6 +40,7 @@ eProsima Shapes Demo
    /examples/content_based_filter
    /examples/time_based_filter
    /examples/tcp_LAN_WAN_transport
+   /examples/ros2_compatibility
 
 .. _troubleshootingindex:
 
