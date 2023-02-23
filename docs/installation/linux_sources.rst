@@ -1,16 +1,16 @@
 .. _installation_linux_sources:
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-   :backlinks: none
-
 Linux installation from sources
 ===============================
 
 For simplicity, the eProsima Shapes Demo installation manual follows the Colcon installation, since eProsima *Fast DDS*
 and *Fast CDR* dependencies are downloaded and installed at the same time that eProsima Shapes Demo is built.
 However, the user must assure that `Qt 5 <https://doc.qt.io/qt-5/>`_ is installed.
+
+.. contents:: Table of Contents
+   :depth: 1
+   :local:
+   :backlinks: none
 
 .. _linux_colcon_installation:
 
