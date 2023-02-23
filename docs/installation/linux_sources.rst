@@ -1,11 +1,16 @@
 .. _installation_linux_sources:
 
+.. contents:: Table of Contents
+   :depth: 1
+   :local:
+   :backlinks: none
+
 Linux installation from sources
 ===============================
 
 For simplicity, the eProsima Shapes Demo installation manual follows the Colcon installation, since eProsima *Fast DDS*
 and *Fast CDR* dependencies are downloaded and installed at the same time that eProsima Shapes Demo is built.
-However, the user must assure that `Qt5 <https://doc.qt.io/qt-5/>`_ is installed.
+However, the user must assure that `Qt 5 <https://doc.qt.io/qt-5/>`_ is installed.
 
 .. _linux_colcon_installation:
 
@@ -66,12 +71,18 @@ To install eProsima Shapes Demo using colcon, please follow the steps below:
 ROS 2 features compilation
 --------------------------
 
-By default eProsima Shapes Demo can be built and used on a ROS 2 installation as long as an installation of Fast DDS version 2.5.1 or higher is available and a QT5 installation is available.
-The build process will try to locate the `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_ and, if present, will automatically enable ROS2 features.
+By default eProsima Shapes Demo can be built and used on a ROS 2 installation as long as an installation of Fast DDS version 2.5.1 or higher is available and a Qt 5 installation is available.
+On Ubuntu Jammy (22.04) installations, Qt 5 development packages are distributed by Canonical as an APT package and can be downloaded by running the following on a terminal:
 
-eProsima provides a different repos file, `shapes-demo-ros2.repos <https://github.com/eProsima/ShapesDemo/blob/master/shapes-demo-ros2.repos>`_, that will download Shapes Demo and its dependencies, including the Shapes Demo TypeSupport, to your workspace.
+    .. code-block:: bash
 
-To build eProsima Shapes Demo with ROS 2 features enabled, inside a ROS 2 Humble installation follow these steps:
+        apt update
+        apt install -y qtbase5-dev
+
+The build process will try to locate the `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_ and, if present, will automatically enable ROS 2 features.
+
+To download Shapes Demo and its dependencies, including the Shapes Demo TypeSupport a different repos file, `shapes-demo-ros2.repos <https://github.com/eProsima/ShapesDemo/blob/master/shapes-demo-ros2.repos>`_, can be used.
+To build eProsima Shapes Demo with ROS 2 features enabled, follow these steps within a sourced ROS 2 Humble installation:
 
 1.  Install the required eProsima Fast DDS dependencies and verify that the system meets the installation requirements.
     The complete list of requirements and dependencies can be found in the
@@ -86,35 +97,39 @@ To build eProsima Shapes Demo with ROS 2 features enabled, inside a ROS 2 Humble
 
     .. code-block:: bash
 
-           pip install -U colcon-common-extensions vcstool
+        apt update
+        apt install -y python3-pip wget
+        pip install -U colcon-common-extensions vcstool
 
     .. note::
 
         If this fails due to an Environment Error, add the ``--user`` flag to the ``pip`` installation
         command.
 
-3.  Create a `ShapesDemo` directory and download the ROS 2 version of the repos file that will be used to install
+3.  Create a `shapes_demo_ws` directory and download the ROS 2 version of the repos file that will be used to install
     eProsima Shapes Demo and its dependencies:
 
     .. code-block:: bash
 
-        mkdir -p ShapesDemo/src && cd ShapesDemo
+        mkdir -p shapes_demo_ws/src
+        cd shapes_demo_ws
         wget https://raw.githubusercontent.com/eProsima/ShapesDemo/master/shapes-demo-ros2.repos
         vcs import src < shapes-demo-ros2.repos
 
-3.  Build the packages:
+4.  Build the packages:
 
     .. code-block:: bash
 
+        cd ~/shapes_demo_ws
         colcon build
 
-4.  Link the application executable to make it accessible from the current directory:
+5.  Link the application executable to make it accessible from the current directory:
 
     .. code-block:: bash
 
-        source install/setup.bash
+        source ~/shapes_demo_ws/install/setup.bash
 
-5.  Run eProsima Shapes Demo:
+6.  Run eProsima Shapes Demo:
 
     .. code-block:: bash
 
