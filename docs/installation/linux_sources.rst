@@ -71,8 +71,10 @@ To install eProsima Shapes Demo using colcon, please follow the steps below:
 ROS 2 features compilation
 --------------------------
 
-By default eProsima Shapes Demo can be built and used on a ROS 2 installation as long as an installation of Fast DDS version 2.5.1 or higher is available and a Qt 5 installation is available.
-On Ubuntu Jammy (22.04) installations, Qt 5 development packages are distributed by Canonical as an APT package and can be downloaded by running the following on a terminal:
+By default eProsima Shapes Demo can be built and used on a ROS 2installation as long as an installation of Fast DDS
+version 2.5.1 or higher is available and a Qt 5 installation is available.
+On Ubuntu Jammy (22.04) installations, Qt 5 development packages are distributedby Canonical as an APT package and can
+be downloaded by running the following on a terminal:
 
     .. code-block:: bash
 
@@ -82,7 +84,8 @@ On Ubuntu Jammy (22.04) installations, Qt 5 development packages are distributed
 The build process will try to locate the `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_ and, if present, will automatically enable ROS 2 features.
 
 To download Shapes Demo and its dependencies, including the Shapes Demo TypeSupport a different repos file, `shapes-demo-ros2.repos <https://github.com/eProsima/ShapesDemo/blob/master/shapes-demo-ros2.repos>`_, can be used.
-To build eProsima Shapes Demo with ROS 2 features enabled, follow these steps within a sourced ROS 2 Humble installation:
+To build eProsima Shapes Demo with ROS 2 features enabled,
+follow these steps within a sourced ROS 2 Humble installation:
 
 1.  Install the required eProsima Fast DDS dependencies and verify that the system meets the installation requirements.
     The complete list of requirements and dependencies can be found in the

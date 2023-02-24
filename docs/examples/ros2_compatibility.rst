@@ -37,8 +37,10 @@ A typical output of the previous command with a Square created by Shapes Demo wo
       /parameter_events [rcl_interfaces/msg/ParameterEvent]
       /rosout [rcl_interfaces/msg/Log]
 
-Since there is a TypeSupport available for these messages, it can be used by ROS 2 to interact with the different ShapesDemo topics.
-For instance, assuming the Shapes Demo TypeSupport was built along with Shapes Demo and is currently available in the current installation folder, a subscription to a Topic could be made like so:
+Since there is a TypeSupport available for these messages, it can be used by ROS 2 to interact with the different
+ShapesDemo topics.
+For instance, assuming the Shapes Demo TypeSupport was built along with Shapes Demo and is currently available in the
+current installation folder, a subscription to a Topic could be made like so:
 
    .. code-block:: bash
 
