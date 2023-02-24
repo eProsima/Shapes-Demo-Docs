@@ -71,9 +71,9 @@ To install eProsima Shapes Demo using colcon, please follow the steps below:
 ROS 2 features compilation
 --------------------------
 
-By default eProsima Shapes Demo can be built and used on a ROS 2installation as long as an installation of Fast DDS
+By default eProsima Shapes Demo can be built and used on a ROS 2 installation as long as an installation of Fast DDS
 version 2.5.1 or higher is available and a Qt 5 installation is available.
-On Ubuntu Jammy (22.04) installations, Qt 5 development packages are distributedby Canonical as an APT package and can
+On Ubuntu Jammy (22.04) installations, Qt 5 development packages are distributed by Canonical as an APT package and can
 be downloaded by running the following on a terminal:
 
     .. code-block:: bash
