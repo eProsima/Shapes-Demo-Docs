@@ -115,7 +115,7 @@ follow these steps within a sourced ROS 2 Humble installation:
     .. code-block:: bash
 
         mkdir -p ~/shapes_demo_ws/src
-        cd shapes_demo_ws
+        cd ~/shapes_demo_ws
         wget https://raw.githubusercontent.com/eProsima/ShapesDemo/master/shapes-demo-ros2.repos
         vcs import src < shapes-demo-ros2.repos
 
