@@ -6,6 +6,13 @@ Linux installation from sources
 For simplicity, the eProsima Shapes Demo installation manual follows the Colcon installation, since eProsima *Fast DDS*
 and *Fast CDR* dependencies are downloaded and installed at the same time that eProsima Shapes Demo is built.
 However, the user must assure that `Qt 5 <https://doc.qt.io/qt-5/>`_ is installed.
+On Ubuntu Jammy (22.04) installations, Qt 5 development packages are distributed by Canonical as an APT package and can
+be downloaded by running the following on a terminal:
+
+    .. code-block:: bash
+
+        apt update
+        apt install -y qtbase5-dev
 
 .. contents:: Table of Contents
    :depth: 1
@@ -73,17 +80,10 @@ ROS 2 features compilation
 
 By default eProsima Shapes Demo can be built and used on a ROS 2 installation as long as an installation of Fast DDS
 version 2.5.1 or higher is available and a Qt 5 installation is available.
-On Ubuntu Jammy (22.04) installations, Qt 5 development packages are distributed by Canonical as an APT package and can
-be downloaded by running the following on a terminal:
-
-    .. code-block:: bash
-
-        apt update
-        apt install -y qtbase5-dev
 
 The build process will try to locate the `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_ and, if present, will automatically enable ROS 2 features.
 
-To download Shapes Demo and its dependencies, including the Shapes Demo TypeSupport a different repos file, `shapes-demo-ros2.repos <https://github.com/eProsima/ShapesDemo/blob/master/shapes-demo-ros2.repos>`_, can be used.
+To download Shapes Demo and its dependencies, including the Shapes Demo TypeSupport, a different repos file, `shapes-demo-ros2.repos <https://github.com/eProsima/ShapesDemo/blob/master/shapes-demo-ros2.repos>`_, can be used.
 To build eProsima Shapes Demo with ROS 2 features enabled,
 follow these steps within a sourced ROS 2 Humble installation:
 
@@ -114,7 +114,7 @@ follow these steps within a sourced ROS 2 Humble installation:
 
     .. code-block:: bash
 
-        mkdir -p shapes_demo_ws/src
+        mkdir -p ~/shapes_demo_ws/src
         cd shapes_demo_ws
         wget https://raw.githubusercontent.com/eProsima/ShapesDemo/master/shapes-demo-ros2.repos
         vcs import src < shapes-demo-ros2.repos

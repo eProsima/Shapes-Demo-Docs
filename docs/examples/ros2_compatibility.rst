@@ -23,19 +23,17 @@ ROS 2 Shapes Demo main window changes to reflect this by showing a different tit
 When using eProsima Shapes Demo in this mode, ROS 2 will be aware of the Topics transmitted.
 All topics currently known by ROS can be listed as follows:
 
-   .. code-block:: bash
+.. code-block:: bash
 
-      ros2 topic list -t
+   ros2 topic list -t
 
 A typical output of the previous command with a Square created by Shapes Demo would be:
 
-   .. code-block:: bash
+.. code-block:: bash
 
-      ros2 topic list -t
-
-      /Square [shapes_demo_typesupport/idl/KeylessShapeType]
-      /parameter_events [rcl_interfaces/msg/ParameterEvent]
-      /rosout [rcl_interfaces/msg/Log]
+   /Square [shapes_demo_typesupport/idl/KeylessShapeType]
+   /parameter_events [rcl_interfaces/msg/ParameterEvent]
+   /rosout [rcl_interfaces/msg/Log]
 
 Since there is a TypeSupport available for these messages, it can be used by ROS 2 to interact with the different
 ShapesDemo topics.
@@ -67,14 +65,21 @@ Analogously, a publication could be made like this:
    .. code-block:: bash
 
       source ~/shapes_demo_ws/install/setup.bash
-      ros2 topic pub /Square shapes_demo_typesupport/idl/KeylessShapeType "{ color: BLUE, x: 155, y: 150, shapesize: 30}"
+      ros2 topic pub /Square shapes_demo_typesupport/idl/KeylessShapeType "{ color: BLUE, x: 155, y: 170, shapesize: 30}"
 
 On successful execution, this is what would be shown on the terminal:
 
    .. code-block:: bash
 
       publisher: beginning loop
-      publishing #1: shapes_demo_typesupport.idl.KeylessShapeType(color='BLUE', x=155, y=150, shapesize=30)
+      publishing #1: shapes_demo_typesupport.idl.KeylessShapeType(color='BLUE', x=155, y=170, shapesize=30)
+
+The ROS 2 Shapes Demo will show the blue Square at the specified location.
+
+.. image:: /01-figures/ros2_shapes_demo_blue_square.png
+   :scale: 100 %
+   :alt: ROS 2 Shapes Demo Topic CLI interaction
+   :align: center
 
 .. note::
 
