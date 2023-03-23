@@ -81,7 +81,7 @@ ROS 2 features compilation
 By default eProsima Shapes Demo can be built and used on a ROS 2 installation as long as an installation of Fast DDS
 version 2.5.1 or higher is available and a Qt 5 installation is available.
 
-The build process will try to locate the `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_ and, if present, will automatically enable ROS 2 features.
+The build process will try to locate the `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_ and, if present, will automatically enable ROS 2 compilation flags.
 
 To download Shapes Demo and its dependencies, including the Shapes Demo TypeSupport, a different repos file, `shapes-demo-ros2.repos <https://github.com/eProsima/ShapesDemo/blob/master/shapes-demo-ros2.repos>`_, can be used.
 To build eProsima Shapes Demo with ROS 2 features enabled,
@@ -139,7 +139,9 @@ follow these steps within a sourced ROS 2 Humble installation:
         ShapesDemo
 
 .. note::
-   When eProsima Shapes Demo is compiled with ROS 2 and the
-   `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_, it will start automatically
-   in ROS 2 mode.
-   This execution mode can be changed using the `Use ROS 2 Topics` checkbox on the `Options > Participant Configuration` dialog (For more information, please refer to :ref:`examples_ros2_compatibility`).
+
+   When eProsima Shapes Demo is compiled with ROS 2, the
+   `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_ (see
+   :ref:`linux_ros2_compilation` compilation section) and the ROS 2 Shapes Demo executable is launched in a context with a valid ROS 2 installation sourced,
+   the default value of the "Use ROS 2 Topics" checkbox will be set to true.
+   Otherwise, if a valid ROS 2 installation could not be found, the checkbox will remain disabled.
