@@ -26,7 +26,7 @@ ROS 2 Shapes Demo main window changes to reflect this by showing a different tit
    `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_ (see
    :ref:`linux_ros2_compilation` compilation section) and the ROS 2 Shapes Demo executable is launched in a context with a valid ROS 2 installation sourced,
    the default value of the "Use ROS 2 Topics" checkbox will be set to true.
-   Otherwise, if a valid ROS 2 installation could not be found, the checkbox will remain disabled.
+   Otherwise, the checkbox will remain disabled.
 
 When using eProsima Shapes Demo in this mode, ROS 2 will be aware of the Topics transmitted.
 All topics currently known by ROS can be listed as follows:
