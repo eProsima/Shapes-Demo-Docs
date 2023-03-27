@@ -21,6 +21,11 @@ ROS 2 Shapes Demo main window changes to reflect this by showing a different tit
    :alt: ROS 2 Shapes Demo Main Window
    :align: center
 
+.. note::
+   When eProsima Shapes Demo is compiled with ROS 2 and the
+   `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_ (see
+   :ref:`linux_ros2_compilation` compilation section), the "Use ROS2 Topics" checkbox is enabled by default.
+
 When using eProsima Shapes Demo in this mode, ROS 2 will be aware of the Topics transmitted.
 All topics currently known by ROS can be listed as follows:
 
