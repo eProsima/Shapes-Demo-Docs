@@ -142,4 +142,4 @@ follow these steps within a sourced ROS 2 Humble installation:
    When eProsima Shapes Demo is compiled with ROS 2 and the
    `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_, it will start automatically
    in ROS 2 mode.
-   This execution mode can be changed (see :ref:`examples_ros2_compatibility`).
+   This execution mode can be changed using the `Use ROS 2 Topics` checkbox on the `Options > Participant Configuration` dialog (For more information, please refer to :ref:`examples_ros2_compatibility`).
