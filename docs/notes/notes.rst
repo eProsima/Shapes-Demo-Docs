@@ -1,16 +1,20 @@
-Version 2.9.1
-=============
+Version 2.10.0
+==============
 
 This patch release includes the following **improvements**:
-* Support for Fast DDS v2.9.1.
 
-This patch release includes the following **bugfixes**:
+* Support for Fast DDS v2.10.0
+* Enable ROS 2 by default if available
+* Enable ROS 2 features on runtime if detected a valid ROS 2 installation
+* Regenerate TypeSupport with Fast DDS-Gen v2.4.0
+* Fix fastrtps version check in CMakeLists
+* Remove thirdparty code
 
-* Added ROS2 name mangling to ROS2 KeylessType.
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.9.1.rst
 .. include:: previous_versions/v2.9.0.rst
 .. include:: previous_versions/v2.8.1.rst
 .. include:: previous_versions/v2.8.0.rst
