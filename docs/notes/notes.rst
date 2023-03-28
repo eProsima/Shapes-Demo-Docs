@@ -7,7 +7,7 @@ This patch release includes the following **improvements**:
 * Enable ROS 2 by default if available
 * Enable ROS 2 features on runtime if detected a valid ROS 2 installation
 * Regenerate TypeSupport with Fast DDS-Gen v2.4.0
-* Fix fastrtps version check in CMakeLists
+* Fix Fast DDS version check in CMakeLists
 * Remove thirdparty code
 
 
