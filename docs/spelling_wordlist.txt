@@ -15,6 +15,5 @@ IPv4
 multicast
 QoS
 repos
-scalable
-thirdparty
 runtime
+scalable
