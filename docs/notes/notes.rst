@@ -11,7 +11,7 @@ This minor release includes the following **improvements**:
 Also, it includes the following **fixes**:
 
 * Fix Fast DDS version check in CMakeLists
-* Remove CMake obsolete code 
+* Remove CMake obsolete code
 
 Previous versions
 =================
