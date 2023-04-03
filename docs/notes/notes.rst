@@ -1,21 +1,14 @@
-Version 2.10.0
+Version 2.10.1
 ==============
 
 This minor release includes the following **improvements**:
 
-* Support for Fast DDS v2.10.0
-* Enable ROS 2 by default if available
-* Enable ROS 2 features on runtime if detected a valid ROS 2 installation
-* Regenerate TypeSupport with Fast DDS-Gen v2.4.0
-
-Also, it includes the following **fixes**:
-
-* Fix Fast DDS version check in CMakeLists
-* Remove CMake obsolete code
+* Support for Fast DDS v2.10.1
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.10.0.rst
 .. include:: previous_versions/v2.9.1.rst
 .. include:: previous_versions/v2.9.0.rst
 .. include:: previous_versions/v2.8.1.rst
