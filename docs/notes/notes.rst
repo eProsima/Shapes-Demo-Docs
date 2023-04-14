@@ -1,15 +1,14 @@
-Version 2.8.1
+Version 2.8.2
 =============
 
 This patch release includes the following **improvements**:
 
-* Ownership QoS Policy enabled when ROS 2 compatible topic option is enabled
-* Partition QoS Policy enabled when ROS 2 compatible topic option is enabled
-* Support for Fast DDS v2.8.1
+* Updated to support Fast DDS v2.8.2
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.8.1.rst
 .. include:: previous_versions/v2.8.0.rst
 .. include:: previous_versions/v2.7.1.rst
 .. include:: previous_versions/v2.7.0.rst
