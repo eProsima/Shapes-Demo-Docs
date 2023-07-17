@@ -1,15 +1,14 @@
-Version 2.11.0
+Version 2.11.1
 ==============
 
 This minor release includes the following **improvements**:
 
-* Support for Fast DDS v2.11.0
-* Regenerate TypeSupport with Fast DDS-Gen v2.5.1
-* Cache user selected options in Participant configuration
+* Support for Fast DDS v2.11.1
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.11.0.rst
 .. include:: previous_versions/v2.10.1.rst
 .. include:: previous_versions/v2.10.0.rst
 .. include:: previous_versions/v2.9.1.rst
