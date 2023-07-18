@@ -1,0 +1,6 @@
+Version 2.9.2
+^^^^^^^^^^^^^
+
+This patch release includes the following **improvements**:
+
+* Support for Fast DDS v2.9.2.
