@@ -1,16 +1,13 @@
-Version 2.9.1
+Version 2.9.2
 =============
 
 This patch release includes the following **improvements**:
-* Support for Fast DDS v2.9.1.
-
-This patch release includes the following **bugfixes**:
-
-* Added ROS2 name mangling to ROS2 KeylessType.
+* Support for Fast DDS v2.9.2.
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.9.1.rst
 .. include:: previous_versions/v2.9.0.rst
 .. include:: previous_versions/v2.8.1.rst
 .. include:: previous_versions/v2.8.0.rst
