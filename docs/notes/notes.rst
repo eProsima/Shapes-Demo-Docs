@@ -1,13 +1,14 @@
-Version 2.6.5
+Version 2.6.6
 =============
 
 This patch release adds the following **improvements**:
 
-* Support for Fast DDS v2.6.5
+* Support for Fast DDS v2.6.6
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.6.5.rst
 .. include:: previous_versions/v2.6.4.rst
 .. include:: previous_versions/v2.6.3.rst
 .. include:: previous_versions/v2.6.2.rst
