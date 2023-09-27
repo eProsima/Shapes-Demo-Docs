@@ -1,14 +1,15 @@
-Version 2.11.2
+Version 2.12.0
 ==============
 
 This minor release includes the following **improvements**:
 
-* Support for Fast DDS v2.11.2
-* Add Shapes Demo v2.9.2 release notes
+* Support for Fast DDS v2.12.0
+* Regenerate TypeSupport with Fast DDS-Gen v3.0.0
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.11.2.rst
 .. include:: previous_versions/v2.11.1.rst
 .. include:: previous_versions/v2.11.0.rst
 .. include:: previous_versions/v2.10.2.rst
