@@ -1,14 +1,15 @@
-Version 2.12.0
+Version 2.12.1
 ==============
 
-This minor release includes the following **improvements**:
+This patch release includes the following **improvements**:
 
-* Support for Fast DDS v2.12.0
-* Regenerate TypeSupport with Fast DDS-Gen v3.0.0
+* Support for Fast DDS v2.12.1
+* Regenerate TypeSupport with Fast DDS-Gen v3.1.0
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.12.0.rst
 .. include:: previous_versions/v2.11.2.rst
 .. include:: previous_versions/v2.11.1.rst
 .. include:: previous_versions/v2.11.0.rst
