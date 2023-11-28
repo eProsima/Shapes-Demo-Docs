@@ -180,7 +180,7 @@ The following image shows the Options Menu.
 
   - **Active Monitor Service:** Activate the DataWriters which publish the data referred to the Monitor Service Status Topic.
     (See
-    `Fast DDS Monitor Service Documentation <https://eprosima-fast-rtps--506.org.readthedocs.build/en/506/fastdds/statistics/monitor_service/intro.html>`_).
+    `Fast DDS Monitor Service Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/statistics/monitor_service/intro.html>`_).
 
 In case that the Participant is already running, it should be stopped in order to change its configuration.
 This will drop every endpoint already created.
