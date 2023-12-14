@@ -52,7 +52,7 @@ There are multiple parameters that the user can define in this menu:
   The latter will send that last stored values to subscribers joining after the publisher has been created. (see
   `Fast DDS DurabilityQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/core/policy/standardQosPolicies.html#durabilityqospolicy>`_).
 
-- **Data Representation:** The Data Representation Qos Policy is set to ``XCDR``
+- **Data Representation:** The Data Representation QoS Policy is set to ``XCDR``
   (version 1), but the user can optionally select the ``XCDR2`` Data Representation.
   (see
   `Fast DDS Data representation Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/core/policy/xtypesExtensions.html#datarepresentationqospolicy>`_).
