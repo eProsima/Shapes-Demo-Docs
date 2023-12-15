@@ -52,6 +52,11 @@ There are multiple parameters that the user can define in this menu:
   The latter will send that last stored values to subscribers joining after the publisher has been created. (see
   `Fast DDS DurabilityQosPolicy Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/core/policy/standardQosPolicies.html#durabilityqospolicy>`_).
 
+- **Data Representation:** The Data Representation QoS Policy is set to ``XCDR``
+  (version 1), but the user can optionally select the ``XCDR2`` Data Representation.
+  (see
+  `Fast DDS Data representation Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/core/policy/xtypesExtensions.html#datarepresentationqospolicy>`_).
+
 - **Liveliness:** The user can select the Liveliness QoS of the publisher from three different values:
   ``AUTOMATIC``, ``MANUAL_BY_PARTICIPANT`` and ``MANUAL_BY_TOPIC``. The Lease Duration value and Announcement Period
   can also be configured. The latter only applies if Liveliness is set to ``AUTOMATIC`` or ``MANUAL_BY_PARTICIPANT``
@@ -109,6 +114,10 @@ has additional elements:
   .. note::
 
     Using Lifespan QoS will not have any visual effect.
+
+  .. note::
+
+    The data reader of a subscriber can receive data sent using both representation versions, **XCDR** and **XCDR2**.
 
 Participant configuration
 -------------------------
