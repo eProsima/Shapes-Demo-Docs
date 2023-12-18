@@ -1,9 +1,18 @@
 Version 2.12.2
 ==============
 
+This patch release includes the following **features**:
+
+* Add an auto fill type information check
+
 This patch release includes the following **improvements**:
 
 * Support for Fast DDS v2.12.2
+* Apply fix in sphinx 4.3.1 dependencies
+
+This patch release includes the following **fixes**:
+
+* Remove Data-Sharing option
 
 Previous versions
 =================
