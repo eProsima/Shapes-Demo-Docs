@@ -1,16 +1,15 @@
-Version 2.13.0
+Version 2.13.1
 ==============
 
 This minor release includes the following **improvements**:
 
-* Support for Fast DDS v2.13.0
-* Add new option to configure data representation in publisher
-* Add new option to enable/disable monitor service
-* Add metadata to identify Shapes Demo application
+* Support for Fast DDS v2.13.1
+* Statistics and monitor are enabled by default
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.13.0.rst
 .. include:: previous_versions/v2.12.1.rst
 .. include:: previous_versions/v2.12.0.rst
 .. include:: previous_versions/v2.11.2.rst
