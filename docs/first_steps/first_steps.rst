@@ -179,8 +179,9 @@ The following image shows the Options Menu.
   (See
   `Fast DDS Domain Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/domain/domain.html>`_).
 
-- **Statistics:** The user can activate *Fast DDS Statistics module* so different instrumentation data could be
-  collected and analyzed by the *Fast DDS Statistics Backend*, or be represented by *Fast DDS Monitor*.
+- **Statistics:** The *Fast DDS Statistics module* is enabled by default, allowing the collection and analysis of
+  various instrumentation data through the *Fast DDS Statistics Backend* and its representation in the *Fast DDS
+  Monitor*.
   This module requires to have compiled *Fast DDS* with Statistics Module ON.
 
   - **Active Statistics:** Activate the DataWriters which publish the data referred to the Statistics Module DDS Layer.
