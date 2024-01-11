@@ -192,6 +192,14 @@ The following image shows the Options Menu.
     (See
     `Fast DDS Monitor Service Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/statistics/monitor_service/intro.html>`_).
 
+- **Advanced options:**
+
+  - **Enable UDP Sample Loss:** A percentage of samples sent by the publisher is intentionally lost.
+    This feature allows the user to simulate network conditions where a certain amount of data loss occurs.
+    The percentage of samples to be lost can be configured by the user.
+    If *Active Monitor Service* was enabled and *Fast DDS* was compiled with Statistics Module ON,
+    the lost samples are reported in *Fast DDS Monitor*.
+
 In case that the Participant is already running, it should be stopped in order to change its configuration.
 This will drop every endpoint already created.
 
