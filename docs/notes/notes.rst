@@ -4,7 +4,10 @@ Version 2.13.1
 This minor release includes the following **improvements**:
 
 * Support for Fast DDS v2.13.1
-* Statistics and monitor are enabled by default
+* Statistics and monitor service are enabled by default
+* Introduced new UDP transport that intentionally drops a percentage of samples
+* Downgrade CMake minimum required version
+* Regenerate Shapes types with Fast DDS-Gen v3.2.1
 
 Previous versions
 =================
