@@ -1,0 +1,9 @@
+Version 2.13.0
+^^^^^^^^^^^^^^
+
+This minor release includes the following **improvements**:
+
+* Support for Fast DDS v2.13.0
+* Add new option to configure data representation in publisher
+* Add new option to enable/disable monitor service
+* Add metadata to identify Shapes Demo application
