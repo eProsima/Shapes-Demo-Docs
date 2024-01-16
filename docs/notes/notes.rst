@@ -1,13 +1,14 @@
-Version 2.10.2
+Version 2.10.3
 ==============
 
-This minor release includes the following **improvements**:
+This patch release includes the following **improvements**:
 
-* Support for Fast DDS v2.10.2
+* Support for Fast DDS v2.10.3
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.10.2.rst
 .. include:: previous_versions/v2.10.1.rst
 .. include:: previous_versions/v2.10.0.rst
 .. include:: previous_versions/v2.9.1.rst
