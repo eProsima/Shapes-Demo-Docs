@@ -194,6 +194,8 @@ The following image shows the Options Menu.
 
 - **Advanced options:**
 
+  - **Autofill type information:** Whether the discovery packages automatically propagate the type information.
+
   - **Enable UDP Sample Loss:** A percentage of samples sent by the publisher is intentionally lost.
     This feature allows the user to simulate network conditions where a certain amount of data loss occurs.
     The percentage of samples to be lost can be configured by the user.
