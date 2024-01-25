@@ -1,0 +1,7 @@
+Version 2.11.2
+^^^^^^^^^^^^^^
+
+This patch release includes the following **improvements**:
+
+* Support for Fast DDS v2.11.2
+* Add Shapes Demo v2.9.2 release notes

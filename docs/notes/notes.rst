@@ -1,14 +1,14 @@
-Version 2.11.2
+Version 2.11.3
 ==============
 
-This minor release includes the following **improvements**:
+This patch release includes the following **improvements**:
 
-* Support for Fast DDS v2.11.2
-* Add Shapes Demo v2.9.2 release notes
+* Support for Fast DDS v2.11.3
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.11.2.rst
 .. include:: previous_versions/v2.11.1.rst
 .. include:: previous_versions/v2.11.0.rst
 .. include:: previous_versions/v2.10.2.rst
