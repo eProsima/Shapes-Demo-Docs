@@ -176,6 +176,14 @@ The following image shows the Options Menu.
   (See
   `Fast DDS Statistics Module Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/statistics/statistics.html>`_).
 
+  - **Active Statistics:** Activate the DataWriters which publish the data referred to the Statistics Module DDS Layer.
+    (See
+    `Fast DDS Statistics Module DDS Layer Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/statistics/dds_layer/statistics_dds_layer.html>`_).
+
+- **Advanced options:**
+
+  - **Autofill type information:** Whether the discovery packages automatically propagate the type information.
+
 In case that the Participant is already running, it should be stopped in order to change its configuration.
 This will drop every endpoint already created.
 
