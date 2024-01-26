@@ -4,6 +4,7 @@ Version 2.10.3
 This patch release includes the following **improvements**:
 
 * Support for Fast DDS v2.10.3
+* Add an auto-fill type information check
 
 Previous versions
 =================
