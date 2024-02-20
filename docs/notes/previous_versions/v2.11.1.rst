@@ -1,6 +1,6 @@
 Version 2.11.1
 ^^^^^^^^^^^^^^
 
-This minor release includes the following **improvements**:
+This patch release includes the following **improvements**:
 
 * Support for Fast DDS v2.11.1
