@@ -1,0 +1,7 @@
+Version 2.13.2
+^^^^^^^^^^^^^^
+
+This patch release includes the following **improvements**:
+
+* Support for Fast DDS v2.13.2
+* Add auto fill type information check in Participant advanced configuration

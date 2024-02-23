@@ -1,10 +1,10 @@
-Version 2.13.2
+Version 2.13.3
 ==============
 
 This patch release includes the following **improvements**:
 
-* Support for Fast DDS v2.13.2
-* Add auto fill type information check in Participant advanced configuration
+* Support for Fast DDS v2.13.3
+* Adapt Fast DDS test transport to drop only user data samples
 
 Previous versions
 =================
