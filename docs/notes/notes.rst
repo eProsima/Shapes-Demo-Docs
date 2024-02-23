@@ -9,6 +9,7 @@ This patch release includes the following **improvements**:
 Previous versions
 =================
 
+.. include:: previous_versions/v2.13.2.rst
 .. include:: previous_versions/v2.13.1.rst
 .. include:: previous_versions/v2.13.0.rst
 .. include:: previous_versions/v2.12.1.rst
