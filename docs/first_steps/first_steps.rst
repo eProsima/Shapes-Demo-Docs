@@ -168,10 +168,6 @@ The following image shows the Options Menu.
     (See
     `Fast DDS Intraprocess Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/intraprocess.html#intraprocess-delivery>`_).
 
-  - **Data Sharing:** Allow using Data Sharing delivery when both Endpoints are running in the same host.
-    (See
-    `Fast DDS Data Sharing Documentation <https://fast-dds.docs.eprosima.com/en/latest/fastdds/transport/datasharing.html#datasharing-delivery>`_).
-
 - **Domain:** The user can select different Domain IDs.
   Shapes Demo instances using different Domain IDs will not communicate.
   To modify the Domain ID the user needs to stop the participant (thus removing all existing publishers and
