@@ -1,0 +1,7 @@
+Version 2.13.3
+^^^^^^^^^^^^^^
+
+This patch release includes the following **improvements**:
+
+* Support for Fast DDS v2.13.3
+* Adapt Fast DDS test transport to drop only user data samples

@@ -1,14 +1,20 @@
-Version 2.13.3
+Version 2.14.0
 ==============
 
-This patch release includes the following **improvements**:
+This release includes the following **improvements**:
 
-* Support for Fast DDS v2.13.3
-* Adapt Fast DDS test transport to drop only user data samples
+#. Remove Data-Sharing option from ShapesDemo
+#. Regenerate types with Fast DDS Gen v3.3.0
+#. Support for Fast DDS v2.14.0
+
+This release includes the following **fixes**:
+
+#. Fix ROS 2 line separator in participant configuration
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.13.3.rst
 .. include:: previous_versions/v2.13.2.rst
 .. include:: previous_versions/v2.13.1.rst
 .. include:: previous_versions/v2.13.0.rst
