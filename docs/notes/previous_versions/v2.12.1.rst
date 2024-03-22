@@ -1,0 +1,7 @@
+Version 2.12.1
+^^^^^^^^^^^^^^
+
+This patch release includes the following **improvements**:
+
+* Support for Fast DDS v2.12.1
+* Regenerate TypeSupport with Fast DDS-Gen v3.1.0
