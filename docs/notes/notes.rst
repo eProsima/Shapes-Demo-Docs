@@ -1,14 +1,19 @@
-Version 2.13.3
+Version 2.13.4
 ==============
 
 This patch release includes the following **improvements**:
 
-* Support for Fast DDS v2.13.3
-* Adapt Fast DDS test transport to drop only user data samples
+1. Support for Fast DDS v2.13.4
+
+This release includes the following **fixes**:
+
+1. Remove Data-Sharing option
+2. Fix ROS 2 line separator
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.13.3.rst
 .. include:: previous_versions/v2.13.2.rst
 .. include:: previous_versions/v2.13.1.rst
 .. include:: previous_versions/v2.13.0.rst
