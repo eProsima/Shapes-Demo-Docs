@@ -1,19 +1,14 @@
-Version 2.14.0
+Version 2.14.1
 ==============
 
 This release includes the following **improvements**:
 
-#. Remove Data-Sharing option from ShapesDemo
-#. Regenerate types with Fast DDS Gen v3.3.0
-#. Support for Fast DDS v2.14.0
-
-This release includes the following **fixes**:
-
-#. Fix ROS 2 line separator in participant configuration
+#. Support for Fast DDS v2.14.1
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.14.0.rst
 .. include:: previous_versions/v2.13.4.rst
 .. include:: previous_versions/v2.13.3.rst
 .. include:: previous_versions/v2.13.2.rst
