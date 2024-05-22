@@ -1,14 +1,18 @@
-Version 2.10.3
+Version 2.10.4
 ==============
 
 This patch release includes the following **improvements**:
 
-* Support for Fast DDS v2.10.3
-* Add an auto-fill type information check
+* Support for Fast DDS v2.10.4
+
+This patch release includes the following **fixes**:
+
+* Remove datasharing option as type is unbounded
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.10.3.rst
 .. include:: previous_versions/v2.10.2.rst
 .. include:: previous_versions/v2.10.1.rst
 .. include:: previous_versions/v2.10.0.rst
