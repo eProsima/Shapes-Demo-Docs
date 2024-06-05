@@ -1,0 +1,11 @@
+Version 2.13.4
+^^^^^^^^^^^^^^
+
+This patch release includes the following **improvements**:
+
+1. Support for Fast DDS v2.13.4
+
+This release includes the following **fixes**:
+
+1. Remove Data-Sharing option
+2. Fix ROS 2 line separator
