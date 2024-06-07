@@ -9,6 +9,7 @@ Previous versions
 =================
 
 .. include:: previous_versions/v2.14.0.rst
+.. include:: previous_versions/v2.13.5.rst
 .. include:: previous_versions/v2.13.4.rst
 .. include:: previous_versions/v2.13.3.rst
 .. include:: previous_versions/v2.13.2.rst
