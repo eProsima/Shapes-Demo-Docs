@@ -1,18 +1,15 @@
-Version 2.6.8
+Version 2.6.9
 =============
 
-This patch release adds the following **improvements**:
+This patch release includes the following **improvements**:
 
-* Add an ``auto fill type information`` check.
-* Support for Fast DDS v2.6.8
-
-This patch release adds the following **fixes**:
-
-* Remove datasharing option as type is unbounded.
+* Improve CI workflows
+* Support for Fast DDS v2.6.9
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.6.8.rst
 .. include:: previous_versions/v2.6.7.rst
 .. include:: previous_versions/v2.6.6.rst
 .. include:: previous_versions/v2.6.5.rst
