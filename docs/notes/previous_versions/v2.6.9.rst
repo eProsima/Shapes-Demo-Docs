@@ -1,0 +1,7 @@
+Version 2.6.9
+^^^^^^^^^^^^^
+
+This patch release includes the following **improvements**:
+
+* Improve CI workflows
+* Support for Fast DDS v2.6.9
