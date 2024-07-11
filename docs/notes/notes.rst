@@ -1,14 +1,14 @@
-Version 2.14.2
+Version 2.14.3
 ==============
 
 This release includes the following **improvements**:
 
-#. Repository improvements
-#. Support for Fast DDS v2.14.2
+#. Support for Fast DDS v2.14.3
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.14.2.rst
 .. include:: previous_versions/v2.14.1.rst
 .. include:: previous_versions/v2.14.0.rst
 .. include:: previous_versions/v2.13.4.rst
