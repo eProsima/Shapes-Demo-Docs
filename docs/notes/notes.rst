@@ -11,6 +11,7 @@ Previous versions
 .. include:: previous_versions/v2.14.2.rst
 .. include:: previous_versions/v2.14.1.rst
 .. include:: previous_versions/v2.14.0.rst
+.. include:: previous_versions/v2.13.6.rst
 .. include:: previous_versions/v2.13.5.rst
 .. include:: previous_versions/v2.13.4.rst
 .. include:: previous_versions/v2.13.3.rst
