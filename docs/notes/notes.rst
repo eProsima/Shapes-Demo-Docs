@@ -1,13 +1,15 @@
-Version 2.13.5
-==============
+Version 2.13.6 (EOL)
+====================
 
 This patch release includes the following **improvements**:
 
-1. Support for Fast DDS v2.13.5
+#. Support for Fast DDS v2.13.6
+#. Improve CI workflows
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.13.5.rst
 .. include:: previous_versions/v2.13.4.rst
 .. include:: previous_versions/v2.13.3.rst
 .. include:: previous_versions/v2.13.2.rst
