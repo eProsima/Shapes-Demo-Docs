@@ -1,13 +1,35 @@
-Version 2.14.3
+Version 3.0.0
 ==============
+
+This release includes the following **features**:
+
+#. Automatic ``TypeObject`` representation registration for ``DynamicTypes``.
+#. Add support to select type propagation policy.
 
 This release includes the following **improvements**:
 
-#. Support for Fast DDS v2.14.3
+#. Support to Fast DDS 3.0.x.
+#. Remove ``WriterProxyData`` from public APIs.
+#. ``TypeObjectRegistry`` refactor.
+#. ``TopicDataType`` refactor.
+#. Account for changes on RTPS writer refactor.
+#. Adjust for removing all redundant headers from include/fastrtps.
+#. Substitute CDRMessage private function with a simple operation.
+#. Update references to ``Time_t`` and ``Duration_t``.
+#. Move DR ``TypeConsistencyEnforcement`` & ``DataRepresentation`` from ``TypeConsistency`` to ``DataReaderQos``.
+#. Add CDRMessage_t include.
+#. Use token for CCache action.
+#. Migrate fastrtps namespace to fastdds.
+#. Adjust for ``const`` qualification of all data related inputs in DataWriter APIs.
+#. Adjust for Fast DDS public headers migration to .hpp.
+#. Improve Github CI.
+#. Remove new line character at the end of ``SHAPESVERSION`` CMake variable
+#. Regenerate types with Fast DDS-Gen v4
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.14.3.rst
 .. include:: previous_versions/v2.14.2.rst
 .. include:: previous_versions/v2.14.1.rst
 .. include:: previous_versions/v2.14.0.rst
