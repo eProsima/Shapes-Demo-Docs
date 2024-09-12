@@ -3,7 +3,7 @@ Version 3.0.1
 
 This release includes the following **improvements**:
 
-#. Support to Fast DDS 3.0.1.
+#. Support to Fast DDS v3.0.1.
 #. Update ``eProsima-CI`` action to install ``Qt``
 #. Regenerate types with Fast DDS-Gen v4.0.1
 
