@@ -1,17 +1,16 @@
-Version 2.10.4
+Version 2.10.5
 ==============
 
 This patch release includes the following **improvements**:
 
-* Support for Fast DDS v2.10.4
-
-This patch release includes the following **fixes**:
-
-* Remove datasharing option as type is unbounded
+* Support for Fast DDS v2.10.5
+* Improve CI workflows
+* Use eProsima-CI action to install Qt
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.10.4.rst
 .. include:: previous_versions/v2.10.3.rst
 .. include:: previous_versions/v2.10.2.rst
 .. include:: previous_versions/v2.10.1.rst
