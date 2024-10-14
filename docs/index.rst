@@ -9,6 +9,7 @@ eProsima Shapes Demo
    :caption: Installation Manual
    :numbered: 5
    :maxdepth: 2
+   :hidden:
 
    /installation/windows_binaries
    /installation/linux_sources
@@ -20,6 +21,7 @@ eProsima Shapes Demo
    :caption: First Steps
    :numbered: 5
    :maxdepth: 2
+   :hidden:
 
    /first_steps/first_steps
 
@@ -29,6 +31,7 @@ eProsima Shapes Demo
    :caption: Shapes Demo Examples
    :numbered: 5
    :maxdepth: 2
+   :hidden:
 
    /examples/discovery
    /examples/history_durability
@@ -49,6 +52,7 @@ eProsima Shapes Demo
    :caption: Troubleshooting
    :numbered: 5
    :maxdepth: 2
+   :hidden:
 
    /troubleshooting/troubleshooting
    /troubleshooting/interoperability
@@ -58,5 +62,6 @@ eProsima Shapes Demo
 .. toctree::
    :caption: Release Notes
    :maxdepth: 2
+   :hidden:
 
    /notes/notes
