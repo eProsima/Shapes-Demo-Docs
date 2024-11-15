@@ -1,0 +1,8 @@
+Version 2.10.5
+^^^^^^^^^^^^^^
+
+This patch release includes the following **improvements**:
+
+* Support for Fast DDS v2.10.5
+* Improve CI workflows
+* Use eProsima-CI action to install Qt
