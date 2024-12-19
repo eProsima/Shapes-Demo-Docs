@@ -1,9 +1,11 @@
-Version 3.1.0
-==============
+Version 3.1.1
+=============
 
 This release includes the following **improvements**:
 
-#. Support to Fast DDS v3.1.0.
+#. Support for Fast DDS v3.1.1
+#. Regenerate types with Fast DDS Gen v4.0.3
+#. Update commercial support section in project README
 
 Previous versions
 =================
