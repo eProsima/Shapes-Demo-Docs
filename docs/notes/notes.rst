@@ -10,6 +10,7 @@ This release includes the following **improvements**:
 Previous versions
 =================
 
+.. include:: previous_versions/v3.1.1.rst
 .. include:: previous_versions/v3.1.0.rst
 .. include:: previous_versions/v3.0.1.rst
 .. include:: previous_versions/v3.0.0.rst
