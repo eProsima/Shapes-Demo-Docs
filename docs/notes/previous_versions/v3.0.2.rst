@@ -1,0 +1,6 @@
+Version 3.0.2 (EOL)
+^^^^^^^^^^^^^^^^^^^
+
+This release includes the following **improvements**:
+
+#. Support to Fast DDS v3.0.2.
