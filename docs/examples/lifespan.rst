@@ -39,9 +39,9 @@ After that, change the write rate to 1000:
 
 3. On Instance1:
 
-    - Click on Options.
-    - Select Preferences.
-    - Set the update interval to 1000.
+   - Click on Options.
+   - Select Preferences.
+   - Set the update interval to 1000.
 
 .. image:: /01-figures/test10_1.png
    :scale: 100 %
@@ -62,13 +62,13 @@ Now, create two subscribers:
 
 5. Create a triangle subscriber:
 
-    - Start eProsima Shapes Demo (this instance will be referred to as *Instance3*).
-    - Click on Subscribe.
-    - Select TRIANGLE option for Shape.
-    - Select ``TRANSIENT_LOCAL`` option for the Durability.
-    - Make sure that RELIABLE checkbox is marked.
-    - Set History to 100.
-    - Set Lifespan Duration to 50.
+   - Start eProsima Shapes Demo (this instance will be referred to as *Instance3*).
+   - Click on Subscribe.
+   - Select TRIANGLE option for Shape.
+   - Select ``TRANSIENT_LOCAL`` option for the Durability.
+   - Make sure that RELIABLE checkbox is marked.
+   - Set History to 100.
+   - Set Lifespan Duration to 50.
 
 When a new subscriber matches with the publisher, due to the ``TRANSIENT_LOCAL`` durability, all the
 samples stored on the publisher history are sent automatically to the new subscriber.
