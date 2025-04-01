@@ -9,15 +9,10 @@ However, the user must assure that `Qt 5 <https://doc.qt.io/qt-5/>`_ is installe
 On Ubuntu Jammy (22.04) installations, Qt 5 development packages are distributed by Canonical as an APT package and can
 be downloaded by running the following on a terminal:
 
-    .. code-block:: bash
+.. code-block:: bash
 
-        apt update
-        apt install -y qtbase5-dev
-
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-   :backlinks: none
+    apt update
+    apt install -y qtbase5-dev
 
 .. _linux_colcon_installation:
 

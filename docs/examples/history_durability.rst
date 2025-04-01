@@ -27,7 +27,7 @@ Step-by-step example implementation
 
 First, three instances are launched and a publisher is created in each of them:
 
-1 - Create a red square publisher:
+1. Create a red square publisher:
 
    - Start eProsima Shapes Demo (this instance will be referred to as *Instance1*).
    - Click on Publish.
@@ -35,7 +35,7 @@ First, three instances are launched and a publisher is created in each of them:
    - Change the History field from 6 to 100.
    - Select TRANSIENT_LOCAL.
 
-2 - Create an orange square publisher:
+2. Create an orange square publisher:
 
    - Start eProsima Shapes Demo (this instance will be referred to as *Instance2*).
    - Click on Publish.
@@ -43,7 +43,7 @@ First, three instances are launched and a publisher is created in each of them:
    - Change the History field from 6 to 100.
    - Select TRANSIENT_LOCAL.
 
-3 - Create a black square publisher:
+3. Create a black square publisher:
 
    - Start eProsima Shapes Demo (this instance will be referred to as *Instance3*).
    - Click on Publish.
