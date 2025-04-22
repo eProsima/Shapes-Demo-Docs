@@ -1,14 +1,15 @@
-Version 2.6.9
-=============
+Version 2.6.10
+==============
 
 This patch release includes the following **improvements**:
 
-* Improve CI workflows
-* Support for Fast DDS v2.6.9
+* Support for Fast DDS v2.6.10
+* Use eProsima-CI action to install Qt
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.6.9.rst
 .. include:: previous_versions/v2.6.8.rst
 .. include:: previous_versions/v2.6.7.rst
 .. include:: previous_versions/v2.6.6.rst
