@@ -1,0 +1,8 @@
+Version 2.6.10
+^^^^^^^^^^^^^^
+
+This patch release includes the following **improvements**:
+
+* Support for Fast DDS v2.6.10
+* Use eProsima-CI action to install Qt
+*
