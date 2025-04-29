@@ -1,5 +1,5 @@
-Version 2.13.6 (EOL)
-^^^^^^^^^^^^^^^^^^^^
+Version 2.13.6
+^^^^^^^^^^^^^^
 
 This patch release includes the following **improvements**:
 

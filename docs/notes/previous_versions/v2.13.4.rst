@@ -1,5 +1,5 @@
-Version 2.13.4 (EOL)
-^^^^^^^^^^^^^^^^^^^^
+Version 2.13.4
+^^^^^^^^^^^^^^
 
 This patch release includes the following **improvements**:
 
