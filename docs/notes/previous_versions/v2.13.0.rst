@@ -1,5 +1,5 @@
-Version 2.13.0 (EOL)
-^^^^^^^^^^^^^^^^^^^^
+Version 2.13.0
+^^^^^^^^^^^^^^
 
 This minor release includes the following **improvements**:
 
