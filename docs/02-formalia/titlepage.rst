@@ -1,4 +1,4 @@
-.. image:: /01-figures/logo.png
+.. image:: /_static/eprosima-logo.svg
    :height: 100px
    :width: 100px
    :align: left
