@@ -1,13 +1,15 @@
-Version 2.10.6
+Version 2.10.7
 ==============
 
 This patch release includes the following **improvements**:
 
-* Support for Fast DDS v2.10.6
+* Regenerate code with Fast DDS Gen v2.5.3
+* Support for Fast DDS v2.10.7
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.10.6.rst
 .. include:: previous_versions/v2.10.5.rst
 .. include:: previous_versions/v2.10.4.rst
 .. include:: previous_versions/v2.10.3.rst
