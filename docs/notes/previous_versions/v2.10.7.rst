@@ -1,0 +1,7 @@
+Version 2.10.7
+^^^^^^^^^^^^^^
+
+This patch release includes the following **improvements**:
+
+* Regenerate code with Fast DDS Gen v2.5.3
+* Support for Fast DDS v2.10.7
