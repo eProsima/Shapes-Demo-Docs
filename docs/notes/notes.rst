@@ -1,13 +1,15 @@
-Version 3.1.2
+Version 3.1.3
 =============
 
 This release includes the following **improvements**:
 
-#. Support for Fast DDS v3.1.2
+#. Remove Monitor Service topic from statistics
+#. Support for Fast DDS v3.1.3
 
 Previous versions
 =================
 
+.. include:: previous_versions/v3.1.2.rst
 .. include:: previous_versions/v3.1.1.rst
 .. include:: previous_versions/v3.1.0.rst
 .. include:: previous_versions/v3.0.2.rst
