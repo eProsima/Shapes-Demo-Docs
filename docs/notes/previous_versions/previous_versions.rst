@@ -3,6 +3,14 @@
 Previous end-of-life versions
 =============================
 
+Version 3.1 (EOL)
+-----------------
+
+.. include:: v3.1.3.rst
+.. include:: v3.1.2.rst
+.. include:: v3.1.1.rst
+.. include:: v3.1.0.rst
+
 Version 3.0 (EOL)
 -----------------
 
@@ -35,6 +43,18 @@ Version 2.11 (EOL)
 .. include:: v2.11.2.rst
 .. include:: v2.11.1.rst
 .. include:: v2.11.0.rst
+
+Version 2.10 (EOL)
+------------------
+
+.. include:: v2.10.7.rst
+.. include:: v2.10.6.rst
+.. include:: v2.10.5.rst
+.. include:: v2.10.4.rst
+.. include:: v2.10.3.rst
+.. include:: v2.10.2.rst
+.. include:: v2.10.1.rst
+.. include:: v2.10.0.rst
 
 Version 2.9 (EOL)
 -----------------
