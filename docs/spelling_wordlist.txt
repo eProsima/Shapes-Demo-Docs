@@ -11,6 +11,7 @@ enablement
 eProsima
 fastdds
 fastrtps
+Furo
 Github
 hpp
 interoperability
