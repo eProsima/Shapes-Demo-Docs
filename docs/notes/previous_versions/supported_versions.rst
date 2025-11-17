@@ -3,6 +3,11 @@
 Supported versions
 ==================
 
+Version 3.4
+-----------
+
+.. include:: v3.4.0.rst
+
 Version 3.3
 -----------
 
