@@ -76,7 +76,7 @@ To install eProsima Shapes Demo using colcon, please follow the steps below:
 
         .. code-block:: bash
 
-            export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/<user>/Qt/6.10.1/gcc_64/lib"
+            export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:<qt-installation-path>/lib"
 
 .. _linux_ros2_compilation:
 
@@ -84,7 +84,7 @@ ROS 2 features compilation
 --------------------------
 
 By default eProsima Shapes Demo can be built and used on a ROS 2 installation as long as an installation of Fast DDS
-version 2.5.1 or higher is available and a Qt 5 installation is available.
+version 2.5.1 or higher is available and a Qt 6.10 installation is available.
 
 The build process will try to locate the `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_ and, if present, will automatically enable ROS 2 compilation flags.
 
@@ -152,7 +152,7 @@ follow these steps within a sourced ROS 2 Humble installation:
 
         .. code-block:: bash
 
-            export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/<user>/Qt/6.10.1/gcc_64/lib"
+            export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:<qt-installation-path>/lib"
 
 .. note::
 
