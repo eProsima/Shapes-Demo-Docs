@@ -11,7 +11,7 @@ After the executable is launched, a window similar to the one presented in the f
 Publishing a Topic (Shape)
 --------------------------
 
-The Publish button allow the users to define the Shape (topic) and Quality of Service (QoS) for their publication.
+The Publish button allows users to define the Shape (topic) and Quality of Service (QoS) for their publication.
 The following image shows an example of the Publication menu.
 
 .. image:: /01-figures/publish.png
