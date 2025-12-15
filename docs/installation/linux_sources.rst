@@ -6,7 +6,7 @@ Linux installation from sources
 For simplicity, the eProsima Shapes Demo installation manual follows the Colcon installation, since eProsima *Fast DDS*
 and *Fast CDR* dependencies are downloaded and installed at the same time that eProsima Shapes Demo is built.
 However, the user must assure that `Qt 6 <https://doc.qt.io/qt-6/>`_ is installed.
-Qt 6.10 is required in order to build eProsima Shapes Demo.
+Qt 6.8 is required in order to build eProsima Shapes Demo.
 To install this Qt version, refer to `Qt Downloads <https://www.qt.io/download>`_ website.
 
 .. note::
@@ -49,8 +49,8 @@ To install eProsima Shapes Demo using colcon, please follow the steps below:
         wget https://raw.githubusercontent.com/eProsima/ShapesDemo/master/shapes-demo.repos
         vcs import src < shapes-demo.repos
 
-    In order to build the project, it must be specified the path to the Qt 6.10 :code:`gcc_64` installation path.
-    Using the standard Qt installation, this path should be similar to :code:`/home/<user>/Qt/6.10.1/gcc_64`.
+    In order to build the project, it must be specified the path to the Qt 6.8 :code:`gcc_64` installation path.
+    Using the standard Qt installation, this path should be similar to :code:`/home/<user>/Qt/6.8.3/gcc_64`.
 
 3.  Build the packages:
 
@@ -84,7 +84,7 @@ ROS 2 features compilation
 --------------------------
 
 By default eProsima Shapes Demo can be built and used on a ROS 2 installation as long as an installation of Fast DDS
-version 2.5.1 or higher is available and a Qt 6.10 installation is available.
+version 2.5.1 or higher is available and a Qt 6.8 installation is available.
 
 The build process will try to locate the `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_ and, if present, will automatically enable ROS 2 compilation flags.
 
@@ -124,8 +124,8 @@ follow these steps within a sourced ROS 2 Humble installation:
         wget https://raw.githubusercontent.com/eProsima/ShapesDemo/master/shapes-demo-ros2.repos
         vcs import src < shapes-demo-ros2.repos
 
-    In order to build the project, it must be specified the path to the Qt 6.10 :code:`gcc_64` installation path.
-    Using the standard Qt installation, this path should be similar to :code:`/home/<user>/Qt/6.10.1/gcc_64`.
+    In order to build the project, it must be specified the path to the Qt 6.8 :code:`gcc_64` installation path.
+    Using the standard Qt installation, this path should be similar to :code:`/home/<user>/Qt/6.8.3/gcc_64`.
 
 4.  Build the packages:
 
