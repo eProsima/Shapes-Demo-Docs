@@ -1,14 +1,15 @@
-Version 2.6.10
+Version 2.6.11
 ==============
 
 This patch release includes the following **improvements**:
 
-* Support for Fast DDS v2.6.10
-* Use eProsima-CI action to install Qt
+* Support for Fast DDS v2.6.11
+* Regenerate code with Fast DDS Gen v2.1.4
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.6.10.rst
 .. include:: previous_versions/v2.6.9.rst
 .. include:: previous_versions/v2.6.8.rst
 .. include:: previous_versions/v2.6.7.rst
