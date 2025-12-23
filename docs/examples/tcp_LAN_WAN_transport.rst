@@ -52,7 +52,7 @@ It contains the following elements:
   In this network Router C has address ``192.168.1.74`` and Router S has address ``192.168.1.75``.
 - A client LAN network managed by Router C.
 - A server LAN network managed by Router S.
-  The Router S NAT settings relay any inbound TCP traffic to port 5100 towards Sever machine.
+  The Router S NAT settings relay any inbound TCP traffic to port 5100 towards the Server machine.
   The TCP port 5100 was arbitrarily chosen, any available port will do.
 - An eProsima Shapes Demo client running in the machine with IPv4 address ``192.168.2.17``.
 - An eProsima Shapes Demo server running in the machine with IPv4 address ``192.168.3.49``.

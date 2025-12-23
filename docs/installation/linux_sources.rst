@@ -5,14 +5,13 @@ Linux installation from sources
 
 For simplicity, the eProsima Shapes Demo installation manual follows the Colcon installation, since eProsima *Fast DDS*
 and *Fast CDR* dependencies are downloaded and installed at the same time that eProsima Shapes Demo is built.
-However, the user must assure that `Qt 5 <https://doc.qt.io/qt-5/>`_ is installed.
-On Ubuntu Jammy (22.04) installations, Qt 5 development packages are distributed by Canonical as an APT package and can
-be downloaded by running the following on a terminal:
+However, the user must assure that `Qt 6 <https://doc.qt.io/qt-6/>`_ is installed.
+Qt 6.8 is required in order to build eProsima Shapes Demo.
+To install this Qt version, refer to `Qt Downloads <https://www.qt.io/download>`_ website.
 
-.. code-block:: bash
+.. note::
 
-    apt update
-    apt install -y qtbase5-dev
+    When going through the installation steps, make sure the box of component *Qt Charts* is checked.
 
 .. _linux_colcon_installation:
 
@@ -50,11 +49,14 @@ To install eProsima Shapes Demo using colcon, please follow the steps below:
         wget https://raw.githubusercontent.com/eProsima/ShapesDemo/master/shapes-demo.repos
         vcs import src < shapes-demo.repos
 
+    In order to build the project, it must be specified the path to the Qt 6.8 :code:`gcc_64` installation path.
+    Using the standard Qt installation, this path should be similar to :code:`/home/<user>/Qt/6.8.3/gcc_64`.
+
 3.  Build the packages:
 
     .. code-block:: bash
 
-        colcon build
+        colcon build --cmake-args -DCMAKE_PREFIX_PATH=<qt-installation-path>
 
 4.  Link the application executable to make it accessible from the current directory:
 
@@ -68,13 +70,21 @@ To install eProsima Shapes Demo using colcon, please follow the steps below:
 
         ShapesDemo
 
+    .. note::
+
+        Ensure the Qt library path is in your ``LD_LIBRARY_PATH``:
+
+        .. code-block:: bash
+
+            export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:<qt-installation-path>/lib"
+
 .. _linux_ros2_compilation:
 
 ROS 2 features compilation
 --------------------------
 
 By default eProsima Shapes Demo can be built and used on a ROS 2 installation as long as an installation of Fast DDS
-version 2.5.1 or higher is available and a Qt 5 installation is available.
+version 2.5.1 or higher is available and a Qt 6.8 installation is available.
 
 The build process will try to locate the `Shapes Demo TypeSupport <https://github.com/eProsima/ShapesDemo-TypeSupport>`_ and, if present, will automatically enable ROS 2 compilation flags.
 
@@ -114,12 +124,15 @@ follow these steps within a sourced ROS 2 Humble installation:
         wget https://raw.githubusercontent.com/eProsima/ShapesDemo/master/shapes-demo-ros2.repos
         vcs import src < shapes-demo-ros2.repos
 
+    In order to build the project, it must be specified the path to the Qt 6.8 :code:`gcc_64` installation path.
+    Using the standard Qt installation, this path should be similar to :code:`/home/<user>/Qt/6.8.3/gcc_64`.
+
 4.  Build the packages:
 
     .. code-block:: bash
 
         cd ~/shapes_demo_ws
-        colcon build
+        colcon build --cmake-args -DCMAKE_PREFIX_PATH=<qt-installation-path>
 
 5.  Link the application executable to make it accessible from the current directory:
 
@@ -132,6 +145,14 @@ follow these steps within a sourced ROS 2 Humble installation:
     .. code-block:: bash
 
         ShapesDemo
+
+    .. note::
+
+        Ensure the Qt library path is in your ``LD_LIBRARY_PATH``:
+
+        .. code-block:: bash
+
+            export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:<qt-installation-path>/lib"
 
 .. note::
 

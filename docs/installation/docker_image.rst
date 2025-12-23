@@ -26,7 +26,7 @@ To run this container you need Docker installed. From a terminal, run:
 
     docker load -i ubuntu-fastdds-shapes-demo\ <version>.tar
 
-1. Finally, run the *Shapes Demo* Docker image:
+3. Finally, run the *Shapes Demo* Docker image:
 
 .. code-block:: bash
 
