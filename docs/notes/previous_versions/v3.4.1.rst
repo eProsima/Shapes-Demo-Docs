@@ -1,0 +1,6 @@
+Version 3.4.1
+^^^^^^^^^^^^^
+
+This patch release includes the following **improvements**:
+
+* Support for Fast DDS v3.4.1
