@@ -1,8 +1,11 @@
 .. _release_notes:
 
-Version 3.4.1 (latest)
+Version 3.5.0 (latest)
 ======================
 
 This release includes the following **improvements**:
 
-#. Support for Fast DDS v3.4.1
+#. Support for Fast DDS 3.5.0
+#. Upgrade from `Qt5` to `Qt6`
+#. Update after 3.3.1
+#. Regenerate code with Fast DDS Gen v4.3.0
