@@ -1,15 +1,14 @@
-Version 2.14.5
+Version 2.14.6
 ==============
 
 This release includes the following **improvements**:
 
-#. Remove Monitor Service topic from statistics
-#. Remove deprecated windows-2019 runner
-#. Support for Fast DDS v2.14.5
+#. Regenerate types with Fast DDS Gen 3.3.2
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.14.5.rst
 .. include:: previous_versions/v2.14.4.rst
 .. include:: previous_versions/v2.14.3.rst
 .. include:: previous_versions/v2.14.2.rst
