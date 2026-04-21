@@ -1,0 +1,6 @@
+Version 3.6.0
+^^^^^^^^^^^^^
+
+This release includes the following **improvements**:
+
+#. Fixed participant domain ID max number
