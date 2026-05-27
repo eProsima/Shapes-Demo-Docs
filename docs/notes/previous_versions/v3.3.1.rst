@@ -1,0 +1,11 @@
+Version 3.3.1 (EOL)
+^^^^^^^^^^^^^^^^^^^
+
+This release includes the following **improvements**:
+
+#. Regenerate types with Fast DDS Gen 4.1.1
+#. Support for Fast DDS v3.3.1
+
+It also includes the following CI improvements:
+
+#. Removed mirror, nightly, weekly and minor changes
