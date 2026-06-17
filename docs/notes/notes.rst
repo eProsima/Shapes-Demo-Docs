@@ -1,8 +1,8 @@
 .. _release_notes:
 
-Version 3.4.2 (latest)
+Version 3.4.3 (latest)
 ======================
 
-This patch release includes the following CI improvements:
+This patch release includes the following **fixes**:
 
-* Updates on 3.4.x after branch out of 3.5.x
+#. Fixed participant domain ID maximum number
