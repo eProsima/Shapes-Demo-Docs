@@ -1,7 +1,7 @@
 .. _release_notes:
 
-Version 3.4.3 (latest)
-======================
+Version 3.4.3 (EOL)
+===================
 
 This patch release includes the following **fixes**:
 
