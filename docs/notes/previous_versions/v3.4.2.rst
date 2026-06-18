@@ -1,5 +1,5 @@
-Version 3.4.2
-^^^^^^^^^^^^^
+Version 3.4.2 (EOL)
+^^^^^^^^^^^^^^^^^^^
 
 This patch release includes the following CI improvements:
 
