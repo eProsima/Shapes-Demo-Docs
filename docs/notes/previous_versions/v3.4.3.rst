@@ -1,0 +1,6 @@
+Version 3.4.3
+^^^^^^^^^^^^^
+
+This patch release includes the following **fixes**:
+
+#. Fixed participant domain ID maximum number
