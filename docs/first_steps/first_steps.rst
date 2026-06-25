@@ -219,6 +219,8 @@ The user can customize several aspects of Shapes Demo operation:
 
 - **Speed:** This scroll bar allows the user to change how much the Shape moves between two write calls.
 
+- **Invert Y axis:** This checkbox inverts the Y axis visually, it does not modify the underlying value.
+
 Endpoints and Output tabs
 -------------------------
 
