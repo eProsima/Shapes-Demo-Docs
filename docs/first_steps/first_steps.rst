@@ -230,10 +230,17 @@ An example of this legend is shown in the following figure.
    :align: center
 
 This table can be used to remove endpoints.
-Two methods are provided:
+Multiple endpoints can be selected at once using standard selection controls
+(``Ctrl+Click`` to toggle individual rows, ``Shift+Click`` to select a range).
 
-- Right click in an endpoint: An option to remove the endpoint is shown.
-- Pressing the delete button when the endpoint is selected.
+Two methods are provided to delete the selected endpoint(s):
+
+- **Right-click context menu:** Right-clicking on an endpoint row shows a *Delete Endpoint* option.
+  If the right-clicked row is not already part of the current selection, it becomes the sole selected row before
+  the menu appears.
+  If one or more rows are already selected and the right-clicked row is among them, the entire selection is
+  deleted when the option is chosen.
+- **Delete key:** Pressing the ``Delete`` key removes all currently selected endpoints at once.
 
 The output tab shows the output log messages.
 An example of the output tab is shown in the figure below.
