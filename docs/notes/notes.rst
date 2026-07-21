@@ -1,12 +1,12 @@
 .. _release_notes:
 
-Version 3.2.4 (latest)
+Version 3.2.5 (latest)
 ======================
 
 This release includes the following **improvements**:
 
-#. Support for Fast DDS v3.2.4
+#. Support for Fast DDS v3.2.5
 
-This release includes the following **fixes**:
+This release includes the following **CI improvements**:
 
-#. Fixed participant domain ID max number
+#. Make ``skip-ci`` label report required statuses as pass
