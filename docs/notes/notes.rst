@@ -1,14 +1,18 @@
-Version 2.6.11
+Version 2.6.12
 ==============
 
-This patch release includes the following **improvements**:
+This release includes the following **improvements**:
 
-* Support for Fast DDS v2.6.11
-* Regenerate code with Fast DDS Gen v2.1.4
+#. Support for Fast DDS v2.6.12
+
+This release includes the following **fixes**:
+
+#. Fixed participant domain ID max number
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.6.11.rst
 .. include:: previous_versions/v2.6.10.rst
 .. include:: previous_versions/v2.6.9.rst
 .. include:: previous_versions/v2.6.8.rst
