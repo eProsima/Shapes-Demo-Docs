@@ -6,11 +6,14 @@ Supported versions
 Version 3.6
 -----------
 
+.. include:: v3.6.1.rst
 .. include:: v3.6.0.rst
 
 Version 3.2
 -----------
 
+.. include:: v3.2.5.rst
+.. include:: v3.2.4.rst
 .. include:: v3.2.3.rst
 .. include:: v3.2.2.rst
 .. include:: v3.2.1.rst
@@ -29,6 +32,7 @@ Version 2.14
 Version 2.6 (maintenance)
 -------------------------
 
+.. include:: v2.6.12.rst
 .. include:: v2.6.11.rst
 .. include:: v2.6.10.rst
 .. include:: v2.6.9.rst
