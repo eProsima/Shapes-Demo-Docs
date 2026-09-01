@@ -1,13 +1,36 @@
-Version 2.14.6
+Version 2.14.7
 ==============
 
 This release includes the following **improvements**:
 
+#. Remove Data-Sharing option from ``ShapesDemo``
+#. Regenerate shapes types: Fast DDS Gen v3.3.0
+#. Regenerate types with Fast DDS Gen v3.3.1
+#. Remove Monitor Service topic from statistics
 #. Regenerate types with Fast DDS Gen 3.3.2
+#. Regenerate types with Fast DDS Gen v3.3.2
+#. Regenerate types with Fast DDS Gen 3.3.3
+#. Support for Fast DDS v2.14.7
+
+This release includes the following **fixes**:
+
+#. Fix ROS 2 line separator in participant configuration
+#. Remove new line character at the end of ``SHAPESVERSION`` cmake variable
+#. Fixed participant domain ID max number
+
+This release includes the following **CI improvements**:
+
+#. Update mirror job
+#. Use token for ccache action
+#. Improve CI workflows in master
+#. Use eProsima-CI action to install Qt
+#. Remove deprecated windows-2019 runner
+#. Make ``skip-ci`` label report required statuses as pass
 
 Previous versions
 =================
 
+.. include:: previous_versions/v2.14.6.rst
 .. include:: previous_versions/v2.14.5.rst
 .. include:: previous_versions/v2.14.4.rst
 .. include:: previous_versions/v2.14.3.rst
