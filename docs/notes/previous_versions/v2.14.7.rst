@@ -1,0 +1,15 @@
+Version 2.14.7
+==============
+
+This release includes the following **improvements**:
+
+#. Regenerate types with Fast DDS Gen 3.3.3
+#. Support for Fast DDS v2.14.7
+
+This release includes the following **fixes**:
+
+#. Fixed participant domain ID max number
+
+This release includes the following **CI improvements**:
+
+#. Make ``skip-ci`` label report required statuses as pass
