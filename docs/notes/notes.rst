@@ -12,7 +12,7 @@ This release includes the following **improvements**:
 
 This release includes the following **fixes**:
 
-#. Update Shape.idl to use lowercase key annotation
+#. Update ``Shape.idl`` to use lowercase key annotation
 
 This release includes the following **CI improvements**:
 
