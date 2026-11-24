@@ -1,22 +1,19 @@
 .. _release_notes:
 
-Version 3.6.2 (latest)
+Version 3.6.3 (latest)
 ======================
 
-This patch release includes the following **fixes**:
+This release includes the following **improvements**:
 
-#. Fix ``Delete Endpoint`` typo
+#. Make draw area expand horizontally and improve axis rendering
+#. Updates after v2.14.7 release
+#. Regenerate types with Fast DDS Gen 4.3.1
+#. Support for Fast DDS v3.6.3
 
-This patch release includes the following **improvements**:
+This release includes the following **fixes**:
 
-#. Add multi-select endpoint deletion
-#. Add coordinate arrows
-#. Add invert Y axis checkbox
-#. Change ``Qt`` dependency to version 6.4
-#. Set Fast DDS version 3.5 as EOL
-#. Mark 3.4.x as EOL
-#. Support for Fast DDS v3.6.2
+#. Update ``Shape.idl`` to use lowercase key annotation
 
-This patch release includes the following **CI improvements**:
+This release includes the following **CI improvements**:
 
-#. Make ``skip-ci`` label report required statuses as pass
+#. Fix typo in workflow step name
