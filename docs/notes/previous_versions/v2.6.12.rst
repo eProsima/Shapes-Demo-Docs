@@ -1,0 +1,10 @@
+Version 2.6.12
+^^^^^^^^^^^^^^
+
+This release includes the following **improvements**:
+
+#. Support for Fast DDS v2.6.12
+
+This release includes the following **fixes**:
+
+#. Fixed participant domain ID max number
