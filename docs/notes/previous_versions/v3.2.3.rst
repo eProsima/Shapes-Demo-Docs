@@ -1,5 +1,5 @@
-Version 3.2.3
-^^^^^^^^^^^^^
+Version 3.2.3 (EOL)
+^^^^^^^^^^^^^^^^^^^
 
 This release includes the following **improvements**:
 
